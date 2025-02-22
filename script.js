@@ -10,6 +10,32 @@ fetch('data.json')
         });
     });
 
+document.getElementById('toggle-annotations').addEventListener('click', () => {
+    document.getElementsByClassName('annotations')[0].classList.toggle('hidden');
+});
+
+function setupAnnoContents() {
+    const annoContents = document.querySelectorAll(".anno-content");
+    // 为每个 anno-content 添加点击事件
+    annoContents.forEach(content => {
+        content.addEventListener("click", function () {
+            // 切换显示和隐藏
+            this.classList.toggle("show");
+        });
+    });
+    document.getElementById('toggle-anno-content').addEventListener('click', () => {
+        const firstContent = annoContents[0];
+        if (firstContent.classList.contains("show")) {
+            // 如果第一个内容是显示状态，隐藏所有内容
+            annoContents.forEach(content => content.classList.remove("show"));
+        } else {
+            // 如果第一个内容是隐藏状态，显示所有内容
+            annoContents.forEach(content => content.classList.add("show"));
+        }
+    });
+}
+
+
 function loadArticle(index, data) {
     let article = data.articles[index];
     document.getElementById('title').textContent = article.title;
@@ -60,6 +86,7 @@ function loadArticle(index, data) {
     });
 
     formatAnnotatedText(data.articles[index]);
+    setupAnnoContents();
 }
 
 function formatAnnotatedText(data) {
@@ -111,14 +138,14 @@ function formatAnnotatedText(data) {
         // 构建高亮文本
         const highlighted = [
             sentence.text.slice(0, localStart),
-            `<span class="highlight">${anno.text}</span>`,
+            `<strong><u>${anno.text}</u></strong>`,
             sentence.text.slice(localEnd, sentence.text.length - 1)
         ].join('');
 
         // 构建注释信息
         output = ''
         output += `${highlighted}`;
-        output += `：${anno.explanation}`;
+        output += `：<span class='anno-content'>${anno.explanation}</span>`;
         if (anno.type) output += `\n | 类型：${anno.type}`;
         output += '\n\n';
         li.innerHTML = output

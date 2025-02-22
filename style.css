@@ -7,47 +7,62 @@
     width: 20%;
     background: #f4f4f4;
     padding: 10px;
+    border-radius: 20px;
 }
 
 
 /* 列表样式 */
-.sidebar ul {
-    list-style: none; /* 去掉默认的列表点 */
+.sidebar ul, .annotations ul {
+    list-style: none;
+    /* 去掉默认的列表点 */
     margin: 0;
     padding: 0;
 }
 
 /* 列表项样式 */
 .sidebar li {
-    margin-bottom: 5px; /* 列表项之间的间隔 */
+    margin-bottom: 5px;
+    /* 列表项之间的间隔 */
 }
 
 /* 链接样式 */
-.sidebar li {
-    display: block; /* 块级元素，占满整个列表项 */
-    padding: 10px; /* 内边距 */
-    text-decoration: none; /* 去掉下划线 */
-    color: #333; /* 字体颜色 */
-    border-radius: 10px; /* 圆角 */
-    transition: background-color 0.3s, color 0.3s; /* 平滑过渡效果 */
+.sidebar li, .annotations li {
+    display: block;
+    /* 块级元素，占满整个列表项 */
+    padding: 10px;
+    /* 内边距 */
+    text-decoration: none;
+    /* 去掉下划线 */
+    color: #333;
+    /* 字体颜色 */
+    border-radius: 10px;
+    /* 圆角 */
+    transition: background-color 0.3s, color 0.3s;
+    /* 平滑过渡效果 */
 }
 
 /* 鼠标悬停效果 */
-.sidebar li:hover {
-    background-color: #e7e7e7; /* 悬停时的背景色 */
-    color: #222; /* 悬停时的字体颜色 */
+.sidebar li:hover, .annotations li:hover {
+    background-color: #e7e7e7;
+    /* 悬停时的背景色 */
+    color: #222;
+    /* 悬停时的字体颜色 */
 }
 
 /* 选中状态样式 */
 .sidebar li.active {
-    background-color: #e0e0e0; /* 选中时的背景色 */
-    color: #222; /* 选中时的字体颜色 */
-    font-weight: bold; /* 加粗字体 */
+    background-color: #e0e0e0;
+    /* 选中时的背景色 */
+    color: #222;
+    /* 选中时的字体颜色 */
+    font-weight: bold;
+    /* 加粗字体 */
 }
 
 .content {
     font-family: "Songti SC", sans-serif;
-    padding: 3%; /* 设置正常的padding，可根据需要调整 */
+    padding: 3%;
+    /* 设置正常的padding，可根据需要调整 */
     width: 45%;
     font-size: 20px;
 }
@@ -57,20 +72,25 @@ h2 {
 }
 
 .body-text {
-    line-height: 2.0; /* 设置行距为1.5倍 */
+    line-height: 2.0;
+    /* 设置行距为1.5倍 */
     text-indent: 2em;
 }
 
 /* 高亮部分的样式 */
 .highlight {
-    background-color: #ffdead; /* 淡橙色背景 */
-    border-radius: 5px; /* 设置圆角，可根据需要调整 */
-    padding: 0px 5px; /* 为高亮部分添加一些内边距 */
+    font-weight: bold;
+    background-color: #ffdead;
+    /* 淡橙色背景 */
+    border-radius: 5px;
+    /* 设置圆角，可根据需要调整 */
+    padding: 0px 5px;
+    /* 为高亮部分添加一些内边距 */
 }
 
 .annotations {
     width: 35%;
-    background: #eaeaea;
+    background: #f0f0f0;
     padding: 10px;
 }
 
@@ -83,5 +103,42 @@ h2 {
     border-radius: 5px;
     font-size: 14px;
     display: none;
-  }
-  
+}
+
+.hidden {
+    display: none;
+}
+
+#toggle-annotations {
+    font-family: 'SF Pro';
+    position: fixed; /* 固定定位 */
+    top: 20px; /* 距离顶部的距离 */
+    right: 20px; /* 距离右侧的距离 */
+    padding: 5px 10px; /* 内边距 */
+    background-color: #e0e0e0; /* 背景颜色 */
+    color: #222; /* 字体颜色 */
+    border: none; /* 无边框 */
+    border-radius: 20px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    font-size: 16px; /* 字体大小 */
+    z-index: 1000; /* 确保按钮在最上层 */
+}
+
+#toogle-annotations button:hover {
+    background-color: #d0d0d0; /* 背景颜色 */
+    color: #222; /* 字体颜色 */
+}
+
+.anno-content {
+    color: #f0f0f0;
+    font-family: 'Kaiti SC';
+    cursor: pointer;
+}
+
+.anno-content.show {
+    color: #222;
+}
+
+#toggle-anno-content {
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+}
