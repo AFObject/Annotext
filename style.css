@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 10px;
+}
+
+
+/* 列表样式 */
+.sidebar ul {
+    list-style: none; /* 去掉默认的列表点 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 列表项样式 */
+.sidebar li {
+    margin-bottom: 5px; /* 列表项之间的间隔 */
+}
+
+/* 链接样式 */
+.sidebar li {
+    display: block; /* 块级元素，占满整个列表项 */
+    padding: 10px; /* 内边距 */
+    text-decoration: none; /* 去掉下划线 */
+    color: #333; /* 字体颜色 */
+    border-radius: 10px; /* 圆角 */
+    transition: background-color 0.3s, color 0.3s; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停效果 */
+.sidebar li:hover {
+    background-color: #e7e7e7; /* 悬停时的背景色 */
+    color: #222; /* 悬停时的字体颜色 */
+}
+
+/* 选中状态样式 */
+.sidebar li.active {
+    background-color: #e0e0e0; /* 选中时的背景色 */
+    color: #222; /* 选中时的字体颜色 */
+    font-weight: bold; /* 加粗字体 */
+}
+
+.content {
+    font-family: "Songti SC", sans-serif;
+    padding: 3%; /* 设置正常的padding，可根据需要调整 */
+    width: 45%;
+    font-size: 20px;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+.body-text {
+    line-height: 2.0; /* 设置行距为1.5倍 */
+    text-indent: 2em;
+}
+
+/* 高亮部分的样式 */
+.highlight {
+    background-color: #ffdead; /* 淡橙色背景 */
+    border-radius: 5px; /* 设置圆角，可根据需要调整 */
+    padding: 0px 5px; /* 为高亮部分添加一些内边距 */
+}
+
+.annotations {
+    width: 35%;
+    background: #eaeaea;
+    padding: 10px;
+}
+
+.tooltip {
+    position: absolute;
+    background: black;
+    opacity: 70%;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+  }
+  
