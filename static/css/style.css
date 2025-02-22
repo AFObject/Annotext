@@ -10,9 +10,17 @@
     border-radius: 20px;
 }
 
+.annotations {
+    width: 35%;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 
 /* 列表样式 */
-.sidebar ul, .annotations ul {
+.sidebar ul,
+.annotations ul {
     list-style: none;
     /* 去掉默认的列表点 */
     margin: 0;
@@ -26,7 +34,8 @@
 }
 
 /* 链接样式 */
-.sidebar li, .annotations li {
+.sidebar li,
+.annotations li {
     display: block;
     /* 块级元素，占满整个列表项 */
     padding: 10px;
@@ -42,7 +51,8 @@
 }
 
 /* 鼠标悬停效果 */
-.sidebar li:hover, .annotations li:hover {
+.sidebar li:hover,
+.annotations li:hover {
     background-color: #e7e7e7;
     /* 悬停时的背景色 */
     color: #222;
@@ -82,16 +92,10 @@ h2 {
     font-weight: bold;
     background-color: #ffdead;
     /* 淡橙色背景 */
-    border-radius: 5px;
+    border-radius: 10px;
     /* 设置圆角，可根据需要调整 */
     padding: 0px 5px;
     /* 为高亮部分添加一些内边距 */
-}
-
-.annotations {
-    width: 35%;
-    background: #f0f0f0;
-    padding: 10px;
 }
 
 .tooltip {
@@ -111,22 +115,35 @@ h2 {
 
 #toggle-annotations {
     font-family: 'SF Pro';
-    position: fixed; /* 固定定位 */
-    top: 20px; /* 距离顶部的距离 */
-    right: 20px; /* 距离右侧的距离 */
-    padding: 5px 10px; /* 内边距 */
-    background-color: #e0e0e0; /* 背景颜色 */
-    color: #222; /* 字体颜色 */
-    border: none; /* 无边框 */
-    border-radius: 20px; /* 圆角 */
-    cursor: pointer; /* 鼠标悬停时显示手型 */
-    font-size: 16px; /* 字体大小 */
-    z-index: 1000; /* 确保按钮在最上层 */
+    position: fixed;
+    /* 固定定位 */
+    top: 20px;
+    /* 距离顶部的距离 */
+    right: 20px;
+    /* 距离右侧的距离 */
+    padding: 5px 10px;
+    /* 内边距 */
+    background-color: #e0e0e0;
+    /* 背景颜色 */
+    color: #222;
+    /* 字体颜色 */
+    border: none;
+    /* 无边框 */
+    border-radius: 20px;
+    /* 圆角 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手型 */
+    font-size: 16px;
+    /* 字体大小 */
+    z-index: 1000;
+    /* 确保按钮在最上层 */
 }
 
 #toogle-annotations button:hover {
-    background-color: #d0d0d0; /* 背景颜色 */
-    color: #222; /* 字体颜色 */
+    background-color: #d0d0d0;
+    /* 背景颜色 */
+    color: #222;
+    /* 字体颜色 */
 }
 
 .anno-content {
@@ -140,5 +157,72 @@ h2 {
 }
 
 #toggle-anno-content {
-    cursor: pointer; /* 鼠标悬停时显示手型 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手型 */
+}
+
+.type-menu {
+    display: block;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* 按钮之间均匀分布 */
+    align-items: center; /* 垂直居中 */
+    padding: 10px;
+}
+
+.type-menu.unshow {
+    display: none;
+}
+
+.type-menu button {
+    font-family: 'Fira Code', 'SF Mono', monospace;
+    /* font-size: 14px;*/
+    display: block;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 2px 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+}
+
+.gray {
+    background-color: #d0d0d0 !important;
+}
+
+.yellow {
+    background-color: #ffdead !important;
+}
+
+.green {
+    background-color: #d6ffc0 !important;
+}
+
+.red {
+    background-color: #fad4d4 !important;
+}
+
+.red-underline {
+    background-color: #e0e0e0;
+    text-decoration: red underline;
+}
+
+.circle-capsule {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-color: #333;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.circle-capsule.red-underline {
+    width: 7px;
+    height: 7px;
+    border-width: 3px;
 }

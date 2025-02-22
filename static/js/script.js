@@ -1,3 +1,6 @@
+let globalData = null;
+let currentArticleIndex = 0;
+
 fetch('/get_data')
     .then(response => response.json())
     .then(data => {
@@ -5,10 +8,11 @@ fetch('/get_data')
         data.articles.forEach((article, index) => {
             let li = document.createElement('li');
             li.textContent = article.title;
-            li.onclick = () => loadArticle(index, data);
+            li.onclick = () => loadArticle(index);
             articleList.appendChild(li);
         });
-        loadArticle(0, data);
+        globalData = data;
+        loadArticle(0);
     });
 
 document.getElementById('toggle-annotations').addEventListener('click', () => {
@@ -37,8 +41,10 @@ function setupAnnoContents() {
 }
 
 
-function loadArticle(index, data) {
-    let article = data.articles[index];
+function loadArticle(index, data=globalData) {
+    currentArticleIndex = index;
+    fetch('/get_data')
+    const article = data.articles[index];
     document.getElementById('title').textContent = article.title;
 
     const articleList = document.getElementById('article-list').querySelectorAll('li');
@@ -56,10 +62,13 @@ function loadArticle(index, data) {
     // 依次插入高亮注释
     annotations.forEach(ann => {
         let before = text.slice(0, ann.start);
-        let highlighted = `<span class="main highlight" data-explanation="${ann.explanation}">${text.slice(ann.start, ann.end)}</span>`;
+        let classText = ann.type.replace('-underline', ' red-underline');
+        let highlighted = `<span class="main highlight ${classText}" data-explanation="${ann.explanation}">${text.slice(ann.start, ann.end)}</span>`;
         let after = text.slice(ann.end);
         text = before + highlighted + after;
     });
+
+    annotations.sort((a, b) => a.start - b.start);
 
     document.getElementById('text').innerHTML = text;
 
@@ -86,12 +95,11 @@ function loadArticle(index, data) {
         });
     });
 
-    formatAnnotatedText(data.articles[index]);
+    formatAnnotatedText(index, data.articles[index]);
     setupAnnoContents();
 }
 
-function formatAnnotatedText(data) {
-
+function formatAnnotatedText(index, data) {
     let annotationList = document.getElementById('annotation-list');
     annotationList.innerHTML = ""; // 清空旧内容
 
@@ -101,7 +109,7 @@ function formatAnnotatedText(data) {
         const tokens = text.split(splitPoints);
         const sentences = [];
         let current = { text: '', start: 0 };
-        
+
         for (let i = 0; i < tokens.length; i++) {
             if (tokens[i].match(splitPoints)) {
                 current.text += tokens[i];
@@ -118,8 +126,8 @@ function formatAnnotatedText(data) {
 
     // 查找包含注释的句子
     function findAnnotationSentence(sentences, annotation) {
-        return sentences.find(s => 
-            s.start <= annotation.start && 
+        return sentences.find(s =>
+            s.start <= annotation.start &&
             s.end >= annotation.end
         );
     }
@@ -127,7 +135,7 @@ function formatAnnotatedText(data) {
     // 主处理逻辑
     const sentences = splitSentences(data.content);
 
-    data.annotations.forEach(anno => {
+    data.annotations.forEach((anno, idx) => {
         let li = document.createElement('li');
         const sentence = findAnnotationSentence(sentences, anno);
         if (!sentence) return;
@@ -135,7 +143,7 @@ function formatAnnotatedText(data) {
         // 计算在句子中的相对位置
         const localStart = anno.start - sentence.start;
         const localEnd = anno.end - sentence.start;
-        
+
         // 构建高亮文本
         const highlighted = [
             sentence.text.slice(0, localStart),
@@ -144,20 +152,63 @@ function formatAnnotatedText(data) {
         ].join('');
 
         // 构建注释信息
-        output = ''
+        let classText = anno.type.replace('-underline', ' red-underline');
+        output = `<div class="circle-capsule ${classText}"></div>`
         output += `${highlighted}`;
         output += `：<span class='anno-content'>${anno.explanation}</span>`;
-        if (anno.type) output += `\n | 类型：${anno.type}`;
+        output += `\n<div class="type-menu unshow"><button class="gray" onclick="setType('${index}', '${idx}', 'gray')">G</button>
+            <button class="green" onclick="setType('${index}', '${idx}', 'green')">A</button>
+            <button class="yellow" onclick="setType('${index}', '${idx}', 'yellow')">B</button>
+            <button class="red" onclick="setType('${index}', '${idx}', 'red')">C</button>
+            <button class="red-underline" onclick="toggleUnderline('${index}', '${idx}')">U</button></div>`
+        // if (anno.type) output += `\n | 类型：${anno.type}`;
         output += '\n\n';
-        li.innerHTML = output
+        li.innerHTML = output;
+        li.addEventListener("click", () => {
+            let elements = document.getElementsByClassName('type-menu');
+            let current = li.getElementsByClassName('type-menu')[0];
+            for (let i of elements) {
+                if (i != current) {
+                    i.classList.add("unshow");
+                }
+            }
+            current.classList.toggle("unshow");
+        });
         annotationList.appendChild(li)
     });
 }
 
 function saveData(updatedData) {
     fetch("/update_data", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(updatedData)
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedData)
     }).then(res => res.json()).then(console.log);
-  }
+}
+
+function setType(articleIndex, annIndex, color) {
+    fetch("/get_data").then(res => res.json()).then(data => {
+        const temp = data.articles[articleIndex].annotations[annIndex].type
+        data.articles[articleIndex].annotations[annIndex].type = color;
+        if (temp.includes('-underline')) {
+            data.articles[articleIndex].annotations[annIndex].type += '-underline';
+        }
+        saveData(data);
+        globalData = data;
+        loadArticle(articleIndex);
+    });
+}
+
+function toggleUnderline(articleIndex, annIndex) {
+    fetch("/get_data").then(res => res.json()).then(data => {
+        let ann = data.articles[articleIndex].annotations[annIndex];
+        if (ann.type.includes("underline")) {
+            ann.type = ann.type.replace("-underline", "");
+        } else {
+            ann.type += "-underline";
+        }
+        saveData(data);
+        globalData = data;
+        loadArticle(articleIndex);
+    });
+}

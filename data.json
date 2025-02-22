@@ -1,95 +1,100 @@
 {
-	"articles": [{
-		"title": "岳阳楼记",
-		"content": "庆历四年春，滕子京谪守巴陵郡...",
-		"annotations": [{
-				"text": "庆历四年",
-				"explanation": "指宋仁宗庆历四年（1044年）。",
-				"type": "时间",
-				"start": 0,
-				"end": 4
-			},
-			{
-				"text": "滕子京",
-				"explanation": "曾任岳州知州。",
-				"type": "人名",
-				"start": 6,
-				"end": 9
-			}
-		]
-	}, {
-		"title": "李将军列传",
-		"content": "《传》曰：“其身正，不令而行；其身不正，虽令不从。”其李将军之谓也。余睹李将军恂恂如鄙人，口不能道辞。及死之日，天下知与不知，皆为尽哀。彼其忠实心诚信于士大夫也。谚曰\"桃李不言，下自成蹊\"。此言虽小，可以喻大也。”",
-		"annotations": [{
-				"text": "《传》",
-				"explanation": "《论语》",
-				"type": "",
-				"start": 0,
-				"end": 3
-			},
-			{
-				"text": "虽",
-				"explanation": "即使",
-				"type": "",
-				"start": 20,
-				"end": 21
-			},
-			{
-				"text": "恂恂",
-				"explanation": "忠厚老实",
-				"type": "",
-				"start": 39,
-				"end": 41
-			},
-			{
-				"text": "鄙人",
-				"explanation": "乡下人",
-				"type": "",
-				"start": 42,
-				"end": 44
-			},
-			{
-				"text": "道辞",
-				"explanation": "能说会道",
-				"type": "",
-				"start": 48,
-				"end": 50
-			},
-			{
-				"text": "知",
-				"explanation": "熟识",
-				"type": "",
-				"start": 58,
-				"end": 59
-			},
-			{
-				"text": "诚",
-				"explanation": "确实",
-				"type": "",
-				"start": 73,
-				"end": 74
-			},
-			{
-				"text": "信于士大夫",
-				"explanation": "被士大夫们信赖",
-				"type": "",
-				"start": 74,
-				"end": 79
-			},
-			{
-				"text": "蹊",
-				"explanation": "小路",
-				"type": "",
-				"start": 92,
-				"end": 93
-			},
-			{
-				"text": "喻",
-				"explanation": "比喻，表明△",
-				"type": "",
-				"start": 102,
-				"end": 103
-			}
-		]
-	}]
+  "articles": [
+    {
+      "annotations": [
+        {
+          "end": 4,
+          "explanation": "指宋仁宗庆历四年（1044年）。",
+          "start": 0,
+          "text": "庆历四年",
+          "type": "gray"
+        },
+        {
+          "end": 9,
+          "explanation": "曾任岳州知州。",
+          "start": 6,
+          "text": "滕子京",
+          "type": "yellow-underline"
+        }
+      ],
+      "content": "庆历四年春，滕子京谪守巴陵郡...",
+      "title": "岳阳楼记"
+    },
+    {
+      "annotations": [
+        {
+          "end": 3,
+          "explanation": "《论语》",
+          "start": 0,
+          "text": "《传》",
+          "type": "green"
+        },
+        {
+          "end": 21,
+          "explanation": "即使",
+          "start": 20,
+          "text": "虽",
+          "type": "green"
+        },
+        {
+          "end": 41,
+          "explanation": "忠厚老实",
+          "start": 39,
+          "text": "恂恂",
+          "type": "green-underline"
+        },
+        {
+          "end": 44,
+          "explanation": "乡下人",
+          "start": 42,
+          "text": "鄙人",
+          "type": "green"
+        },
+        {
+          "end": 50,
+          "explanation": "能说会道",
+          "start": 48,
+          "text": "道辞",
+          "type": "yellow"
+        },
+        {
+          "end": 59,
+          "explanation": "熟识",
+          "start": 58,
+          "text": "知",
+          "type": "red"
+        },
+        {
+          "end": 74,
+          "explanation": "确实",
+          "start": 73,
+          "text": "诚",
+          "type": "green"
+        },
+        {
+          "end": 79,
+          "explanation": "被士大夫们信赖",
+          "start": 74,
+          "text": "信于士大夫",
+          "type": "green"
+        },
+        {
+          "end": 93,
+          "explanation": "小路",
+          "start": 92,
+          "text": "蹊",
+          "type": "red"
+        },
+        {
+          "end": 103,
+          "explanation": "比喻，表明△",
+          "start": 102,
+          "text": "喻",
+          "type": "yellow"
+        }
+      ],
+      "content": "《传》曰：“其身正，不令而行；其身不正，虽令不从。”其李将军之谓也。余睹李将军恂恂如鄙人，口不能道辞。及死之日，天下知与不知，皆为尽哀。彼其忠实心诚信于士大夫也。谚曰\"桃李不言，下自成蹊\"。此言虽小，可以喻大也。”",
+      "title": "李将军列传"
+    }
+  ]
 }

@@ -3,6 +3,7 @@ import json
 
 app = Flask(__name__)
 DATA_FILE = "data.json"
+app.config['JSON_SORT_KEYS'] = False
 
 @app.route('/')
 def home():
