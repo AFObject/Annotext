@@ -1,4 +1,4 @@
-fetch('data.json')
+fetch('/get_data')
     .then(response => response.json())
     .then(data => {
         const articleList = document.getElementById('article-list');
@@ -8,6 +8,7 @@ fetch('data.json')
             li.onclick = () => loadArticle(index, data);
             articleList.appendChild(li);
         });
+        loadArticle(0, data);
     });
 
 document.getElementById('toggle-annotations').addEventListener('click', () => {
@@ -152,3 +153,11 @@ function formatAnnotatedText(data) {
         annotationList.appendChild(li)
     });
 }
+
+function saveData(updatedData) {
+    fetch("/update_data", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedData)
+    }).then(res => res.json()).then(console.log);
+  }
