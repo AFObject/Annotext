@@ -58,14 +58,15 @@ function loadArticle(index, data=globalData) {
 
     // **按 start 索引降序排序，确保从后往前替换**
     annotations.sort((a, b) => b.start - a.start);
+    let length = annotations.length
 
     // 依次插入高亮注释
-    annotations.forEach(ann => {
+    annotations.forEach((ann, idx) => {
         let before = text.slice(0, ann.start);
         let classText = ann.type.replace('-underline', ' red-underline');
         let highlighted = `<span class="main highlight ${classText}" data-explanation="${ann.explanation}">${text.slice(ann.start, ann.end)}</span>`;
         let after = text.slice(ann.end);
-        text = before + highlighted + after;
+        text = before + highlighted + `<sup>${length - idx}</sup>` + after;
     });
 
     annotations.sort((a, b) => a.start - b.start);
@@ -137,7 +138,7 @@ function formatAnnotatedText(index, data) {
 
     data.annotations.forEach((anno, idx) => {
         let li = document.createElement('li');
-        const sentence = findAnnotationSentence(sentences, anno);
+        const sentence = findAnnotationSentence(sentences, anno)
         if (!sentence) return;
 
         // 计算在句子中的相对位置
@@ -153,8 +154,8 @@ function formatAnnotatedText(index, data) {
 
         // 构建注释信息
         let classText = anno.type.replace('-underline', ' red-underline');
-        output = `<div class="circle-capsule ${classText}"></div>`
-        output += `${highlighted}`;
+        output = `<div class="circle-capsule ${classText}">${idx + 1}</div>`
+        output += `${highlighted.replaceAll('</p>', '').replaceAll('<p>', '')}`;
         output += `：<span class='anno-content'>${anno.explanation}</span>`;
         output += `\n<div class="type-menu unshow"><button class="gray" onclick="setType('${index}', '${idx}', 'gray')">G</button>
             <button class="green" onclick="setType('${index}', '${idx}', 'green')">A</button>

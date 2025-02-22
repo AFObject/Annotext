@@ -1,100 +1,498 @@
 {
-  "articles": [
-    {
-      "annotations": [
+    "articles": [
         {
-          "end": 4,
-          "explanation": "指宋仁宗庆历四年（1044年）。",
-          "start": 0,
-          "text": "庆历四年",
-          "type": "gray"
+            "annotations": [
+                {
+                    "end": 4,
+                    "explanation": "指宋仁宗庆历四年（1044年）。",
+                    "start": 0,
+                    "text": "庆历四年",
+                    "type": "gray"
+                },
+                {
+                    "end": 9,
+                    "explanation": "曾任岳州知州。",
+                    "start": 6,
+                    "text": "滕子京",
+                    "type": "yellow-underline"
+                }
+            ],
+            "content": "庆历四年春，滕子京谪守巴陵郡...",
+            "title": "岳阳楼记"
         },
         {
-          "end": 9,
-          "explanation": "曾任岳州知州。",
-          "start": 6,
-          "text": "滕子京",
-          "type": "yellow-underline"
+            "annotations": [
+                {
+                    "end": 3,
+                    "explanation": "《论语》",
+                    "start": 0,
+                    "text": "《传》",
+                    "type": "green"
+                },
+                {
+                    "end": 21,
+                    "explanation": "即使",
+                    "start": 20,
+                    "text": "虽",
+                    "type": "green"
+                },
+                {
+                    "end": 41,
+                    "explanation": "忠厚老实",
+                    "start": 39,
+                    "text": "恂恂",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 44,
+                    "explanation": "乡下人",
+                    "start": 42,
+                    "text": "鄙人",
+                    "type": "green"
+                },
+                {
+                    "end": 50,
+                    "explanation": "能说会道",
+                    "start": 48,
+                    "text": "道辞",
+                    "type": "yellow"
+                },
+                {
+                    "end": 59,
+                    "explanation": "熟识",
+                    "start": 58,
+                    "text": "知",
+                    "type": "red"
+                },
+                {
+                    "end": 74,
+                    "explanation": "确实",
+                    "start": 73,
+                    "text": "诚",
+                    "type": "green"
+                },
+                {
+                    "end": 79,
+                    "explanation": "被士大夫们信赖",
+                    "start": 74,
+                    "text": "信于士大夫",
+                    "type": "green"
+                },
+                {
+                    "end": 93,
+                    "explanation": "小路",
+                    "start": 92,
+                    "text": "蹊",
+                    "type": "red"
+                },
+                {
+                    "end": 103,
+                    "explanation": "比喻，表明△",
+                    "start": 102,
+                    "text": "喻",
+                    "type": "yellow"
+                }
+            ],
+            "content": "《传》曰：“其身正，不令而行；其身不正，虽令不从。”其李将军之谓也。余睹李将军恂恂如鄙人，口不能道辞。及死之日，天下知与不知，皆为尽哀。彼其忠实心诚信于士大夫也。谚曰\"桃李不言，下自成蹊\"。此言虽小，可以喻大也。”",
+            "title": "李将军列传"
+        },
+        {
+            "annotations": [
+                {
+                    "end": 22,
+                    "explanation": "自我克制",
+                    "start": 20,
+                    "text": "自持",
+                    "type": "red"
+                },
+                {
+                    "end": 24,
+                    "explanation": "快走",
+                    "start": 23,
+                    "text": "趋",
+                    "type": "green"
+                },
+                {
+                    "end": 27,
+                    "explanation": "符合",
+                    "start": 26,
+                    "text": "中",
+                    "type": "green"
+                },
+                {
+                    "end": 33,
+                    "explanation": "撰写",
+                    "start": 32,
+                    "text": "属",
+                    "type": "yellow"
+                },
+                {
+                    "end": 49,
+                    "explanation": "融合贯通，综合古今",
+                    "start": 45,
+                    "text": "贯综今古",
+                    "type": "red"
+                },
+                {
+                    "end": 52,
+                    "explanation": "做榜样",
+                    "start": 51,
+                    "text": "范",
+                    "type": "green"
+                },
+                {
+                    "end": 55,
+                    "explanation": "带头先做",
+                    "start": 53,
+                    "text": "先型",
+                    "type": "green"
+                },
+                {
+                    "end": 58,
+                    "explanation": "超过",
+                    "start": 57,
+                    "text": "倾",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 60,
+                    "explanation": "辈，类",
+                    "start": 59,
+                    "text": "伦",
+                    "type": "green"
+                },
+                {
+                    "end": 83,
+                    "explanation": "担任",
+                    "start": 82,
+                    "text": "居",
+                    "type": "green"
+                },
+                {
+                    "end": 89,
+                    "explanation": "畏惧、害怕",
+                    "start": 88,
+                    "text": "惮",
+                    "type": "green"
+                },
+                {
+                    "end": 102,
+                    "explanation": "=审理案件",
+                    "start": 100,
+                    "text": "治狱",
+                    "type": "red"
+                },
+                {
+                    "end": 110,
+                    "explanation": "积压的",
+                    "start": 109,
+                    "text": "滞",
+                    "type": "green"
+                },
+                {
+                    "end": 111,
+                    "explanation": "案件",
+                    "start": 110,
+                    "text": "讼",
+                    "type": "green"
+                },
+                {
+                    "end": 115,
+                    "explanation": "就",
+                    "start": 114,
+                    "text": "辄",
+                    "type": "green"
+                },
+                {
+                    "end": 121,
+                    "explanation": "古代官府中的小吏",
+                    "start": 119,
+                    "text": "老胥",
+                    "type": "red"
+                },
+                {
+                    "end": 123,
+                    "explanation": "指特别狡猾的人",
+                    "start": 121,
+                    "text": "巨猾",
+                    "type": "red"
+                },
+                {
+                    "end": 126,
+                    "explanation": "咬着舌头，形容因吃惊、害怕等而说不出话来",
+                    "start": 124,
+                    "text": "咋舌",
+                    "type": "red"
+                },
+                {
+                    "end": 129,
+                    "explanation": "不",
+                    "start": 128,
+                    "text": "罔",
+                    "type": "green"
+                },
+                {
+                    "end": 132,
+                    "explanation": "出卖官职爵位，徇私枉法",
+                    "start": 130,
+                    "text": "鬻法",
+                    "type": "red"
+                },
+                {
+                    "end": 137,
+                    "explanation": "钻空子",
+                    "start": 133,
+                    "text": "上下其间",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 155,
+                    "explanation": "就",
+                    "start": 154,
+                    "text": "辄",
+                    "type": "green"
+                },
+                {
+                    "end": 163,
+                    "explanation": "=偏袒，迎合",
+                    "start": 162,
+                    "text": "阿",
+                    "type": "red"
+                },
+                {
+                    "end": 164,
+                    "explanation": "像",
+                    "start": 163,
+                    "text": "类",
+                    "type": "green"
+                },
+                {
+                    "end": 176,
+                    "explanation": "主持考试之事",
+                    "start": 174,
+                    "text": "典试",
+                    "type": "yellow"
+                },
+                {
+                    "end": 181,
+                    "explanation": "持镜，比喻明察",
+                    "start": 179,
+                    "text": "持鉴",
+                    "type": "green"
+                },
+                {
+                    "end": 192,
+                    "explanation": "正",
+                    "start": 191,
+                    "text": "方",
+                    "type": "green"
+                },
+                {
+                    "end": 210,
+                    "explanation": "极力",
+                    "start": 209,
+                    "text": "力",
+                    "type": "green"
+                },
+                {
+                    "end": 219,
+                    "explanation": "瑕疵错误",
+                    "start": 217,
+                    "text": "疵谬",
+                    "type": "yellow"
+                },
+                {
+                    "end": 223,
+                    "explanation": "合乎程式和标准",
+                    "start": 221,
+                    "text": "入毂",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 227,
+                    "explanation": "两次",
+                    "start": 226,
+                    "text": "再",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 244,
+                    "explanation": "打拍子，形容十分赞赏",
+                    "start": 242,
+                    "text": "击节",
+                    "type": "yellow"
+                },
+                {
+                    "end": 248,
+                    "explanation": "古代写字用的木片",
+                    "start": 247,
+                    "text": "牍",
+                    "type": "yellow"
+                },
+                {
+                    "end": 259,
+                    "explanation": "学识渊博，修养有素的学者",
+                    "start": 257,
+                    "text": "宿学",
+                    "type": "red"
+                },
+                {
+                    "end": 283,
+                    "explanation": "凭借",
+                    "start": 282,
+                    "text": "以",
+                    "type": "yellow"
+                },
+                {
+                    "end": 295,
+                    "explanation": "非常",
+                    "start": 294,
+                    "text": "剧",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 311,
+                    "explanation": "全",
+                    "start": 310,
+                    "text": "略",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 325,
+                    "explanation": "簇拥吵闹",
+                    "start": 323,
+                    "text": "拥噪",
+                    "type": "red"
+                },
+                {
+                    "end": 373,
+                    "explanation": "顾忌",
+                    "start": 372,
+                    "text": "顾",
+                    "type": "green"
+                },
+                {
+                    "end": 383,
+                    "explanation": "欢欣之极",
+                    "start": 381,
+                    "text": "距跃",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 392,
+                    "explanation": "收敛行迹",
+                    "start": 390,
+                    "text": "屏息",
+                    "type": "red"
+                },
+                {
+                    "end": 404,
+                    "explanation": "做种种坏事",
+                    "start": 402,
+                    "text": "为非",
+                    "type": "yellow"
+                },
+                {
+                    "end": 419,
+                    "explanation": "孝顺友爱处于纯粹的天性",
+                    "start": 413,
+                    "text": "孝友出于至性",
+                    "type": "red"
+                },
+                {
+                    "end": 432,
+                    "explanation": "宽厚",
+                    "start": 431,
+                    "text": "厚",
+                    "type": "red"
+                },
+                {
+                    "end": 445,
+                    "explanation": "整肃，使…端庄/方",
+                    "start": 444,
+                    "text": "整",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 468,
+                    "explanation": "随意",
+                    "start": 467,
+                    "text": "妄",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 469,
+                    "explanation": "屈从",
+                    "start": 468,
+                    "text": "徇",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 489,
+                    "explanation": "严正的话语",
+                    "start": 487,
+                    "text": "庄语",
+                    "type": "red"
+                },
+                {
+                    "end": 493,
+                    "explanation": "沮丧",
+                    "start": 492,
+                    "text": "沮",
+                    "type": "green"
+                },
+                {
+                    "end": 495,
+                    "explanation": "停止",
+                    "start": 494,
+                    "text": "寝",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 499,
+                    "explanation": "将近",
+                    "start": 498,
+                    "text": "垂",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 504,
+                    "explanation": "敦睦",
+                    "start": 503,
+                    "text": "敦",
+                    "type": "yellow"
+                },
+                {
+                    "end": 505,
+                    "explanation": "人伦",
+                    "start": 504,
+                    "text": "伦",
+                    "type": "green"
+                },
+                {
+                    "end": 506,
+                    "explanation": "救济",
+                    "start": 505,
+                    "text": "赈",
+                    "type": "red"
+                },
+                {
+                    "end": 510,
+                    "explanation": "安居其德，修养道德",
+                    "start": 508,
+                    "text": "居德",
+                    "type": "red"
+                },
+                {
+                    "end": 512,
+                    "explanation": "匡正风俗",
+                    "start": 510,
+                    "text": "正俗",
+                    "type": "red"
+                }
+            ],
+            "content": "<p>公讳鼎，字实甫，自为童子时即以言动自持，趋立多中礼。早岁善属文，补邑诸生。坚意嗜读，贯综今古，而范诸先型，常倾其伦辈。</p><p>癸丑，成进士，为晋宁司理。居官廉正，吏惮其守，一切馈遗不敢入。治狱多平反，即疑案滞讼，一讯辄得其情。老胥巨猾皆咋舌退，罔敢鬻法以上下其间。时有巡盐使者送犯拘罪，公讯无实，辄释之。其公方不阿类如此。</p><p>典试山东，持鉴朗察，所得皆知名士。方在闱中，薛韩城时为莱郡司理，手一卷力荐之。公视其文疵谬不可入毂，驳至再，乃与同事者搜阅，得一卷，共为击节。及发牍，为郝君名晋者，实宿学寒士，既复捷去。公方以得人为慰。</p><p>以左布政使调巡嘉湖，湖地剧难治，又多势家豪仆，飞舸肆掠，略无所忌。公一日过乌镇，见拥噪千人，号泣震远迩。询之，曰：“朱家奴掠人也。”立捕两奴，及舟械至，奴犹称相国从者，意不下。公弗顾，益尽法惩之，民距跃称快。自是豪强屏息，终公之任，无敢暴掠为非。</p><p>公孝友出于至性，廉于其身，而处人唯恐不厚。与人相接，无贫富长幼皆整容礼之，或人有非理之请，虽亲厚必直辞拒之，不妄徇也。其在任时，戚属间有所欲言，公相对庄语，多意沮而寝。居家垂二十年，敦伦赈乏，居德正俗，不出户庭而系天下之望，人以比之范文正云。</p>",
+            "title": "周鼎传"
         }
-      ],
-      "content": "庆历四年春，滕子京谪守巴陵郡...",
-      "title": "岳阳楼记"
-    },
-    {
-      "annotations": [
-        {
-          "end": 3,
-          "explanation": "《论语》",
-          "start": 0,
-          "text": "《传》",
-          "type": "green"
-        },
-        {
-          "end": 21,
-          "explanation": "即使",
-          "start": 20,
-          "text": "虽",
-          "type": "green"
-        },
-        {
-          "end": 41,
-          "explanation": "忠厚老实",
-          "start": 39,
-          "text": "恂恂",
-          "type": "green-underline"
-        },
-        {
-          "end": 44,
-          "explanation": "乡下人",
-          "start": 42,
-          "text": "鄙人",
-          "type": "green"
-        },
-        {
-          "end": 50,
-          "explanation": "能说会道",
-          "start": 48,
-          "text": "道辞",
-          "type": "yellow"
-        },
-        {
-          "end": 59,
-          "explanation": "熟识",
-          "start": 58,
-          "text": "知",
-          "type": "red"
-        },
-        {
-          "end": 74,
-          "explanation": "确实",
-          "start": 73,
-          "text": "诚",
-          "type": "green"
-        },
-        {
-          "end": 79,
-          "explanation": "被士大夫们信赖",
-          "start": 74,
-          "text": "信于士大夫",
-          "type": "green"
-        },
-        {
-          "end": 93,
-          "explanation": "小路",
-          "start": 92,
-          "text": "蹊",
-          "type": "red"
-        },
-        {
-          "end": 103,
-          "explanation": "比喻，表明△",
-          "start": 102,
-          "text": "喻",
-          "type": "yellow"
-        }
-      ],
-      "content": "《传》曰：“其身正，不令而行；其身不正，虽令不从。”其李将军之谓也。余睹李将军恂恂如鄙人，口不能道辞。及死之日，天下知与不知，皆为尽哀。彼其忠实心诚信于士大夫也。谚曰\"桃李不言，下自成蹊\"。此言虽小，可以喻大也。”",
-      "title": "李将军列传"
-    }
-  ]
+    ]
 }
