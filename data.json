@@ -7,7 +7,7 @@
                     "explanation": "指宋仁宗庆历四年（1044年）。",
                     "start": 0,
                     "text": "庆历四年",
-                    "type": "gray"
+                    "type": "gray-underline"
                 },
                 {
                     "end": 9,
@@ -76,7 +76,7 @@
                     "explanation": "被士大夫们信赖",
                     "start": 74,
                     "text": "信于士大夫",
-                    "type": "green"
+                    "type": "red"
                 },
                 {
                     "end": 93,
@@ -180,7 +180,7 @@
                     "explanation": "=审理案件",
                     "start": 100,
                     "text": "治狱",
-                    "type": "red"
+                    "type": "yellow"
                 },
                 {
                     "end": 110,
@@ -327,7 +327,7 @@
                     "explanation": "古代写字用的木片",
                     "start": 247,
                     "text": "牍",
-                    "type": "yellow"
+                    "type": "gray"
                 },
                 {
                     "end": 259,
@@ -383,7 +383,7 @@
                     "explanation": "收敛行迹",
                     "start": 390,
                     "text": "屏息",
-                    "type": "red"
+                    "type": "yellow"
                 },
                 {
                     "end": 404,
@@ -404,7 +404,7 @@
                     "explanation": "宽厚",
                     "start": 431,
                     "text": "厚",
-                    "type": "red"
+                    "type": "yellow"
                 },
                 {
                     "end": 445,

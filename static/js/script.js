@@ -162,7 +162,13 @@ function formatAnnotatedText(index, data) {
             <button class="yellow" onclick="setType('${index}', '${idx}', 'yellow')">B</button>
             <button class="red" onclick="setType('${index}', '${idx}', 'red')">C</button>
             <button class="red-underline" onclick="toggleUnderline('${index}', '${idx}')">U</button></div>`
-        // if (anno.type) output += `\n | 类型：${anno.type}`;
+        let typeText = anno.type;
+        if (typeText.includes('underline')) {
+            output = output.replace('class="red-underline"', 'class="red-underline bordered"');
+        }
+        let g = typeText.replace('-underline', '');
+        console.log(g);
+        output = output.replace(`class="${g}"`, `class="${g} bordered"`);
         output += '\n\n';
         li.innerHTML = output;
         li.addEventListener("click", () => {
