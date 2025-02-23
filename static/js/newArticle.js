@@ -1,16 +1,14 @@
 function newArticle() {
     let title = prompt(`标题：`);
-    if (title == '') {
-        return;
+    if (title && title != '') {
+        let text = prompt(`内容：`);
+        if (text && text != '') {
+            let articleData = processAnnotatedText(text, title);
+            globalData.articles.push(articleData);
+            saveData();
+            location.reload(true);
+        }
     }
-    let text = prompt(`内容：`);
-    if (text == '') {
-        return;
-    }
-    let articleData = processAnnotatedText(text, title);
-    globalData.articles.push(articleData);
-    saveData();
-    location.reload(true);
 }
 
 function processAnnotatedText(text, title = "") {

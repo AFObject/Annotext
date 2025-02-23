@@ -1,4 +1,4 @@
-document.addEventListener("keydown", function (event) {
+document.getElementById("main-text-content").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         let selectionData = getSelectionIndex();
         if (selectionData) {

@@ -560,11 +560,25 @@
         {
             "annotations": [
                 {
+                    "end": 13,
+                    "explanation": "占据",
+                    "start": 12,
+                    "text": "拥",
+                    "type": "yellow"
+                },
+                {
                     "end": 24,
                     "explanation": "伺机夺取",
                     "start": 23,
                     "text": "窥",
                     "type": "green"
+                },
+                {
+                    "end": 76,
+                    "explanation": "防守和进攻的器械",
+                    "start": 72,
+                    "text": "守战之具",
+                    "type": "yellow"
                 },
                 {
                     "end": 82,
@@ -578,7 +592,7 @@
                     "explanation": "两手合抱，形容毫不费力",
                     "start": 89,
                     "text": "拱手",
-                    "type": "red"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 109,
@@ -679,6 +693,13 @@
                     "type": "green"
                 },
                 {
+                    "end": 402,
+                    "explanation": "窘迫",
+                    "start": 401,
+                    "text": "困",
+                    "type": "yellow"
+                },
+                {
                     "end": 426,
                     "explanation": "弱点",
                     "start": 425,
@@ -698,6 +719,13 @@
                     "start": 440,
                     "text": "橹",
                     "type": "green"
+                },
+                {
+                    "end": 482,
+                    "explanation": "时间短暂",
+                    "start": 481,
+                    "text": "浅",
+                    "type": "yellow"
                 },
                 {
                     "end": 497,
@@ -735,11 +763,25 @@
                     "type": "green-underline"
                 },
                 {
+                    "end": 530,
+                    "explanation": "天地四方",
+                    "start": 528,
+                    "text": "六合",
+                    "type": "yellow"
+                },
+                {
                     "end": 534,
                     "explanation": "行刑用的棍杖，敲：短，扑：长",
                     "start": 532,
                     "text": "敲扑",
                     "type": "green"
+                },
+                {
+                    "end": 569,
+                    "explanation": "颈上系绳，表示投降",
+                    "start": 567,
+                    "text": "系颈",
+                    "type": "yellow"
                 },
                 {
                     "end": 571,

@@ -16,7 +16,10 @@ fetch('/get_data')
     });
 
 document.getElementById('toggle-annotations').addEventListener('click', () => {
-    document.getElementsByClassName('annotations')[0].classList.toggle('hidden');
+    document.getElementById('annotations').classList.toggle('hidden');
+});
+document.getElementById('toggle-sidebar').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.toggle('hidden');
 });
 
 function setupAnnoContents() {
@@ -175,11 +178,14 @@ function formatAnnotatedText(index, data) {
             // 滑动到对应位置并高亮显示
             const element = document.getElementById(`ann-${idx + 1}`);
             element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            element.classList.add("flash-highlight");
-            console.log(element.classList);
-            element.addEventListener("animationend", () => {
-                element.classList.remove("flash-highlight");
-            }, { once: true }); // 只监听一次动画结束事件
+            // 等待滑动结束
+            document.getElementById("main-text-content").addEventListener("scrollend", () => {
+                console.log("scrollend");
+                element.classList.add("flash-highlight");
+                element.addEventListener("animationend", () => {
+                    element.classList.remove("flash-highlight");
+                }, { once: true }); // 只监听一次动画结束事件
+            }, { once: true }); // 仅触发一次
 
             let elements = document.getElementsByClassName('type-menu');
             let current = li.getElementsByClassName('type-menu')[0];

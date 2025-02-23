@@ -10,26 +10,25 @@
 
 <body>
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <h3 id="annotext-title">AnnoText</h3>
             <button id="new-article-btn" onclick="newArticle()">􀏪</button>
             <button id="new-article-btn" onclick="downloadDataAsJSON()">􀈉</button>
             <ul id="article-list"></ul>
         </div>
-        <div style="display: flex; margin-left: 22%; width: 77%; position: fixed">
-            <div class="content">
-                <h2 id="title"></h2>
-                <p id="text" class="body-text"></p>
-            </div>
-            <div class="annotations">
-                <h3 id="toggle-anno-content" style="padding: 5px">注释</h3>
-                <!-- <button id="toggle-anno-content">􀋭</button>
-        -->
-                <ul id="annotation-list"></ul>
-            </div>
+        <div class="content" id="main-text-content" tabindex="0">
+            <h2 id="title"></h2>
+            <p id="text" class="body-text"></p>
+        </div>
+        <div class="annotations" id="annotations">
+            <h3 id="toggle-anno-content" style="padding: 5px">注释</h3>
+            <!-- <button id="toggle-anno-content">􀋭</button>
+    -->
+            <ul id="annotation-list"></ul>
         </div>
     </div>
     <button id="toggle-annotations">􀏛</button>
+    <button id="toggle-sidebar">􀏚</button>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/edit.js') }}"></script>
     <script src="{{ url_for('static', filename='js/newArticle.js') }}"></script>

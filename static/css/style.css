@@ -1,33 +1,39 @@
 .container {
     display: flex;
+    position: fixed;
     height: 100vh;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    gap: 10px;
 }
 
 .sidebar {
-    position: fixed;
     width: 20%;
     background: #f4f4f4;
     padding: 10px;
     border-radius: 20px;
+    transition: width 0.3s ease; /* 平滑过渡效果 */
+}
+
+.sidebar.hidden {
+    width: 0;
+    visibility: hidden;
 }
 
 .content {
-    /* position: fixed;*/
     flex: 1;
-    /* width: 43%;*/
     font-family: "Times New Roman", "Songti SC", "STSongti", "Songti", "宋体", sans-serif;
-    padding: 3%;
+    padding: 8px;
     font-size: 20px;
     overflow-y: scroll;
-    height: 95vh;
     transition: flex-basis 0.3s ease; /* 平滑过渡效果 */
 }
 
 .annotations {
     visibility: visible;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* position: fixed; */
-    /* margin-left: 70%; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 28%;
     background: #f0f0f0;
     padding: 10px;
@@ -136,20 +142,28 @@ h2 {
     display: none;
 }
 
-#toggle-annotations {
+#toggle-annotations, #toggle-sidebar {
     font-family: 'SF Pro';
     position: fixed;
-    top: 20px;
-    right: 20px;
     padding: 5px 10px;
     background-color: #e0e0e0;
     color: #222;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 16px;
     z-index: 1000;
     transition: background-color 0.3s, color 0.3s;
+}
+
+#toggle-annotations {
+    top: 20px;
+    right: 20px;
+}
+
+#toggle-sidebar {
+    top: 20px;
+    right: 70px;
 }
 
 .anno-content {
@@ -268,7 +282,7 @@ h2 {
 }
 
 
-#new-article-btn:hover, #save-btn:hover, #toggle-annotations:hover {
+#new-article-btn:hover, #save-btn:hover, #toggle-annotations:hover, #toggle-sidebar:hover {
     background-color: #d0d0d0;
     color: #222;
 }
