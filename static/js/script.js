@@ -167,7 +167,6 @@ function formatAnnotatedText(index, data) {
             output = output.replace('class="red-underline"', 'class="red-underline bordered"');
         }
         let g = typeText.replace('-underline', '');
-        console.log(g);
         output = output.replace(`class="${g}"`, `class="${g} bordered"`);
         output += '\n\n';
         li.innerHTML = output;

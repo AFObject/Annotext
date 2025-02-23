@@ -51,10 +51,17 @@
                     "type": "green"
                 },
                 {
-                    "text": "令",
-                    "start": 11,
+                    "end": 9,
+                    "explanation": "正义",
+                    "start": 8,
+                    "text": "正",
+                    "type": "yellow"
+                },
+                {
                     "end": 12,
                     "explanation": "命令",
+                    "start": 11,
+                    "text": "令",
                     "type": "yellow"
                 },
                 {
@@ -65,10 +72,10 @@
                     "type": "green"
                 },
                 {
-                    "text": "余",
-                    "start": 34,
                     "end": 35,
                     "explanation": "我",
+                    "start": 34,
+                    "text": "余",
                     "type": "yellow"
                 },
                 {
@@ -93,10 +100,10 @@
                     "type": "yellow"
                 },
                 {
-                    "text": "及",
-                    "start": 51,
                     "end": 52,
                     "explanation": "等到",
+                    "start": 51,
+                    "text": "及",
                     "type": "yellow"
                 },
                 {
@@ -412,6 +419,13 @@
                     "start": 323,
                     "text": "拥噪",
                     "type": "red"
+                },
+                {
+                    "text": "询",
+                    "start": 334,
+                    "end": 335,
+                    "explanation": "询问",
+                    "type": "yellow"
                 },
                 {
                     "end": 373,

@@ -5,7 +5,6 @@ document.addEventListener("keydown", function (event) {
             let { start, end, selectedText } = selectionData;
             let explanation = prompt(`为 "${selectedText}" 添加注释:`);
             if (explanation) addAnnotation(selectedText, start, end, explanation);
-            btn.style.display = "none";
         }
     }
 });
@@ -20,7 +19,7 @@ function getSelectionIndex() {
 
     // **获取 HTML 结构对应的纯文本**
     let articleElem = document.getElementsByClassName("body-text")[0];
-    let preText = getPlainText(articleElem); // 关键：转换为纯文本
+    // let preText = getPlainText(articleElem); // 关键：转换为纯文本
 
     // **获取选中文本在 HTML 里的偏移量**
     let beforeRange = document.createRange();
@@ -28,7 +27,8 @@ function getSelectionIndex() {
     beforeRange.setEnd(range.startContainer, range.startOffset);
 
     // **计算 start & end（真实纯文本索引）**
-    let preTextBeforeSelection = getPlainText(beforeRange.cloneContents());
+    let preContent = beforeRange.cloneContents();
+    let preTextBeforeSelection = getPlainText(preContent);
     let start = preTextBeforeSelection.length;
     let end = start + selectedText.length;
     console.log(start, end, selectedText);
@@ -37,12 +37,24 @@ function getSelectionIndex() {
 }
 
 function getPlainText(element) {
-    // **克隆节点，避免影响原 HTML**
-    let clone = element.cloneNode(true);
+    // 克隆节点，避免修改原 HTML
+    let clone = document.createElement('div');
+    clone.appendChild(element)
 
-    // **移除所有 <sup> 标签及其内容**
+    // **移除 <sup> 及其内容**
     clone.querySelectorAll("sup").forEach(sup => sup.remove());
-    return clone.textContent || clone.innerText || "";
+
+    // **移除 <highlight> 但保留其内容**
+    clone.querySelectorAll("span").forEach(hl => {
+        let parent = hl.parentNode;
+        while (hl.firstChild) parent.insertBefore(hl.firstChild, hl);
+        parent.removeChild(hl);
+    });
+
+    console.log(clone.innerHTML);
+
+    // **转换为纯文本但保留 <p> 结构**
+    return clone.innerHTML.replace(/<\/p>\s*$/i, "");;
 }
 
 
