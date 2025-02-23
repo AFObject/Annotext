@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>古文注释背诵</title>
+    <title>AnnoText</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
             <h3>AnnoText</h3>
             <ul id="article-list"></ul>
         </div>
-        <div class="content">
-            <h2 id="title"></h2>
-            <p id="text" class="body-text"></p>
-        </div>
-        <div class="annotations">
-            <h3 id="toggle-anno-content" style="padding: 5px">注释</h3>
-            <!-- <button id="toggle-anno-content">􀋭</button>
+        <div style="display: flex; margin-left: 22%; width: 77%; position: fixed">
+            <div class="content">
+                <h2 id="title"></h2>
+                <p id="text" class="body-text"></p>
+            </div>
+            <div class="annotations">
+                <h3 id="toggle-anno-content" style="padding: 5px">注释</h3>
+                <!-- <button id="toggle-anno-content">􀋭</button>
         -->
-            <ul id="annotation-list"></ul>
+                <ul id="annotation-list"></ul>
+            </div>
         </div>
     </div>
     <button id="toggle-annotations">􀏛</button>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
+
 </html>

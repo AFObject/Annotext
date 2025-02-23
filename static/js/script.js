@@ -66,7 +66,7 @@ function loadArticle(index, data=globalData) {
         let classText = ann.type.replace('-underline', ' red-underline');
         let highlighted = `<span class="main highlight ${classText}" data-explanation="${ann.explanation}">${text.slice(ann.start, ann.end)}</span>`;
         let after = text.slice(ann.end);
-        text = before + highlighted + `<sup>${length - idx}</sup>` + after;
+        text = before + highlighted + `<sup style="margin-left: 1px; margin-right: 3px">${length - idx}</sup>` + after;
     });
 
     annotations.sort((a, b) => a.start - b.start);

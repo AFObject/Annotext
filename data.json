@@ -418,14 +418,14 @@
                     "explanation": "随意",
                     "start": 467,
                     "text": "妄",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 469,
                     "explanation": "屈从",
                     "start": 468,
                     "text": "徇",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 489,
