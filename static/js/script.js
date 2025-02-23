@@ -185,7 +185,7 @@ function formatAnnotatedText(index, data) {
     });
 }
 
-function saveData(updatedData) {
+function saveData(updatedData=globalData) {
     fetch("/update_data", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

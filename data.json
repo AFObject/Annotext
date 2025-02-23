@@ -10,11 +10,32 @@
                     "type": "gray-underline"
                 },
                 {
+                    "end": 5,
+                    "explanation": "春天",
+                    "start": 4,
+                    "text": "春",
+                    "type": "yellow"
+                },
+                {
                     "end": 9,
                     "explanation": "曾任岳州知州。",
                     "start": 6,
                     "text": "滕子京",
                     "type": "yellow-underline"
+                },
+                {
+                    "end": 10,
+                    "explanation": "被贬",
+                    "start": 9,
+                    "text": "谪",
+                    "type": "yellow"
+                },
+                {
+                    "end": 14,
+                    "explanation": "位于四川",
+                    "start": 11,
+                    "text": "巴陵郡",
+                    "type": "yellow"
                 }
             ],
             "content": "庆历四年春，滕子京谪守巴陵郡...",
@@ -30,11 +51,25 @@
                     "type": "green"
                 },
                 {
+                    "text": "令",
+                    "start": 11,
+                    "end": 12,
+                    "explanation": "命令",
+                    "type": "yellow"
+                },
+                {
                     "end": 21,
                     "explanation": "即使",
                     "start": 20,
                     "text": "虽",
                     "type": "green"
+                },
+                {
+                    "text": "余",
+                    "start": 34,
+                    "end": 35,
+                    "explanation": "我",
+                    "type": "yellow"
                 },
                 {
                     "end": 41,
@@ -58,11 +93,25 @@
                     "type": "yellow"
                 },
                 {
+                    "text": "及",
+                    "start": 51,
+                    "end": 52,
+                    "explanation": "等到",
+                    "type": "yellow"
+                },
+                {
                     "end": 59,
                     "explanation": "熟识",
                     "start": 58,
                     "text": "知",
                     "type": "red"
+                },
+                {
+                    "end": 69,
+                    "explanation": "他",
+                    "start": 68,
+                    "text": "彼",
+                    "type": "yellow"
                 },
                 {
                     "end": 74,
