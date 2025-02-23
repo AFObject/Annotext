@@ -7,7 +7,7 @@
                     "explanation": "指宋仁宗庆历四年（1044年）。",
                     "start": 0,
                     "text": "庆历四年",
-                    "type": "gray-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 5,
@@ -669,7 +669,7 @@
                     "explanation": "有所顾虑而徘徊不敢前进",
                     "start": 379,
                     "text": "逡巡",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 392,
@@ -711,7 +711,7 @@
                     "explanation": "发扬，发展",
                     "start": 500,
                     "text": "奋",
-                    "type": "green"
+                    "type": "green-underline"
                 },
                 {
                     "end": 508,
@@ -949,7 +949,7 @@
                     "explanation": "衡量。",
                     "start": 1022,
                     "text": "絜",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 1050,

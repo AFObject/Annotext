@@ -15,7 +15,7 @@
     /* position: fixed;*/
     flex: 1;
     /* width: 43%;*/
-    font-family: "Times New Roman", "Songti SC", sans-serif;
+    font-family: "Times New Roman", "Songti SC", "STSongti", "Songti", "宋体", sans-serif;
     padding: 3%;
     font-size: 20px;
     overflow-y: scroll;
@@ -139,39 +139,22 @@ h2 {
 #toggle-annotations {
     font-family: 'SF Pro';
     position: fixed;
-    /* 固定定位 */
     top: 20px;
-    /* 距离顶部的距离 */
     right: 20px;
-    /* 距离右侧的距离 */
     padding: 5px 10px;
-    /* 内边距 */
     background-color: #e0e0e0;
-    /* 背景颜色 */
     color: #222;
-    /* 字体颜色 */
     border: none;
-    /* 无边框 */
     border-radius: 20px;
-    /* 圆角 */
     cursor: pointer;
-    /* 鼠标悬停时显示手型 */
     font-size: 16px;
-    /* 字体大小 */
     z-index: 1000;
-    /* 确保按钮在最上层 */
-}
-
-#toogle-annotations button:hover {
-    background-color: #d0d0d0;
-    /* 背景颜色 */
-    color: #222;
-    /* 字体颜色 */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .anno-content {
     color: #f0f0f0;
-    font-family: 'Kaiti SC';
+    font-family: 'Kaiti SC', '楷体', 'Kaiti', 'STKaiti', 'STKaiti SC';
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -223,23 +206,23 @@ h2 {
 }
 
 .gray {
-    background-color: #d0d0d0 !important;
+    background-color: #d0d0d0;
 }
 
 .yellow {
-    background-color: #ffdead !important;
+    background-color: #ffdead;
 }
 
 .green {
-    background-color: #d6ffc0 !important;
+    background-color: #d6ffc0;
 }
 
 .red {
-    background-color: #fad4d4 !important;
+    background-color: #fad4d4;
 }
 
 .red-underline {
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0;*/
     text-decoration: red underline;
 }
 
@@ -271,38 +254,40 @@ h2 {
     border-color: #555;
 }
 
-#new-article-btn {
+#new-article-btn, #save-btn {
     display: inline-block;
     font-family: 'SF Pro';
-    padding: 5px 10px;
-    /* 内边距 */
+    padding: 7px 10px;
     background-color: #e0e0e0;
-    /* 背景颜色 */
     color: #222;
-    /* 字体颜色 */
     border: none;
-    /* 无边框 */
-    border-radius: 20px;
-    /* 圆角 */
+    border-radius: 12px;
     cursor: pointer;
-    /* 鼠标悬停时显示手型 */
-    font-size: 16px;
-    /* 字体大小 */
-    z-index: 1000;
-    /* 确保按钮在最上层 */
+    font-size: 12px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 
-#new-article-btn:hover {
+#new-article-btn:hover, #save-btn:hover, #toggle-annotations:hover {
     background-color: #d0d0d0;
-    /* 背景颜色 */
     color: #222;
-    /* 字体颜色 */
 }
 
 #annotext-title {
     display: inline-block;
     padding: 5px;
     font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'SF Mono', monospace;
+}
+
+
+@keyframes flash {
+    0% { background-color: rgb(255, 239, 0); box-shadow: 0 0 20px rgb(255, 60, 0); }
+    40% { background-color: rgb(255, 239, 0); box-shadow: 0 0 50px rgb(255, 60, 0); }
+    50% { background-color: rgb(255, 239, 0); box-shadow: 0 0 50px rgb(255, 60, 0); }
+    100% { background-color: rgb(255, 239, 0); box-shadow: 0 0 0px rgb(255, 60, 0)}
+}
+
+.flash-highlight {
+    animation: flash 0.5s ease-in-out;
 }

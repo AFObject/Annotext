@@ -64,7 +64,8 @@ function loadArticle(index, data = globalData) {
     annotations.forEach((ann, idx) => {
         let before = text.slice(0, ann.start);
         let classText = ann.type.replace('-underline', ' red-underline');
-        let highlighted = `<span class="main highlight ${classText}" data-explanation="${ann.explanation}">${text.slice(ann.start, ann.end)}</span>`;
+        // 倒序了，所以全部是 length - idx
+        let highlighted = `<span id="ann-${length - idx}" class="main highlight ${classText}" data-explanation="${ann.explanation}">${text.slice(ann.start, ann.end)}</span>`;
         let after = text.slice(ann.end);
         text = before + highlighted + `<sup style="margin-left: 1px; margin-right: 3px">${length - idx}</sup>` + after;
     });
@@ -171,6 +172,15 @@ function formatAnnotatedText(index, data) {
         output += '\n\n';
         li.innerHTML = output;
         li.addEventListener("click", () => {
+            // 滑动到对应位置并高亮显示
+            const element = document.getElementById(`ann-${idx + 1}`);
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            element.classList.add("flash-highlight");
+            console.log(element.classList);
+            element.addEventListener("animationend", () => {
+                element.classList.remove("flash-highlight");
+            }, { once: true }); // 只监听一次动画结束事件
+
             let elements = document.getElementsByClassName('type-menu');
             let current = li.getElementsByClassName('type-menu')[0];
             for (let i of elements) {

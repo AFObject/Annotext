@@ -13,6 +13,7 @@
         <div class="sidebar">
             <h3 id="annotext-title">AnnoText</h3>
             <button id="new-article-btn" onclick="newArticle()">􀏪</button>
+            <button id="new-article-btn" onclick="downloadDataAsJSON()">􀈉</button>
             <ul id="article-list"></ul>
         </div>
         <div style="display: flex; margin-left: 22%; width: 77%; position: fixed">
@@ -32,6 +33,7 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/edit.js') }}"></script>
     <script src="{{ url_for('static', filename='js/newArticle.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/save.js') }}"></script>
 </body>
 
 </html>
