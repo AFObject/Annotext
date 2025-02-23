@@ -5,14 +5,14 @@ fetch('/get_data')
     .then(response => response.json())
     .then(data => {
         const articleList = document.getElementById('article-list');
-        data.articles.forEach((article, index) => {
+        data.articles.map((article, index) => ({ article, index })).reverse().forEach(({ article, index }) => {
             let li = document.createElement('li');
             li.textContent = article.title;
             li.onclick = () => loadArticle(index);
             articleList.appendChild(li);
         });
         globalData = data;
-        loadArticle(0);
+        loadArticle(data.articles.length - 1);
     });
 
 document.getElementById('toggle-annotations').addEventListener('click', () => {
@@ -41,7 +41,7 @@ function setupAnnoContents() {
 }
 
 
-function loadArticle(index, data=globalData) {
+function loadArticle(index, data = globalData) {
     currentArticleIndex = index;
     fetch('/get_data')
     const article = data.articles[index];
@@ -51,7 +51,7 @@ function loadArticle(index, data=globalData) {
     articleList.forEach(li => {
         li.classList.remove('active');
     });
-    articleList[index].classList.add('active');
+    articleList[data.articles.length - 1 - index].classList.add('active');
 
     let text = article.content;
     let annotations = article.annotations;
@@ -184,7 +184,7 @@ function formatAnnotatedText(index, data) {
     });
 }
 
-function saveData(updatedData=globalData) {
+function saveData(updatedData = globalData) {
     fetch("/update_data", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

@@ -270,3 +270,39 @@ h2 {
     border-width: 2px;
     border-color: #555;
 }
+
+#new-article-btn {
+    display: inline-block;
+    font-family: 'SF Pro';
+    padding: 5px 10px;
+    /* 内边距 */
+    background-color: #e0e0e0;
+    /* 背景颜色 */
+    color: #222;
+    /* 字体颜色 */
+    border: none;
+    /* 无边框 */
+    border-radius: 20px;
+    /* 圆角 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手型 */
+    font-size: 16px;
+    /* 字体大小 */
+    z-index: 1000;
+    /* 确保按钮在最上层 */
+}
+
+
+#new-article-btn:hover {
+    background-color: #d0d0d0;
+    /* 背景颜色 */
+    color: #222;
+    /* 字体颜色 */
+}
+
+#annotext-title {
+    display: inline-block;
+    padding: 5px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
