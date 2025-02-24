@@ -21,9 +21,17 @@
             <p id="text" class="body-text"></p>
         </div>
         <div class="annotations" id="annotations">
-            <h3 id="toggle-anno-content" style="padding: 5px">注释</h3>
-            <!-- <button id="toggle-anno-content">􀋭</button>
-    -->
+            <h3 id="toggle-anno-content" title="点击全部显示或隐藏答案">注释</h3>
+            <div style="display: flex">
+                <h4 id="filter-label">筛选</h4>
+                <div class="filter-menu">
+                    <button id="gray-filter-btn" class="gray bordered" onclick="toggleFilter('gray')">G</button>
+                    <button id="green-filter-btn" class="green bordered" onclick="toggleFilter('green')">A</button>
+                    <button id="yellow-filter-btn" class="yellow bordered" onclick="toggleFilter('yellow')">B</button>
+                    <button id="red-filter-btn" class="red bordered" onclick="toggleFilter('red')">C</button>
+                    <button id="underline-filter-btn" class="red-underline" onclick="toggleFilter('underline')">U</button>
+                </div>
+            </div>
             <ul id="annotation-list"></ul>
         </div>
     </div>
@@ -33,6 +41,7 @@
     <script src="{{ url_for('static', filename='js/edit.js') }}"></script>
     <script src="{{ url_for('static', filename='js/newArticle.js') }}"></script>
     <script src="{{ url_for('static', filename='js/save.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/filter.js') }}"></script>
 </body>
 
 </html>

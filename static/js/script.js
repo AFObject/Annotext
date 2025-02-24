@@ -22,6 +22,7 @@ document.getElementById('toggle-sidebar').addEventListener('click', () => {
     document.getElementById('sidebar').classList.toggle('hidden');
 });
 
+// 对每个 anno-content，设置点击切换显示的逻辑
 function setupAnnoContents() {
     const annoContents = document.querySelectorAll(".anno-content");
     // 为每个 anno-content 添加点击事件
@@ -95,8 +96,6 @@ function loadArticle(index, data = globalData) {
                     tooltip.style.display = 'none';
                 });
             });
-
-            // document.getElementById('annotation-list').innerHTML = `<li>${el.dataset.explanation}</li>`;
         });
     });
 
@@ -104,7 +103,10 @@ function loadArticle(index, data = globalData) {
     setupAnnoContents();
 }
 
-function formatAnnotatedText(index, data) {
+// 处理右侧边栏
+// - index: 文章编号
+// - data: 单篇文章的数据
+function formatAnnotatedText(index=currentArticleIndex, data=globalData.articles[index]) {
     let annotationList = document.getElementById('annotation-list');
     annotationList.innerHTML = ""; // 清空旧内容
 
@@ -141,6 +143,8 @@ function formatAnnotatedText(index, data) {
     const sentences = splitSentences(data.content);
 
     data.annotations.forEach((anno, idx) => {
+        if (!judgeFilter(anno.type)) return;
+
         let li = document.createElement('li');
         const sentence = findAnnotationSentence(sentences, anno)
         if (!sentence) return;
