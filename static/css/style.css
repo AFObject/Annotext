@@ -56,7 +56,7 @@
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    height: 75vh;
+    height: 78vh;
 }
 
 /* 列表项样式 */
@@ -185,7 +185,7 @@ h2 {
 
 .filter-menu {
     display: inline-block;
-    flex: 1;
+    height: 40px;
 }
 
 .type-menu, .filter-menu {
@@ -193,6 +193,7 @@ h2 {
     padding: 5px;
     border-radius: 5px;
     display: flex;
+    gap: 4px;
     justify-content: space-between; /* 按钮之间均匀分布 */
     align-items: center; /* 垂直居中 */
     padding: 10px;
@@ -275,6 +276,10 @@ h2 {
     box-shadow: 1px 1px 2px rgba(80, 80, 80, 0.5);
 }
 
+.red-underline.bordered {
+    border-color: rgb(150, 0, 0) !important;
+}
+
 #new-article-btn, #save-btn {
     display: inline-block;
     font-family: 'SF Pro';
@@ -314,6 +319,6 @@ h2 {
 }
 
 #filter-label {
+    color: #222;
     display: inline;
-    padding: 10px;
 }

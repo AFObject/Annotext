@@ -3,47 +3,6 @@
         {
             "annotations": [
                 {
-                    "end": 4,
-                    "explanation": "指宋仁宗庆历四年（1044年）。",
-                    "start": 0,
-                    "text": "庆历四年",
-                    "type": "green-underline"
-                },
-                {
-                    "end": 5,
-                    "explanation": "春天",
-                    "start": 4,
-                    "text": "春",
-                    "type": "yellow"
-                },
-                {
-                    "end": 9,
-                    "explanation": "曾任岳州知州。",
-                    "start": 6,
-                    "text": "滕子京",
-                    "type": "yellow-underline"
-                },
-                {
-                    "end": 10,
-                    "explanation": "被贬",
-                    "start": 9,
-                    "text": "谪",
-                    "type": "yellow"
-                },
-                {
-                    "end": 14,
-                    "explanation": "位于四川",
-                    "start": 11,
-                    "text": "巴陵郡",
-                    "type": "yellow"
-                }
-            ],
-            "content": "庆历四年春，滕子京谪守巴陵郡...",
-            "title": "岳阳楼记"
-        },
-        {
-            "annotations": [
-                {
                     "end": 3,
                     "explanation": "《论语》",
                     "start": 0,
@@ -560,6 +519,13 @@
         {
             "annotations": [
                 {
+                    "end": 11,
+                    "explanation": "险固地势",
+                    "start": 10,
+                    "text": "固",
+                    "type": "yellow"
+                },
+                {
                     "end": 13,
                     "explanation": "占据",
                     "start": 12,
@@ -648,7 +614,7 @@
                     "explanation": "结",
                     "start": 239,
                     "text": "约",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 242,
@@ -725,7 +691,7 @@
                     "explanation": "时间短暂",
                     "start": 481,
                     "text": "浅",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 497,
@@ -830,7 +796,7 @@
                     "explanation": "兵刃",
                     "start": 654,
                     "text": "锋",
-                    "type": "red"
+                    "type": "yellow"
                 },
                 {
                     "end": 656,
@@ -1019,9 +985,122 @@
             "title": "过秦论"
         },
         {
-            "title": "五代史伶官传序",
+            "annotations": [
+                {
+                    "end": 20,
+                    "explanation": "人的作为",
+                    "start": 18,
+                    "text": "人事",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 23,
+                    "explanation": "推其根本",
+                    "start": 22,
+                    "text": "原",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 92,
+                    "explanation": "订立盟约",
+                    "start": 91,
+                    "text": "约",
+                    "type": "yellow"
+                },
+                {
+                    "end": 120,
+                    "explanation": "副词，表示祈使语气",
+                    "start": 119,
+                    "text": "其",
+                    "type": "yellow"
+                },
+                {
+                    "end": 146,
+                    "explanation": "官名，这里泛指一般属官。",
+                    "start": 144,
+                    "text": "从事",
+                    "type": "yellow"
+                },
+                {
+                    "end": 150,
+                    "explanation": "猪、羊各一头。",
+                    "start": 147,
+                    "text": "一少牢",
+                    "type": "gray"
+                },
+                {
+                    "end": 184,
+                    "explanation": "缚",
+                    "start": 183,
+                    "text": "系",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 189,
+                    "explanation": "丝带、丝绳，这里泛指绳索。",
+                    "start": 188,
+                    "text": "组",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 191,
+                    "explanation": "匣子，这里用作动词，用匣子装。",
+                    "start": 190,
+                    "text": "函",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 227,
+                    "explanation": "仇人。",
+                    "start": 225,
+                    "text": "仇雠",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 298,
+                    "explanation": "或者，还是",
+                    "start": 297,
+                    "text": "抑",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 299,
+                    "explanation": "考察，探究",
+                    "start": 298,
+                    "text": "本",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 343,
+                    "explanation": "安乐",
+                    "start": 341,
+                    "text": "逸豫",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 361,
+                    "explanation": "全，整个",
+                    "start": 360,
+                    "text": "举",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 404,
+                    "explanation": "极小的事。忽，一寸的十万分之一。微，一寸的百万分之一。",
+                    "start": 402,
+                    "text": "忽微",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 413,
+                    "explanation": "沉湎，无节制。",
+                    "start": 412,
+                    "text": "溺",
+                    "type": "yellow-underline"
+                }
+            ],
             "content": "<p>呜呼！盛衰之理，虽曰天命，岂非人事哉！原庄宗之所以得天下，与其所以失之者，可以知之矣。</p><p>世言晋王之将终也，以三矢赐庄宗而告之曰：“梁，吾仇也；燕王，吾所立；契丹与吾约为兄弟；而皆背晋以归梁。此三者，吾遗恨也。与尔三矢，尔其无忘乃父之志！”庄宗受而藏之于庙。其后用兵，则遣从事以一少牢告庙，请其矢，盛以锦囊，负而前驱，及凯旋而纳之。</p><p>方其系燕父子以组，函梁君臣之首，入于太庙，还矢先王，而告以成功，其意气之盛，可谓壮哉！及仇雠已灭，天下已定，一夫夜呼，乱者四应，仓皇东出，未及见贼而士卒离散，君臣相顾，不知所归。至于誓天断发，泣下沾襟，何其衰也！岂得之难而失之易欤？抑本其成败之迹，而皆自于人欤？</p><p>《书》曰：“满招损，谦得益。”忧劳可以兴国，逸豫可以亡身，自然之理也。故方其盛也，举天下之豪杰，莫能与之争；及其衰也，数十伶人困之，而身死国灭，为天下笑。夫祸患常积于忽微，而智勇多困于所溺，岂独伶人也哉！作《伶官传》。</p>",
-            "annotations": []
+            "title": "五代史伶官传序"
         }
     ]
 }
