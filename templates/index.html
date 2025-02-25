@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnnoText</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/color-scheme.css') }}">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <ul id="article-list"></ul>
         </div>
         <div class="content" id="main-text-content" tabindex="0">
-            <h2 id="title"></h2>
+            <h2 id="text-title"></h2>
             <p id="text" class="body-text"></p>
         </div>
         <div class="annotations" id="annotations">

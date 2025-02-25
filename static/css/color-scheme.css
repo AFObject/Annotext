@@ -1,0 +1,32 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --sidebar-bg: #f4f4f4;
+    --highlight-color: yellow;
+    --active-item-bg: #e0e0e0;
+    --active-btn-bg: #d0d0d0;
+    --border-color: #333;
+
+    --gray-bg: #d0d0d0;
+    --yellow-bg: #ffdead;
+    --green-bg: #d6ffc0;
+    --red-bg: #fad4d4;
+}
+
+/* 系统是暗黑模式时 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #181818;
+        --text-color: #f0f0f0;
+        --sidebar-bg: #333;
+        --highlight-color: #ffcc00;
+        --active-item-bg: #4f4f4f;
+        --active-btn-bg: #5f5f5f;
+        --border-color: #f0f0f0;
+
+        --gray-bg: #5f5f5f;
+        --yellow-bg: #cc9a23a7;
+        --green-bg: #026878c1;
+        --red-bg: #a30000b6;
+    }
+}

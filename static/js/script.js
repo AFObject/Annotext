@@ -49,7 +49,7 @@ function loadArticle(index, data = globalData) {
     currentArticleIndex = index;
     fetch('/get_data')
     const article = data.articles[index];
-    document.getElementById('title').textContent = article.title;
+    document.getElementById('text-title').textContent = article.title;
 
     const articleList = document.getElementById('article-list').querySelectorAll('li');
     articleList.forEach(li => {
