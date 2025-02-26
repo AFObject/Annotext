@@ -18,10 +18,10 @@
     :root {
         --bg-color: #181818;
         --text-color: #f0f0f0;
-        --sidebar-bg: #333;
+        --sidebar-bg: #272727;
         --highlight-color: #ffcc00;
-        --active-item-bg: #4f4f4f;
-        --active-btn-bg: #5f5f5f;
+        --active-item-bg: #3f3f3f;
+        --active-btn-bg: #4f4f4f;
         --border-color: #f0f0f0;
 
         --gray-bg: #5f5f5f;
