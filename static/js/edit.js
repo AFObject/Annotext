@@ -1,5 +1,6 @@
 const content = document.getElementById('content');
-const contextMenu = document.getElementById('custom-context-menu');
+const annoContextMenu = document.getElementById('anno-context-menu');
+const sidebarContextMenu = document.getElementById('sidebar-context-menu');
 
 document.getElementById("main-text-content").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
@@ -13,7 +14,8 @@ document.getElementById("main-text-content").addEventListener("keydown", functio
 });
 
 document.addEventListener('click', () => {
-    contextMenu.style.display = 'none';
+    annoContextMenu.style.display = 'none';
+    sidebarContextMenu.style.display = 'none';
 });
 
 function getSelectionIndex() {
@@ -64,10 +66,16 @@ function getPlainText(element) {
     return clone.innerHTML.replace(/<\/p>\s*$/i, "");;
 }
 
-function showContextMenu(x, y) {
-    contextMenu.style.left = `${x}px`;
-    contextMenu.style.top = `${y}px`;
-    contextMenu.style.display = 'block';
+function showAnnoContextMenu(x, y) {
+    annoContextMenu.style.left = `${x}px`;
+    annoContextMenu.style.top = `${y}px`;
+    annoContextMenu.style.display = 'block';
+}
+
+function showSidebarContextMenu(x, y) {
+    sidebarContextMenu.style.left = `${x}px`;
+    sidebarContextMenu.style.top = `${y}px`;
+    sidebarContextMenu.style.display = 'block';
 }
 
 function requestEdit(idx1, idx2) {
@@ -78,11 +86,19 @@ function requestEdit(idx1, idx2) {
     }
 }
 
-function confirmDeletion(idx1, idx2) {
+function confirmAnnoDeletion(idx1, idx2) {
     let anno = globalData.articles[idx1].annotations[idx2]
     let isConfirmed = confirm(`确认删除注释：${anno.text} - ${anno.explanation}？`);
     if (isConfirmed) {
         deleteAnnotation(idx1, idx2);
+    }
+}
+
+function confirmArticleDeletion(idx1) {
+    let article = globalData.articles[idx1]
+    let isConfirmed = confirm(`确认删除 ${article.title} 吗？`);
+    if (isConfirmed) {
+        deleteArticle(idx1);
     }
 }
 
@@ -91,6 +107,12 @@ function confirmDeletion(idx1, idx2) {
 // 后端操作
 //
 // ===========
+
+function deleteArticle(idx1) {
+    globalData.articles.splice(idx1, 1);
+    saveData();
+    location.reload(true);
+}
 
 function addAnnotation(text, start, end, explanation) { // 修改保存后端数据
     let newAnn = { text, start, end, explanation, type: "yellow" };
@@ -114,6 +136,27 @@ function deleteAnnotation(idx1, idx2) { // 修改保存后端数据
     globalData.articles[idx1].annotations.splice(idx2, 1);
     saveData();
     loadArticle(currentArticleIndex);
+}
+
+function setType(articleIndex, annIndex, color) {
+    const temp = globalData.articles[articleIndex].annotations[annIndex].type
+    globalData.articles[articleIndex].annotations[annIndex].type = color;
+    if (temp.includes('-underline')) {
+        globalData.articles[articleIndex].annotations[annIndex].type += '-underline';
+    }
+    saveData();
+    loadArticle(articleIndex);
+}
+
+function toggleUnderline(articleIndex, annIndex) {
+    let ann = globalData.articles[articleIndex].annotations[annIndex];
+    if (ann.type.includes("underline")) {
+        ann.type = ann.type.replace("-underline", "");
+    } else {
+        ann.type += "-underline";
+    }
+    saveData();
+    loadArticle(articleIndex);
 }
 
 function saveData(updatedData = globalData) { // 终极后端保存

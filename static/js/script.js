@@ -9,6 +9,11 @@ fetch('/get_data')
             let li = document.createElement('li');
             li.textContent = article.title;
             li.onclick = () => loadArticle(index);
+            li.addEventListener("contextmenu", (e) => {
+                e.preventDefault();
+                document.getElementById("sidebar-context-menu-delete-btn").onclick = () => confirmArticleDeletion(index);
+                showSidebarContextMenu(e.pageX, e.pageY);
+            });
             articleList.appendChild(li);
         });
         globalData = data;
@@ -22,30 +27,9 @@ document.getElementById('toggle-sidebar').addEventListener('click', () => {
     document.getElementById('sidebar').classList.toggle('hidden');
 });
 
-// 对每个 anno-content，设置点击切换显示的逻辑
-function setupAnnoContents() {
-    const annoContents = document.querySelectorAll(".anno-content");
-    // 为每个 anno-content 添加点击事件
-    annoContents.forEach(content => {
-        content.addEventListener("click", function () {
-            // 切换显示和隐藏
-            this.classList.toggle("show");
-        });
-    });
-    document.getElementById('toggle-anno-content').addEventListener('click', () => {
-        const firstContent = annoContents[0];
-        if (firstContent.classList.contains("show")) {
-            // 如果第一个内容是显示状态，隐藏所有内容
-            annoContents.forEach(content => content.classList.remove("show"));
-        } else {
-            // 如果第一个内容是隐藏状态，显示所有内容
-            annoContents.forEach(content => content.classList.add("show"));
-        }
-    });
-}
-
-
-function loadArticle(index, data = globalData) {
+// 【主要逻辑】一篇 Article 的全部加载任务
+// 代码中为正文高亮部分
+function loadArticle(index, data=globalData) {
     currentArticleIndex = index;
     fetch('/get_data')
     const article = data.articles[index];
@@ -99,14 +83,14 @@ function loadArticle(index, data = globalData) {
         });
     });
 
-    formatAnnotatedText(index, data.articles[index]);
-    setupAnnoContents();
+    loadAnnotationBar(index, data.articles[index]);
+    resetAnnoContentDisplay();
 }
 
-// 处理右侧边栏
+// 【主要逻辑】处理右侧边栏
 // - index: 文章编号
 // - data: 单篇文章的数据
-function formatAnnotatedText(index=currentArticleIndex, data=globalData.articles[index]) {
+function loadAnnotationBar(index=currentArticleIndex, data=globalData.articles[index]) {
     let annotationList = document.getElementById('annotation-list');
     annotationList.innerHTML = ""; // 清空旧内容
 
@@ -204,37 +188,32 @@ function formatAnnotatedText(index=currentArticleIndex, data=globalData.articles
         // 增加右键菜单
         li.addEventListener("contextmenu", (e) => {
             e.preventDefault();
-            document.getElementById("context-menu-edit-btn").onclick = () => requestEdit(currentArticleIndex, idx);
-            document.getElementById("context-menu-delete-btn").onclick = () => confirmDeletion(currentArticleIndex, idx);
-            showContextMenu(e.pageX, e.pageY);
+            document.getElementById("anno-context-menu-edit-btn").onclick = () => requestEdit(currentArticleIndex, idx);
+            document.getElementById("anno-context-menu-delete-btn").onclick = () => confirmAnnoDeletion(currentArticleIndex, idx);
+            showAnnoContextMenu(e.pageX, e.pageY);
         });
         annotationList.appendChild(li)
     });
 }
 
-function setType(articleIndex, annIndex, color) {
-    fetch("/get_data").then(res => res.json()).then(data => {
-        const temp = data.articles[articleIndex].annotations[annIndex].type
-        data.articles[articleIndex].annotations[annIndex].type = color;
-        if (temp.includes('-underline')) {
-            data.articles[articleIndex].annotations[annIndex].type += '-underline';
-        }
-        saveData(data);
-        globalData = data;
-        loadArticle(articleIndex);
+// 对每个 anno-content，设置点击切换显示的逻辑
+function resetAnnoContentDisplay() {
+    const annoContents = document.querySelectorAll(".anno-content");
+    // 为每个 anno-content 添加点击事件
+    annoContents.forEach(content => {
+        content.addEventListener("click", function () {
+            // 切换显示和隐藏
+            this.classList.toggle("show");
+        });
     });
-}
-
-function toggleUnderline(articleIndex, annIndex) {
-    fetch("/get_data").then(res => res.json()).then(data => {
-        let ann = data.articles[articleIndex].annotations[annIndex];
-        if (ann.type.includes("underline")) {
-            ann.type = ann.type.replace("-underline", "");
+    document.getElementById('toggle-anno-content').addEventListener('click', () => {
+        const firstContent = annoContents[0];
+        if (firstContent.classList.contains("show")) {
+            // 如果第一个内容是显示状态，隐藏所有内容
+            annoContents.forEach(content => content.classList.remove("show"));
         } else {
-            ann.type += "-underline";
+            // 如果第一个内容是隐藏状态，显示所有内容
+            annoContents.forEach(content => content.classList.add("show"));
         }
-        saveData(data);
-        globalData = data;
-        loadArticle(articleIndex);
     });
 }

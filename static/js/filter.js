@@ -8,8 +8,8 @@ function toggleFilter(type) {
     }
     document.getElementById(`${type}-filter-btn`).classList.toggle('bordered');
     console.log(filterTypes);
-    formatAnnotatedText();
-    setupAnnoContents();
+    loadAnnotationBar();
+    resetAnnoContentDisplay();
 }
 
 function judgeFilter(type) {
