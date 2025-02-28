@@ -1,3 +1,6 @@
+const content = document.getElementById('content');
+const contextMenu = document.getElementById('custom-context-menu');
+
 document.getElementById("main-text-content").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         let selectionData = getSelectionIndex();
@@ -7,6 +10,10 @@ document.getElementById("main-text-content").addEventListener("keydown", functio
             if (explanation) addAnnotation(selectedText, start, end, explanation);
         }
     }
+});
+
+document.addEventListener('click', () => {
+    contextMenu.style.display = 'none';
 });
 
 function getSelectionIndex() {
@@ -57,17 +64,62 @@ function getPlainText(element) {
     return clone.innerHTML.replace(/<\/p>\s*$/i, "");;
 }
 
+function showContextMenu(x, y) {
+    contextMenu.style.left = `${x}px`;
+    contextMenu.style.top = `${y}px`;
+    contextMenu.style.display = 'block';
+}
 
-function addAnnotation(text, start, end, explanation) {
+function requestEdit(idx1, idx2) {
+    let anno = globalData.articles[idx1].annotations[idx2]
+    let text = prompt(`编辑“${anno.text}”的释义：`, anno.explanation);
+    if (text && text != '') {
+        editAnnotation(idx1, idx2, text);
+    }
+}
+
+function confirmDeletion(idx1, idx2) {
+    let anno = globalData.articles[idx1].annotations[idx2]
+    let isConfirmed = confirm(`确认删除注释：${anno.text} - ${anno.explanation}？`);
+    if (isConfirmed) {
+        deleteAnnotation(idx1, idx2);
+    }
+}
+
+// ===========
+//
+// 后端操作
+//
+// ===========
+
+function addAnnotation(text, start, end, explanation) { // 修改保存后端数据
     let newAnn = { text, start, end, explanation, type: "yellow" };
-    console.log(newAnn)
-
     let annotations = globalData.articles[currentArticleIndex].annotations;
     annotations.push(newAnn);
 
     // **按 start 重新排序**
     annotations.sort((a, b) => a.start - b.start);
 
-    saveData(); // 保存数据并刷新
+    saveData();
     loadArticle(currentArticleIndex);
+}
+
+function editAnnotation(idx1, idx2, text) { // 修改保存后端数据
+    globalData.articles[idx1].annotations[idx2].explanation = text;
+    saveData();
+    loadArticle(currentArticleIndex);
+}
+
+function deleteAnnotation(idx1, idx2) { // 修改保存后端数据
+    globalData.articles[idx1].annotations.splice(idx2, 1);
+    saveData();
+    loadArticle(currentArticleIndex);
+}
+
+function saveData(updatedData = globalData) { // 终极后端保存
+    fetch("/update_data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedData)
+    }).then(res => res.json()).then(console.log);
 }

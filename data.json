@@ -10,13 +10,6 @@
                     "type": "green"
                 },
                 {
-                    "end": 9,
-                    "explanation": "正义",
-                    "start": 8,
-                    "text": "正",
-                    "type": "yellow"
-                },
-                {
                     "end": 12,
                     "explanation": "命令",
                     "start": 11,
@@ -59,25 +52,11 @@
                     "type": "yellow"
                 },
                 {
-                    "end": 52,
-                    "explanation": "等到",
-                    "start": 51,
-                    "text": "及",
-                    "type": "yellow"
-                },
-                {
                     "end": 59,
                     "explanation": "熟识",
                     "start": 58,
                     "text": "知",
                     "type": "red"
-                },
-                {
-                    "end": 69,
-                    "explanation": "他",
-                    "start": 68,
-                    "text": "彼",
-                    "type": "yellow"
                 },
                 {
                     "end": 74,
@@ -1093,7 +1072,7 @@
                 },
                 {
                     "end": 413,
-                    "explanation": "沉湎，无节制。",
+                    "explanation": "沉湎，无节制",
                     "start": 412,
                     "text": "溺",
                     "type": "yellow-underline"

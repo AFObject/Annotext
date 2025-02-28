@@ -337,3 +337,37 @@ h2 {
 #text-title {
     color: var(--text-color);
 }
+
+/* 右键菜单 */
+
+.context-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.context-menu li {
+    color: var(--text-color);
+    font-size: smaller;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.context-menu li:last-child {
+    border-bottom: none;
+}
+
+.context-menu li:hover {
+    background-color: var(--active-item-bg);
+}

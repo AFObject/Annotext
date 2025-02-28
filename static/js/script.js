@@ -200,16 +200,16 @@ function formatAnnotatedText(index=currentArticleIndex, data=globalData.articles
             }
             current.classList.toggle("unshow");
         });
+
+        // 增加右键菜单
+        li.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            document.getElementById("context-menu-edit-btn").onclick = () => requestEdit(currentArticleIndex, idx);
+            document.getElementById("context-menu-delete-btn").onclick = () => confirmDeletion(currentArticleIndex, idx);
+            showContextMenu(e.pageX, e.pageY);
+        });
         annotationList.appendChild(li)
     });
-}
-
-function saveData(updatedData = globalData) {
-    fetch("/update_data", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(updatedData)
-    }).then(res => res.json()).then(console.log);
 }
 
 function setType(articleIndex, annIndex, color) {
