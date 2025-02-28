@@ -167,13 +167,11 @@ function loadAnnotationBar(index=currentArticleIndex, data=globalData.articles[i
             const element = document.getElementById(`ann-${idx + 1}`);
             element.scrollIntoView({ behavior: 'smooth', block: 'center' });
             // 等待滑动结束
-            document.getElementById("main-text-content").addEventListener("scrollend", () => {
-                console.log("scrollend");
-                element.classList.add("flash-highlight");
-                element.addEventListener("animationend", () => {
-                    element.classList.remove("flash-highlight");
-                }, { once: true }); // 只监听一次动画结束事件
-            }, { once: true }); // 仅触发一次
+            // document.getElementById("main-text-content").addEventListener("scrollend", () => {
+            element.classList.add("flash-highlight");
+            element.addEventListener("animationend", () => {
+                element.classList.remove("flash-highlight");
+            }, { once: true }); // 只监听一次动画结束事件
 
             let elements = document.getElementsByClassName('type-menu');
             let current = li.getElementsByClassName('type-menu')[0];
