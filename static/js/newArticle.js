@@ -14,7 +14,11 @@ function newArticle() {
 function processAnnotatedText(text, title = "") {
     text = text.split('\n')
         .filter(line => line.trim() !== '')
-        .map(line => `<p>${line.trim()}</p>`)
+        .map(line => {
+            if (line.includes('<h3>')) return line.trim();
+            if (line.includes('##')) return line.replace('##', '<h3>').trim() + '</h3>';
+            else return `<p>${line.trim()}</p>`;
+        })
         .join('');
     // 正则匹配所有注释结构（添加g标志进行全局匹配）
     const pattern = /【(.*?)】\s*（(.*?)）/g;
