@@ -887,7 +887,7 @@
                     "explanation": "推其根本",
                     "start": 22,
                     "text": "原",
-                    "type": "yellow-underline"
+                    "type": "red-underline"
                 },
                 {
                     "end": 92,
@@ -936,28 +936,28 @@
                     "explanation": "匣子，这里用作动词，用匣子装。",
                     "start": 190,
                     "text": "函",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 227,
                     "explanation": "仇人。",
                     "start": 225,
                     "text": "仇雠",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 298,
                     "explanation": "或者，还是",
                     "start": 297,
                     "text": "抑",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 299,
                     "explanation": "考察，探究",
                     "start": 298,
                     "text": "本",
-                    "type": "yellow-underline"
+                    "type": "red-underline"
                 },
                 {
                     "end": 343,
@@ -985,7 +985,7 @@
                     "explanation": "沉湎，无节制",
                     "start": 412,
                     "text": "溺",
-                    "type": "yellow-underline"
+                    "type": "red-underline"
                 }
             ],
             "content": "<p>呜呼！盛衰之理，虽曰天命，岂非人事哉！原庄宗之所以得天下，与其所以失之者，可以知之矣。</p><p>世言晋王之将终也，以三矢赐庄宗而告之曰：“梁，吾仇也；燕王，吾所立；契丹与吾约为兄弟；而皆背晋以归梁。此三者，吾遗恨也。与尔三矢，尔其无忘乃父之志！”庄宗受而藏之于庙。其后用兵，则遣从事以一少牢告庙，请其矢，盛以锦囊，负而前驱，及凯旋而纳之。</p><p>方其系燕父子以组，函梁君臣之首，入于太庙，还矢先王，而告以成功，其意气之盛，可谓壮哉！及仇雠已灭，天下已定，一夫夜呼，乱者四应，仓皇东出，未及见贼而士卒离散，君臣相顾，不知所归。至于誓天断发，泣下沾襟，何其衰也！岂得之难而失之易欤？抑本其成败之迹，而皆自于人欤？</p><p>《书》曰：“满招损，谦得益。”忧劳可以兴国，逸豫可以亡身，自然之理也。故方其盛也，举天下之豪杰，莫能与之争；及其衰也，数十伶人困之，而身死国灭，为天下笑。夫祸患常积于忽微，而智勇多困于所溺，岂独伶人也哉！作《伶官传》。</p>",
@@ -994,10 +994,10 @@
         {
             "annotations": [
                 {
-                    "text": "辄",
-                    "start": 30,
                     "end": 31,
                     "explanation": "+往往，总是",
+                    "start": 30,
+                    "text": "辄",
                     "type": "yellow-underline"
                 },
                 {
@@ -1005,13 +1005,13 @@
                     "explanation": "砖",
                     "start": 34,
                     "text": "甓",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
-                    "text": "方",
-                    "start": 55,
                     "end": 56,
                     "explanation": "正",
+                    "start": 55,
+                    "text": "方",
                     "type": "green-underline"
                 },
                 {
@@ -1022,17 +1022,31 @@
                     "type": "yellow"
                 },
                 {
-                    "text": "敛膝",
-                    "start": 89,
-                    "end": 91,
-                    "explanation": "+盘腿",
+                    "end": 63,
+                    "explanation": "过分地",
+                    "start": 61,
+                    "text": "过尔",
                     "type": "yellow"
                 },
                 {
-                    "text": "危坐",
-                    "start": 91,
+                    "end": 65,
+                    "explanation": "悠闲放松",
+                    "start": 63,
+                    "text": "优逸",
+                    "type": "yellow"
+                },
+                {
+                    "end": 91,
+                    "explanation": "+盘腿",
+                    "start": 89,
+                    "text": "敛膝",
+                    "type": "yellow"
+                },
+                {
                     "end": 93,
                     "explanation": "端坐",
+                    "start": 91,
+                    "text": "危坐",
                     "type": "green-underline"
                 },
                 {
@@ -1040,27 +1054,41 @@
                     "explanation": "军中府中",
                     "start": 94,
                     "text": "军府",
-                    "type": "yellow"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 101,
                     "explanation": "自上而下去检查管理 ",
                     "start": 99,
                     "text": "检摄",
-                    "type": "yellow"
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 107,
+                    "explanation": "+稍稍",
+                    "start": 106,
+                    "text": "少",
+                    "type": "green"
                 },
                 {
                     "end": 124,
                     "explanation": "很短的时间。",
                     "start": 122,
                     "text": "寸阴",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
-                    "text": "岂",
-                    "start": 135,
                     "end": 136,
                     "explanation": "难道",
+                    "start": 135,
+                    "text": "岂",
+                    "type": "green"
+                },
+                {
+                    "end": 138,
+                    "explanation": "只，仅仅",
+                    "start": 137,
+                    "text": "但",
                     "type": "green"
                 },
                 {
@@ -1068,14 +1096,14 @@
                     "explanation": "随便",
                     "start": 195,
                     "text": "聊",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 212,
                     "explanation": "种田",
                     "start": 211,
                     "text": "佃",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 216,
@@ -1085,10 +1113,17 @@
                     "type": "yellow-underline"
                 },
                 {
-                    "text": "给",
-                    "start": 236,
+                    "end": 222,
+                    "explanation": "+捉拿",
+                    "start": 221,
+                    "text": "执",
+                    "type": "yellow"
+                },
+                {
                     "end": 237,
                     "explanation": "富裕",
+                    "start": 236,
+                    "text": "给",
                     "type": "green"
                 },
                 {
@@ -1096,14 +1131,21 @@
                     "explanation": "登记",
                     "start": 253,
                     "text": "籍",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 257,
                     "explanation": "收藏起来",
                     "start": 255,
                     "text": "掌之",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
+                },
+                {
+                    "end": 260,
+                    "explanation": "都",
+                    "start": 259,
+                    "text": "咸",
+                    "type": "green"
                 },
                 {
                     "end": 268,
@@ -1120,59 +1162,73 @@
                     "type": "gray"
                 },
                 {
+                    "end": 287,
+                    "explanation": "+铺",
+                    "start": 286,
+                    "text": "布",
+                    "type": "yellow"
+                },
+                {
+                    "end": 300,
+                    "explanation": "+收存，储存",
+                    "start": 299,
+                    "text": "贮",
+                    "type": "yellow"
+                },
+                {
                     "end": 306,
                     "explanation": "装配船只",
                     "start": 304,
                     "text": "装船",
-                    "type": "green"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 312,
                     "explanation": "综合料理事务极其细致",
                     "start": 308,
                     "text": "综理微密",
-                    "type": "yellow"
-                },
-                {
-                    "end": 350,
-                    "explanation": "人名，复姓皇甫",
-                    "start": 346,
-                    "text": "皇甫文备",
-                    "type": "yellow"
-                },
-                {
-                    "text": "酷",
-                    "start": 354,
-                    "end": 355,
-                    "explanation": "+凶残，残酷",
-                    "type": "yellow"
-                },
-                {
-                    "end": 365,
-                    "explanation": "指徐有功 。 大理 ，官 名 ， 主 管 刑 法",
-                    "start": 362,
-                    "text": "徐大理",
-                    "type": "yellow"
-                },
-                {
-                    "end": 367,
-                    "explanation": "判决案件",
-                    "start": 365,
-                    "text": "论狱",
-                    "type": "yellow"
-                },
-                {
-                    "text": "党",
-                    "start": 370,
-                    "end": 371,
-                    "explanation": "勾结",
                     "type": "yellow-underline"
                 },
                 {
-                    "text": "逆人",
-                    "start": 371,
+                    "end": 355,
+                    "explanation": "+凶残，残酷",
+                    "start": 354,
+                    "text": "酷",
+                    "type": "green"
+                },
+                {
+                    "end": 366,
+                    "explanation": "判决",
+                    "start": 365,
+                    "text": "论",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 367,
+                    "explanation": "案件",
+                    "start": 366,
+                    "text": "狱",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 371,
+                    "explanation": "勾结",
+                    "start": 370,
+                    "text": "党",
+                    "type": "yellow-underline"
+                },
+                {
                     "end": 373,
                     "explanation": "+逆贼",
+                    "start": 371,
+                    "text": "逆人",
+                    "type": "green"
+                },
+                {
+                    "end": 382,
+                    "explanation": "+特意",
+                    "start": 381,
+                    "text": "特",
                     "type": "green"
                 },
                 {
@@ -1183,11 +1239,53 @@
                     "type": "green"
                 },
                 {
-                    "text": "曩",
-                    "start": 407,
+                    "end": 387,
+                    "explanation": "不久",
+                    "start": 385,
+                    "text": "无何",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 391,
+                    "explanation": "被",
+                    "start": 390,
+                    "text": "为",
+                    "type": "green"
+                },
+                {
+                    "end": 401,
+                    "explanation": "宽宏",
+                    "start": 400,
+                    "text": "宽",
+                    "type": "green"
+                },
+                {
+                    "end": 403,
+                    "explanation": "有人",
+                    "start": 402,
+                    "text": "或",
+                    "type": "green"
+                },
+                {
+                    "end": 407,
+                    "explanation": "他",
+                    "start": 406,
+                    "text": "彼",
+                    "type": "green"
+                },
+                {
                     "end": 408,
                     "explanation": "过去",
+                    "start": 407,
+                    "text": "曩",
                     "type": "green-underline"
+                },
+                {
+                    "end": 438,
+                    "explanation": "+私人的恩怨",
+                    "start": 436,
+                    "text": "私忿",
+                    "type": "green"
                 },
                 {
                     "end": 451,
@@ -1197,6 +1295,13 @@
                     "type": "green"
                 },
                 {
+                    "end": 454,
+                    "explanation": "+妨害",
+                    "start": 453,
+                    "text": "害",
+                    "type": "yellow-underline"
+                },
+                {
                     "end": 497,
                     "explanation": "仆从",
                     "start": 495,
@@ -1204,11 +1309,18 @@
                     "type": "green"
                 },
                 {
+                    "end": 504,
+                    "explanation": "躲藏",
+                    "start": 503,
+                    "text": "匿",
+                    "type": "yellow"
+                },
+                {
                     "end": 522,
                     "explanation": "陪乘，负责警卫",
                     "start": 520,
                     "text": "骖乘",
-                    "type": "yellow"
+                    "type": "gray"
                 },
                 {
                     "end": 534,
@@ -1222,52 +1334,80 @@
                     "explanation": "大声数落湖阳公主的过错",
                     "start": 542,
                     "text": "大言数主之失",
-                    "type": "yellow"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 557,
                     "explanation": "击杀",
                     "start": 555,
                     "text": "格杀",
-                    "type": "green"
+                    "type": "green-underline"
                 },
                 {
-                    "end": 641,
+                    "end": 575,
+                    "explanation": "用棍棒",
+                    "start": 574,
+                    "text": "箠",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 642,
                     "explanation": "柱",
-                    "start": 640,
+                    "start": 641,
                     "text": "楹",
                     "type": "yellow-underline"
                 },
                 {
-                    "end": 652,
+                    "end": 646,
+                    "explanation": "+覆盖",
+                    "start": 645,
+                    "text": "被",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 653,
                     "explanation": "太监",
-                    "start": 649,
+                    "start": 650,
                     "text": "小黄门",
                     "type": "gray"
                 },
                 {
-                    "end": 675,
+                    "end": 661,
+                    "explanation": "道歉",
+                    "start": 660,
+                    "text": "谢",
+                    "type": "yellow"
+                },
+                {
+                    "end": 676,
                     "explanation": "按撑",
-                    "start": 674,
+                    "start": 675,
                     "text": "据",
                     "type": "yellow-underline"
                 },
                 {
-                    "end": 736,
+                    "end": 713,
+                    "explanation": "制服",
+                    "start": 712,
+                    "text": "行",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 737,
                     "explanation": "意为强头倔脑的县令，此指董宣",
-                    "start": 733,
+                    "start": 734,
                     "text": "强项令",
                     "type": "yellow"
                 },
                 {
-                    "end": 748,
+                    "end": 749,
                     "explanation": "分发",
-                    "start": 747,
+                    "start": 748,
                     "text": "班",
                     "type": "yellow-underline"
                 }
             ],
-            "content": "<h3>108. 陶侃二三事</h3><p>陶侃在广州，无事辄朝运白甓于斋外，暮运于斋内。人问其故，答曰：“吾方致力中原，过尔优逸，恐不堪事，故自劳耳。”…… 侃性聪敏恭勤，终日敛膝危坐，军府众事，检摄无遗，未尝少闲。常语人云：“大禹圣人，乃惜寸阴，至于众人，当惜分阴。岂可但逸游荒醉，生无益于时，死无闻于后，是自弃也！” 尝出游，见人持一把未熟稻，侃问：“用此何为？” 人云：“行道所见，聊取之耳。” 侃大怒曰：“汝既不佃，而戏贼人稻！” 执而鞭之。是以百姓勤于农作，家给人足。尝造船，其木屑竹头，侃皆令籍而掌之，人咸不解所以。后正会，积雪始晴，厅事前余雪犹湿，乃以木屑布地。及桓温伐蜀，又以侃所贮竹头作钉装船。其综理微密，皆此类也。</p><h3>109. 徐有功断狱秉公</h3><p>皇甫文备，武后时酷吏也，与徐大理徐大理论狱，诬徐党逆人，奏成其罪。武后特出之。无何，文备为人所告，有功讯之在宽。或曰：“彼曩时将陷公于死，今公反欲出之，何也？” 徐曰：“汝所言者，私忿也；我所守者，公法也。安可以私害公？”</p><h3>110. 强项令董宣</h3><p>董宣为洛阳令。时湖阳公主苍头白日杀人，因匿主家，吏不能得。及主出行，而以奴骖乘。宣于夏门亭候之，乃驻车扣马，以刀画地，大言数主之失；斥奴下车，因格杀之。主即还宫诉帝，帝大怒，召宣，欲杀之。宣叩头曰：“愿乞一言而死。”帝曰：“欲何言？”宣曰：“陛下圣德中兴，而纵奴杀良人，将何以理天下乎？臣不须，请得自杀！”即以头击楹，流血被面。帝令小黄门持之，使宣叩头谢主，宣不从；强使顿之，宣两手据地，终不肯俯。主曰：“文叔白衣时，藏亡匿死，吏不敢至门。今为天子，威不能行一令乎？”帝笑曰：“天子不与白衣同。”因敕强项令出。赐钱三十万。宣悉以班诸吏。由是搏击豪强，莫不震栗，京师号为“卧虎”。</p>",
+            "content": "<h3>108. 陶侃二三事</h3><p>陶侃在广州，无事辄朝运白甓于斋外，暮运于斋内。人问其故，答曰：“吾方致力中原，过尔优逸，恐不堪事，故自劳耳。”…… 侃性聪敏恭勤，终日敛膝危坐，军府众事，检摄无遗，未尝少闲。常语人云：“大禹圣人，乃惜寸阴，至于众人，当惜分阴。岂可但逸游荒醉，生无益于时，死无闻于后，是自弃也！” 尝出游，见人持一把未熟稻，侃问：“用此何为？” 人云：“行道所见，聊取之耳。” 侃大怒曰：“汝既不佃，而戏贼人稻！” 执而鞭之。是以百姓勤于农作，家给人足。尝造船，其木屑竹头，侃皆令籍而掌之，人咸不解所以。后正会，积雪始晴，厅事前余雪犹湿，乃以木屑布地。及桓温伐蜀，又以侃所贮竹头作钉装船。其综理微密，皆此类也。</p><h3>109. 徐有功断狱秉公</h3><p>皇甫文备，武后时酷吏也，与徐大理徐大理论狱，诬徐党逆人，奏成其罪。武后特出之。无何，文备为人所告，有功讯之在宽。或曰：“彼曩时将陷公于死，今公反欲出之，何也？” 徐曰：“汝所言者，私忿也；我所守者，公法也。安可以私害公？”</p><h3>110. 强项令董宣</h3><p>董宣为洛阳令。时湖阳公主苍头白日杀人，因匿主家，吏不能得。及主出行，而以奴骖乘。宣于夏门亭候之，乃驻车扣马，以刀画地，大言数主之失；斥奴下车，因格杀之。主即还宫诉帝，帝大怒，召宣，欲箠杀之。宣叩头曰：“愿乞一言而死。”帝曰：“欲何言？”宣曰：“陛下圣德中兴，而纵奴杀良人，将何以理天下乎？臣不须，请得自杀！”即以头击楹，流血被面。帝令小黄门持之，使宣叩头谢主，宣不从；强使顿之，宣两手据地，终不肯俯。主曰：“文叔白衣时，藏亡匿死，吏不敢至门。今为天子，威不能行一令乎？”帝笑曰：“天子不与白衣同。”因敕强项令出。赐钱三十万。宣悉以班诸吏。由是搏击豪强，莫不震栗，京师号为“卧虎”。</p>",
             "title": "助读 108-110"
         }
     ]
