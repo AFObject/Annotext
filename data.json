@@ -998,7 +998,7 @@
                     "explanation": "+往往，总是",
                     "start": 30,
                     "text": "辄",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 35,
@@ -1019,7 +1019,7 @@
                     "explanation": "有志出力恢复中原失地",
                     "start": 56,
                     "text": "致力中原",
-                    "type": "yellow"
+                    "type": "red-underline"
                 },
                 {
                     "end": 63,
@@ -1040,7 +1040,7 @@
                     "explanation": "+盘腿",
                     "start": 89,
                     "text": "敛膝",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 93,
@@ -1054,14 +1054,14 @@
                     "explanation": "军中府中",
                     "start": 94,
                     "text": "军府",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 101,
                     "explanation": "自上而下去检查管理 ",
                     "start": 99,
                     "text": "检摄",
-                    "type": "yellow-underline"
+                    "type": "red-underline"
                 },
                 {
                     "end": 107,
@@ -1152,7 +1152,7 @@
                     "explanation": "年初一集会",
                     "start": 266,
                     "text": "正会",
-                    "type": "yellow"
+                    "type": "gray"
                 },
                 {
                     "end": 276,
@@ -1348,14 +1348,14 @@
                     "explanation": "用棍棒",
                     "start": 574,
                     "text": "箠",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 642,
                     "explanation": "柱",
                     "start": 641,
                     "text": "楹",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 646,
@@ -1383,14 +1383,14 @@
                     "explanation": "按撑",
                     "start": 675,
                     "text": "据",
-                    "type": "yellow-underline"
+                    "type": "red-underline"
                 },
                 {
                     "end": 713,
                     "explanation": "制服",
                     "start": 712,
                     "text": "行",
-                    "type": "yellow-underline"
+                    "type": "red-underline"
                 },
                 {
                     "end": 737,
@@ -1409,6 +1409,837 @@
             ],
             "content": "<h3>108. 陶侃二三事</h3><p>陶侃在广州，无事辄朝运白甓于斋外，暮运于斋内。人问其故，答曰：“吾方致力中原，过尔优逸，恐不堪事，故自劳耳。”…… 侃性聪敏恭勤，终日敛膝危坐，军府众事，检摄无遗，未尝少闲。常语人云：“大禹圣人，乃惜寸阴，至于众人，当惜分阴。岂可但逸游荒醉，生无益于时，死无闻于后，是自弃也！” 尝出游，见人持一把未熟稻，侃问：“用此何为？” 人云：“行道所见，聊取之耳。” 侃大怒曰：“汝既不佃，而戏贼人稻！” 执而鞭之。是以百姓勤于农作，家给人足。尝造船，其木屑竹头，侃皆令籍而掌之，人咸不解所以。后正会，积雪始晴，厅事前余雪犹湿，乃以木屑布地。及桓温伐蜀，又以侃所贮竹头作钉装船。其综理微密，皆此类也。</p><h3>109. 徐有功断狱秉公</h3><p>皇甫文备，武后时酷吏也，与徐大理徐大理论狱，诬徐党逆人，奏成其罪。武后特出之。无何，文备为人所告，有功讯之在宽。或曰：“彼曩时将陷公于死，今公反欲出之，何也？” 徐曰：“汝所言者，私忿也；我所守者，公法也。安可以私害公？”</p><h3>110. 强项令董宣</h3><p>董宣为洛阳令。时湖阳公主苍头白日杀人，因匿主家，吏不能得。及主出行，而以奴骖乘。宣于夏门亭候之，乃驻车扣马，以刀画地，大言数主之失；斥奴下车，因格杀之。主即还宫诉帝，帝大怒，召宣，欲箠杀之。宣叩头曰：“愿乞一言而死。”帝曰：“欲何言？”宣曰：“陛下圣德中兴，而纵奴杀良人，将何以理天下乎？臣不须，请得自杀！”即以头击楹，流血被面。帝令小黄门持之，使宣叩头谢主，宣不从；强使顿之，宣两手据地，终不肯俯。主曰：“文叔白衣时，藏亡匿死，吏不敢至门。今为天子，威不能行一令乎？”帝笑曰：“天子不与白衣同。”因敕强项令出。赐钱三十万。宣悉以班诸吏。由是搏击豪强，莫不震栗，京师号为“卧虎”。</p>",
             "title": "助读 108-110"
+        },
+        {
+            "annotations": [
+                {
+                    "end": 6,
+                    "explanation": "别号",
+                    "start": 5,
+                    "text": "斋",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 31,
+                    "explanation": "裂了缝的铁锅",
+                    "start": 29,
+                    "text": "折铛",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 36,
+                    "explanation": "恬淡的样子",
+                    "start": 34,
+                    "text": "淡如",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 45,
+                    "explanation": "整日",
+                    "start": 43,
+                    "text": "长日",
+                    "type": "green"
+                },
+                {
+                    "end": 46,
+                    "explanation": "有时",
+                    "start": 45,
+                    "text": "或",
+                    "type": "green"
+                },
+                {
+                    "end": 49,
+                    "explanation": "生火做饭",
+                    "start": 47,
+                    "text": "举火",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 52,
+                    "explanation": "门",
+                    "start": 51,
+                    "text": "户",
+                    "type": "green"
+                },
+                {
+                    "end": 57,
+                    "explanation": "吃",
+                    "start": 56,
+                    "text": "啖",
+                    "type": "green"
+                },
+                {
+                    "end": 72,
+                    "explanation": "归还所执掌的权力，即辞官。",
+                    "start": 70,
+                    "text": "致政",
+                    "type": "red"
+                },
+                {
+                    "end": 76,
+                    "explanation": "严厉",
+                    "start": 74,
+                    "text": "严峻",
+                    "type": "yellow"
+                },
+                {
+                    "end": 85,
+                    "explanation": "靠近，到",
+                    "start": 84,
+                    "text": "就",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 89,
+                    "explanation": "询问疑难问题",
+                    "start": 87,
+                    "text": "质疑",
+                    "type": "yellow"
+                },
+                {
+                    "end": 93,
+                    "explanation": "从始至终整段时间",
+                    "start": 92,
+                    "text": "竟",
+                    "type": "yellow"
+                },
+                {
+                    "end": 99,
+                    "explanation": "茶水",
+                    "start": 97,
+                    "text": "汤茗",
+                    "type": "green"
+                },
+                {
+                    "end": 125,
+                    "explanation": "烧火做饭",
+                    "start": 123,
+                    "text": "执爨",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 141,
+                    "explanation": "借",
+                    "start": 140,
+                    "text": "假",
+                    "type": "green"
+                },
+                {
+                    "end": 153,
+                    "explanation": "等到",
+                    "start": 152,
+                    "text": "俟",
+                    "type": "green"
+                },
+                {
+                    "end": 165,
+                    "explanation": "消瘦",
+                    "start": 164,
+                    "text": "削",
+                    "type": "yellow"
+                },
+                {
+                    "end": 168,
+                    "explanation": "儒家经典",
+                    "start": 167,
+                    "text": "经",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 169,
+                    "explanation": "史书",
+                    "start": 168,
+                    "text": "史",
+                    "type": "yellow"
+                },
+                {
+                    "end": 170,
+                    "explanation": "佛教",
+                    "start": 169,
+                    "text": "释",
+                    "type": "green"
+                },
+                {
+                    "end": 171,
+                    "explanation": "道教",
+                    "start": 170,
+                    "text": "老",
+                    "type": "green"
+                },
+                {
+                    "end": 173,
+                    "explanation": "其他技艺",
+                    "start": 171,
+                    "text": "方技",
+                    "type": "yellow"
+                },
+                {
+                    "end": 210,
+                    "explanation": "羊羔、野鸡",
+                    "start": 208,
+                    "text": "羔雉",
+                    "type": "gray"
+                },
+                {
+                    "end": 237,
+                    "explanation": "专一",
+                    "start": 236,
+                    "text": "笃",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 242,
+                    "explanation": "名教、理学",
+                    "start": 240,
+                    "text": "名理",
+                    "type": "yellow"
+                },
+                {
+                    "end": 246,
+                    "explanation": "封闭",
+                    "start": 245,
+                    "text": "杜",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 291,
+                    "explanation": "含蓄而不外露",
+                    "start": 286,
+                    "text": "沉静有蕴藉",
+                    "type": "gray"
+                },
+                {
+                    "end": 296,
+                    "explanation": "固执而不孤陋寡闻",
+                    "start": 292,
+                    "text": "固而不陋",
+                    "type": "gray"
+                },
+                {
+                    "end": 304,
+                    "explanation": "固定的",
+                    "start": 303,
+                    "text": "恒",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 322,
+                    "explanation": "求取",
+                    "start": 321,
+                    "text": "干",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 341,
+                    "explanation": "塌陷",
+                    "start": 340,
+                    "text": "垫",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 355,
+                    "explanation": "只是",
+                    "start": 354,
+                    "text": "但",
+                    "type": "green"
+                },
+                {
+                    "end": 365,
+                    "explanation": "寒冷",
+                    "start": 364,
+                    "text": "凛",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 380,
+                    "explanation": "悠闲自得",
+                    "start": 378,
+                    "text": "优游",
+                    "type": "yellow"
+                },
+                {
+                    "end": 402,
+                    "explanation": "骑着白马的贤人",
+                    "start": 400,
+                    "text": "白驹",
+                    "type": "yellow"
+                },
+                {
+                    "end": 417,
+                    "explanation": "醒来说话",
+                    "start": 415,
+                    "text": "寤言",
+                    "type": "yellow"
+                },
+                {
+                    "end": 420,
+                    "explanation": "通“誓”，发誓",
+                    "start": 419,
+                    "text": "矢",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 422,
+                    "explanation": "弗谖，不忘记",
+                    "start": 420,
+                    "text": "弗暖",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 432,
+                    "explanation": "气度，节操",
+                    "start": 431,
+                    "text": "概",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 437,
+                    "explanation": "富饶",
+                    "start": 436,
+                    "text": "饶",
+                    "type": "yellow"
+                },
+                {
+                    "end": 491,
+                    "explanation": "等，辈",
+                    "start": 490,
+                    "text": "曹",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 511,
+                    "explanation": "形容人的气度宽宏",
+                    "start": 509,
+                    "text": "汪汪",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 521,
+                    "explanation": "洁净的样子",
+                    "start": 519,
+                    "text": "皭然",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 523,
+                    "explanation": "污浊",
+                    "start": 522,
+                    "text": "滓",
+                    "type": "red-underline"
+                },
+                {
+                    "end": 527,
+                    "explanation": "他的",
+                    "start": 526,
+                    "text": "厥",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 531,
+                    "explanation": "像",
+                    "start": 530,
+                    "text": "肖",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 533,
+                    "explanation": "枝系，分支",
+                    "start": 532,
+                    "text": "枝",
+                    "type": "yellow"
+                }
+            ],
+            "content": "<p>邢蠢斋先生量，字用理，居葑城之东。屋三间，青苔满壁，折铛败席，淡如也。平生不娶，长日或不举火，闭户读书，惟啖餐饼一二而已。金宪陈公直道致政归，严峻不交一客，惟挟册就先生质疑，清谈竟日，不设汤茗。吴文定公归自少宰，过访，叩其门。先生曰：“我方执爨，未有童子应门，奈何？”吴公乃假邻家木榻坐门外。良久，俟其终食乃进。先生清瘦如削，自经史释老方技，无不兼通，诗甚秀逸。郡守或请其诗，公曰：“古有采诗，无献诗。吾岂以为羔雉哉？”因削其草。门人朱存理仅收其遗数篇，存理字性甫，笃学善谈名理，读书杜户，称其师传，与同时朱凯尧民称两朱先生。邢参，字丽文，或云用理先生之族孙也。为人沉静有蕴藉，固而不陋。居城市，贫无恒业，唯教授里中儿，以著述自娱，无所干请。尝遇大雪，诸君往视之，则屋三角已垫，方坐其一角不渗者。相见，但诵所得佳句，绝无惨凛色也。早岁丧妻，终不再娶，优游以终。</p><p>论曰：诗有之：“皎皎白驹，在彼空谷。”又曰：“独寐寤言，永矢弗暖。”此则幽人隐士之概也。吴故饶，隐君子如邢先生，岂以交陈佥事、吴少宰诸公为重耶？夫佥事少宰得交邢先生乃重也。空谷考槃，此为称矣。性甫接先曹之典型，畅遗民之雅韵；丽文养和靖躁，汪汪德心，恬泊处约，皭然不滓，即非厥祖，乃肖孙枝矣。</p>",
+            "title": "刑布衣传"
+        },
+        {
+            "annotations": [
+                {
+                    "end": 32,
+                    "explanation": "侍妾",
+                    "start": 30,
+                    "text": "姬侍",
+                    "type": "yellow"
+                },
+                {
+                    "end": 36,
+                    "explanation": "向来，一向",
+                    "start": 35,
+                    "text": "素",
+                    "type": "green"
+                },
+                {
+                    "end": 43,
+                    "explanation": "+交好",
+                    "start": 41,
+                    "text": "交欢",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 47,
+                    "explanation": "美女",
+                    "start": 45,
+                    "text": "名姝",
+                    "type": "green"
+                },
+                {
+                    "end": 58,
+                    "explanation": "即宵衣旰食，天不亮穿衣，天很晚才吃饭，形容操劳",
+                    "start": 56,
+                    "text": "宵旰",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 69,
+                    "explanation": "拒绝",
+                    "start": 68,
+                    "text": "却",
+                    "type": "green"
+                },
+                {
+                    "end": 74,
+                    "explanation": "+非常",
+                    "start": 73,
+                    "text": "大",
+                    "type": "green"
+                },
+                {
+                    "end": 97,
+                    "explanation": "怜惜",
+                    "start": 96,
+                    "text": "爱",
+                    "type": "green"
+                },
+                {
+                    "end": 113,
+                    "explanation": "军队",
+                    "start": 112,
+                    "text": "师",
+                    "type": "green"
+                },
+                {
+                    "end": 118,
+                    "explanation": "督促",
+                    "start": 117,
+                    "text": "课",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 122,
+                    "explanation": "从山坡上奔下来",
+                    "start": 120,
+                    "text": "注坡",
+                    "type": "yellow"
+                },
+                {
+                    "end": 124,
+                    "explanation": "跳越壕沟",
+                    "start": 122,
+                    "text": "跳壕",
+                    "type": "gray"
+                },
+                {
+                    "end": 128,
+                    "explanation": "+穿着重铠",
+                    "start": 126,
+                    "text": "重铠",
+                    "type": "yellow"
+                },
+                {
+                    "end": 142,
+                    "explanation": "捆绑柴草",
+                    "start": 140,
+                    "text": "束刍",
+                    "type": "yellow"
+                },
+                {
+                    "end": 148,
+                    "explanation": "示众",
+                    "start": 147,
+                    "text": "徇",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 204,
+                    "explanation": "为国而战死的",
+                    "start": 201,
+                    "text": "死事者",
+                    "type": "yellow"
+                },
+                {
+                    "end": 215,
+                    "explanation": "赏赐",
+                    "start": 213,
+                    "text": "颁犒",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 225,
+                    "explanation": "+占",
+                    "start": 224,
+                    "text": "犯",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 236,
+                    "explanation": "指军事行动",
+                    "start": 235,
+                    "text": "举",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 256,
+                    "explanation": "突然",
+                    "start": 255,
+                    "text": "猝",
+                    "type": "yellow"
+                },
+                {
+                    "end": 318,
+                    "explanation": "已经",
+                    "start": 317,
+                    "text": "既",
+                    "type": "green"
+                },
+                {
+                    "end": 326,
+                    "explanation": "尚未全部渡过河",
+                    "start": 323,
+                    "text": "未既济",
+                    "type": "yellow"
+                },
+                {
+                    "end": 378,
+                    "explanation": "同“阵”，摆好了交战的阵势",
+                    "start": 377,
+                    "text": "陈",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 387,
+                    "explanation": "大败",
+                    "start": 385,
+                    "text": "败绩",
+                    "type": "yellow"
+                },
+                {
+                    "end": 396,
+                    "explanation": "国君的侍卫被杀死",
+                    "start": 392,
+                    "text": "门官歼焉",
+                    "type": "yellow"
+                },
+                {
+                    "end": 401,
+                    "explanation": "+怪罪",
+                    "start": 400,
+                    "text": "咎",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 411,
+                    "explanation": "再次",
+                    "start": 410,
+                    "text": "重",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 415,
+                    "explanation": "同“擒”，捉拿",
+                    "start": 414,
+                    "text": "禽",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 417,
+                    "explanation": "头发花白的老人",
+                    "start": 415,
+                    "text": "二毛",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 428,
+                    "explanation": "险要之地",
+                    "start": 426,
+                    "text": "阻隘",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 457,
+                    "explanation": "劲敌",
+                    "start": 455,
+                    "text": "勍敌",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 467,
+                    "explanation": "+帮助",
+                    "start": 466,
+                    "text": "赞",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 471,
+                    "explanation": "+敌人在地形上受阻",
+                    "start": 470,
+                    "text": "阻",
+                    "type": "yellow"
+                },
+                {
+                    "end": 500,
+                    "explanation": "年纪到了很老的人",
+                    "start": 497,
+                    "text": "及胡耇",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 514,
+                    "explanation": "使兵士们明白战败是可耻的",
+                    "start": 512,
+                    "text": "明耻",
+                    "type": "yellow"
+                },
+                {
+                    "end": 534,
+                    "explanation": "可怜，怜惜",
+                    "start": 533,
+                    "text": "爱",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 551,
+                    "explanation": "屈服、投降他们",
+                    "start": 549,
+                    "text": "服焉",
+                    "type": "yellow"
+                },
+                {
+                    "end": 555,
+                    "explanation": "凭借",
+                    "start": 554,
+                    "text": "以",
+                    "type": "green"
+                },
+                {
+                    "end": 564,
+                    "explanation": "鸣金击鼓用声音来激发士气",
+                    "start": 559,
+                    "text": "金鼓以声气",
+                    "type": "gray"
+                },
+                {
+                    "end": 583,
+                    "explanation": "阵列不整齐",
+                    "start": 582,
+                    "text": "儳",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 617,
+                    "explanation": "残暴",
+                    "start": 616,
+                    "text": "虐",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 620,
+                    "explanation": "+住在国都里的人",
+                    "start": 618,
+                    "text": "国人",
+                    "type": "gray"
+                },
+                {
+                    "end": 621,
+                    "explanation": "公开指责别人的过错",
+                    "start": 620,
+                    "text": "谤",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 633,
+                    "explanation": "忍受",
+                    "start": 632,
+                    "text": "堪",
+                    "type": "yellow"
+                },
+                {
+                    "end": 634,
+                    "explanation": "政令",
+                    "start": 633,
+                    "text": "命",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 666,
+                    "explanation": "用眼睛看",
+                    "start": 665,
+                    "text": "目",
+                    "type": "yellow"
+                },
+                {
+                    "end": 679,
+                    "explanation": "制止，消除",
+                    "start": 678,
+                    "text": "弭",
+                    "type": "yellow"
+                },
+                {
+                    "end": 695,
+                    "explanation": "+阻挡",
+                    "start": 694,
+                    "text": "障",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 699,
+                    "explanation": "堵住",
+                    "start": 698,
+                    "text": "防",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 710,
+                    "explanation": "堵塞",
+                    "start": 709,
+                    "text": "壅",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 712,
+                    "explanation": "水泛滥",
+                    "start": 711,
+                    "text": "溃",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 728,
+                    "explanation": "治理河道的人",
+                    "start": 725,
+                    "text": "为川者",
+                    "type": "yellow"
+                },
+                {
+                    "end": 737,
+                    "explanation": "此指开导。",
+                    "start": 736,
+                    "text": "宣",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 792,
+                    "explanation": "体现，显现",
+                    "start": 791,
+                    "text": "兴",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 795,
+                    "explanation": "百姓认为好的",
+                    "start": 794,
+                    "text": "善",
+                    "type": "yellow"
+                },
+                {
+                    "end": 797,
+                    "explanation": "防范，防备",
+                    "start": 796,
+                    "text": "备",
+                    "type": "yellow"
+                },
+                {
+                    "end": 802,
+                    "explanation": "增加",
+                    "start": 801,
+                    "text": "阜",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 825,
+                    "explanation": "考虑成熟就自然从口中说出来",
+                    "start": 821,
+                    "text": "成而行之",
+                    "type": "yellow"
+                },
+                {
+                    "end": 838,
+                    "explanation": "亲附的人",
+                    "start": 837,
+                    "text": "与",
+                    "type": "yellow-underline"
+                },
+                {
+                    "end": 841,
+                    "explanation": "多少",
+                    "start": 839,
+                    "text": "几何",
+                    "type": "yellow"
+                },
+                {
+                    "end": 863,
+                    "explanation": "把国王放逐到彘那个地方",
+                    "start": 859,
+                    "text": "流王于彘",
+                    "type": "gray"
+                },
+                {
+                    "end": 905,
+                    "explanation": "此指城",
+                    "start": 904,
+                    "text": "郡",
+                    "type": "yellow"
+                },
+                {
+                    "end": 933,
+                    "explanation": "看望你",
+                    "start": 931,
+                    "text": "相视",
+                    "type": "yellow"
+                },
+                {
+                    "end": 941,
+                    "explanation": "毁坏道义",
+                    "start": 939,
+                    "text": "败义",
+                    "type": "yellow"
+                },
+                {
+                    "end": 951,
+                    "explanation": "所应有的行为",
+                    "start": 949,
+                    "text": "所行",
+                    "type": "yellow"
+                },
+                {
+                    "end": 997,
+                    "explanation": "抛弃",
+                    "start": 996,
+                    "text": "委",
+                    "type": "yellow"
+                },
+                {
+                    "end": 1000,
+                    "explanation": "宁可",
+                    "start": 999,
+                    "text": "宁",
+                    "type": "yellow"
+                },
+                {
+                    "end": 1033,
+                    "explanation": "退兵",
+                    "start": 1031,
+                    "text": "班军",
+                    "type": "yellow"
+                },
+                {
+                    "end": 1039,
+                    "explanation": "都，同时",
+                    "start": 1038,
+                    "text": "并",
+                    "type": "yellow"
+                }
+            ],
+            "content": "<h3>111. 岳飞抗金</h3><p>岳飞事亲至孝，家无姬侍。吴玠素服飞，愿与交欢，饰名姝遗之，飞曰：“主上宵旰，宁大将安乐时耶！”却不受。玠大叹服。或问：“天下何时太平？”飞曰：“文臣不爱钱，武臣不惜死，天下太平矣！”师每休舍，课将士注坡跳壕，皆重铠以习之。卒有取民麻一缕以束刍者，立斩以徇。卒夜宿，民开门愿纳，无敢入者。军号“冻死不拆屋，饿死不掳掠”。卒有疾，亲为调药。诸将远戍，飞妻问劳其家；死事者，哭之而育其孤。有颁犒，均给军吏，秋毫无犯。善以少击众。凡有所举，尽召诸统制，谋定而后战，故所向克捷。猝遇敌不动。故敌为之语曰：“撼山易，撼岳家军难。”</p><h3>112. 宋襄公治军</h3><p>宋公及楚人战于泓。宋人既成列，楚人未既济。司马曰：“彼众我寡，及其未既济也，请击之。”公曰：“不可。”既济而未成列，又以告。公曰：“未可。”既陈而后击之，宋师败绩。公伤股，门官歼焉。国人皆咎公。公曰：“君子不重伤，不禽二毛。古之为军也，不以阻隘也。寡人虽亡国之余，不鼓不成列。”子鱼曰：“君未知战。勍敌之人，隘而不列，天赞我也。阻而鼓之，不亦可乎？犹有惧焉。且今之勍者，皆吾敌也。虽及胡耇，获则取之，何有于二毛？明耻教战，求杀敌也，伤未及死，如何勿重？若爱重伤，则如勿伤；爱其二毛，则如服焉。三军以利用也，金鼓以声气也。利而用之，阻隘可也；声盛致志，鼓儳可也。”</p><h3>113. 周厉王止谤</h3><p>周厉王虐，国人谤王。召公告王曰：“民不堪命矣。”王怒。得卫巫，使监谤者。以告，则杀之。国人莫敢言，道路以目。王喜。告召公曰：“吾能弭谤矣，乃不敢言！”召公曰：“是障之也。防民之口，甚于防川。川壅而溃，伤人必多；民亦如之。是故为川者决之使导，为民者宣之使言。……民之有口也，犹土之有山川也，财物于是乎出。犹其有原湿衍沃也，衣食于是乎生。口之宣言也，善败于是乎兴。行善而备败，所以阜财用衣食者也。夫民虑之于心而宣之于口，成而行之，胡可壅也？若壅其口，其与能几何！”王弗听。于是国人莫敢出言。三年乃流王于彘。</p><h3>114. 荀巨伯探病友</h3><p>荀巨伯远看友人疾，值胡贼攻郡，友人语巨伯曰：“吾今死矣，子可去。”巨伯曰：“远来相视，子令吾去，败义以求生，岂荀巨伯所行耶？”贼既至，谓巨伯曰：“大军至，一郡尽空，汝何男子，而敢独止？”巨伯曰：“友人有疾，不忍委之，宁以我身代友人命。”贼相谓曰：“我辈无义之人，而人有义之国。”遂班军而还。一郡并获全。</p>",
+            "title": "助读 111-114"
         }
     ]
 }
