@@ -64,21 +64,17 @@ function loadArticle(index, data=globalData) {
 
     // 绑定鼠标悬停事件
     document.querySelectorAll('.main.highlight').forEach(el => {
-        el.addEventListener('mouseover', () => {
+        el.addEventListener('mouseover', (e) => {
             let tooltip = document.createElement('div');
             tooltip.className = 'tooltip';
+            tooltip.textContent = el.dataset.explanation;
+            tooltip.style.left = e.pageX + 'px';
+            tooltip.style.top = (e.pageY - 30) + 'px';
+            tooltip.style.display = 'block';
             document.body.appendChild(tooltip);
-
-            document.querySelectorAll('.highlight').forEach(el => {
-                el.addEventListener('mouseover', (e) => {
-                    tooltip.textContent = el.dataset.explanation;
-                    tooltip.style.left = e.pageX + 'px';
-                    tooltip.style.top = (e.pageY - 30) + 'px';
-                    tooltip.style.display = 'block';
-                });
-                el.addEventListener('mouseout', () => {
-                    tooltip.style.display = 'none';
-                });
+            el.addEventListener('mouseout', () => {
+                tooltip.style.display = 'none';
+                tooltip.remove();
             });
         });
     });
@@ -96,7 +92,7 @@ function loadAnnotationBar(index=currentArticleIndex, data=globalData.articles[i
 
     // 辅助函数：带位置信息的句子分割
     function splitSentences(text) {
-        const splitPoints = /([，。！？；：“”.\"])/g;
+        const splitPoints = /([，。！？；：“”.\"<>])/g;
         const tokens = text.split(splitPoints);
         const sentences = [];
         let current = { text: '', start: 0 };
@@ -111,7 +107,10 @@ function loadAnnotationBar(index=currentArticleIndex, data=globalData.articles[i
                 current.text += tokens[i];
             }
         }
-        if (current.text) sentences.push(current);
+        if (current.text) {
+            current.end = text.length;
+            sentences.push(current);
+        }
         return sentences;
     }
 

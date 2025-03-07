@@ -14,11 +14,12 @@
         <div class="sidebar" id="sidebar">
             <h3 id="annotext-title">AnnoText</h3>
             <button id="new-article-btn" onclick="newArticle()">􀏪</button>
-            <button id="new-article-btn" onclick="downloadDataAsJSON()">􀈉</button>
+            <button id="save-btn" onclick="downloadDataAsJSON()">􀈉</button>
             <ul id="article-list"></ul>
         </div>
         <div class="content" id="main-text-content" tabindex="0">
             <h2 id="text-title"></h2>
+            <button id="edit-btn" onclick="startEdit()">􀈎</button>
             <p id="text" class="body-text"></p>
         </div>
         <div class="annotations" id="annotations">
@@ -32,6 +33,16 @@
                 <button id="underline-filter-btn" class="red-underline" onclick="toggleFilter('underline')">U</button>
             </div>
             <ul id="annotation-list"></ul>
+        </div>
+    </div>
+    <div id="editorOverlay">
+        <div id="editorContainer" style="display: none;">
+            <h3>编辑源码</h3>
+            <textarea id="textEditor"></textarea>
+            <div style="text-align: right;">
+                <button onclick="cancelEdit()">取消</button>
+                <button onclick="confirmEdit()">确定</button>
+            </div>
         </div>
     </div>
     <div id="anno-context-menu" class="context-menu">

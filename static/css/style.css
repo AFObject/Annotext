@@ -295,7 +295,7 @@ h2 {
     border-color: rgb(150, 0, 0) !important;
 }
 
-#new-article-btn, #save-btn {
+#new-article-btn, #save-btn, #edit-btn, #editorContainer button {
     display: inline-block;
     font-family: 'SF Pro';
     padding: 7px 10px;
@@ -308,8 +308,11 @@ h2 {
     transition: background-color 0.3s, color 0.3s;
 }
 
+#edit-btn {
+    margin-left: 5px;
+}
 
-#new-article-btn:hover, #save-btn:hover, #toggle-annotations:hover, #toggle-sidebar:hover {
+#new-article-btn:hover, #save-btn:hover, #edit-btn:hover, #toggle-annotations:hover, #toggle-sidebar:hover, #editorContainer button:hover {
     background-color: var(--active-btn-bg);
     color: var(--text-color);
 }
@@ -340,6 +343,7 @@ h2 {
 }
 
 #text-title {
+    display: inline-block;
     color: var(--text-color);
 }
 
@@ -375,4 +379,50 @@ h2 {
 
 .context-menu li:hover {
     background-color: var(--active-item-bg);
+}
+
+/* 遮罩层 - 弹出时模糊背景 */
+#editorOverlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* 模糊效果 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 编辑框样式 */
+#editorContainer {
+    width: 50%;
+    height: 60%;
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#textEditor {
+    resize: none;
+    height: 80%;
+    font-family: monospace; /* 等宽字体 */
+    font-size: 16px;
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    padding: 10px;
+    border: none;
+}
+
+#editorContainer button {
+    display: inline-block;
+    margin-top: 10px;
+    align-self: flex-end;
+    background-color: var(--active-item-bg);
+    color: var(--text-color);
 }
