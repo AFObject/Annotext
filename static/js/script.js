@@ -20,12 +20,13 @@ fetch('/get_data')
         loadArticle(data.articles.length - 1);
     });
 
-document.getElementById('toggle-annotations').addEventListener('click', () => {
+function toggleAnnotations() {
     document.getElementById('annotations').classList.toggle('hidden');
-});
-document.getElementById('toggle-sidebar').addEventListener('click', () => {
+}
+
+function toggleSidebar() {
     document.getElementById('sidebar').classList.toggle('hidden');
-});
+}
 
 // 【主要逻辑】一篇 Article 的全部加载任务
 // 代码中为正文高亮部分
@@ -213,4 +214,20 @@ function resetAnnoContentDisplay() {
             annoContents.forEach(content => content.classList.add("show"));
         }
     });
+}
+
+function printMode() {
+    toggleSidebar();
+    document.getElementsByClassName('container')[0].style.position = 'relative';
+    document.getElementsByClassName('container')[0].style.height = 'auto';
+    document.getElementsByClassName('body-text')[0].style.lineHeight = 2.4; // 此处修改原文行距
+    document.getElementById('main-text-content').style.overflowY = 'visible';
+    document.getElementById('annotation-list').style.overflowY = 'visible';
+    document.getElementById('annotation-list').style.height = 'auto';
+    document.getElementById('annotations').style.width = '40%';
+    document.getElementById('main-text-content').style.width = '60%';
+    document.getElementsByClassName('filter-menu')[0].style.display = 'none';
+    document.querySelectorAll(".annotations li").forEach(li => li.style.padding = '6px'); // 此处修改注释行距
+    document.querySelectorAll('.global-btn').forEach(btn => btn.style.display = 'none');
+    document.querySelectorAll(".anno-content").forEach(content => content.classList.add("show"));
 }

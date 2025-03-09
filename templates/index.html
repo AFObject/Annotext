@@ -13,13 +13,15 @@
     <div class="container">
         <div class="sidebar" id="sidebar">
             <h3 id="annotext-title">AnnoText</h3>
-            <button id="new-article-btn" onclick="newArticle()">􀏪</button>
-            <button id="save-btn" onclick="downloadDataAsJSON()">􀈉</button>
+            <button id="new-article-btn" class="global-btn" onclick="newArticle()">􀏪</button>
+            <button id="save-btn" class="global-btn" onclick="downloadDataAsJSON()">􀈉</button>
             <ul id="article-list"></ul>
         </div>
         <div class="content" id="main-text-content" tabindex="0">
             <h2 id="text-title"></h2>
-            <button id="edit-btn" onclick="startEdit()">􀈎</button>
+            <button id="edit-btn" class="global-btn" onclick="startEdit()">􀈎</button>
+            <button id="test-btn" class="global-btn" onclick="startTest()">􁜾</button>
+            <button id="print-btn" class="global-btn" onclick="printMode()">􀎚</button>
             <p id="text" class="body-text"></p>
         </div>
         <div class="annotations" id="annotations">
@@ -35,13 +37,22 @@
             <ul id="annotation-list"></ul>
         </div>
     </div>
-    <div id="editorOverlay">
+    <div id="overlay">
         <div id="editorContainer" style="display: none;">
             <h3>编辑源码</h3>
             <textarea id="textEditor"></textarea>
             <div style="text-align: right;">
-                <button onclick="cancelEdit()">取消</button>
-                <button onclick="confirmEdit()">确定</button>
+                <button class="global-btn" onclick="cancelEdit()">取消</button>
+                <button class="global-btn" onclick="startEdit()">确定</button>
+            </div>
+        </div>
+        <div id="testContainer" style="display: none;">
+            <h3>随机测试</h3>
+            <div id="test-question"></div>
+            <div style="text-align: right;" class="btn-container">
+                <button class="global-btn" onclick="closeTest()">取消</button>
+                <button class="global-btn" onclick="showAnswer()">显示答案</button>
+                <button class="global-btn" onclick="generateTest()">下一个</button>
             </div>
         </div>
     </div>
@@ -56,13 +67,14 @@
             <li id="sidebar-context-menu-delete-btn" style="color: red">删除</li>
         </ul>
     </div>
-    <button id="toggle-annotations">􀏛</button>
-    <button id="toggle-sidebar">􀏚</button>
+    <button id="toggle-annotations" class="global-btn" onclick="toggleAnnotations()">􀏛</button>
+    <button id="toggle-sidebar" class="global-btn" onclick="toggleSidebar()">􀏚</button>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/edit.js') }}"></script>
     <script src="{{ url_for('static', filename='js/article.js') }}"></script>
     <script src="{{ url_for('static', filename='js/save.js') }}"></script>
     <script src="{{ url_for('static', filename='js/filter.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/test.js') }}"></script>
 </body>
 
 </html>

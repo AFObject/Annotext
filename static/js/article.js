@@ -124,7 +124,7 @@ function exportText(articleIndex = currentArticleIndex) {
 }
 
 function startEdit() {
-    document.getElementById("editorOverlay").style.visibility = "visible"; // 显示编辑框
+    document.getElementById("overlay").style.visibility = "visible"; // 显示编辑框
     document.getElementById("editorContainer").style.display = "flex"; // 显示编辑框
     document.getElementById("textEditor").value = exportText(); // 预填充原文
 }
@@ -140,5 +140,5 @@ function confirmEdit() {
 
 function cancelEdit() {
     document.getElementById("editorContainer").style.display = "none";
-    document.getElementById("editorOverlay").style.visibility = "hidden";
+    document.getElementById("overlay").style.visibility = "hidden";
 }
