@@ -340,7 +340,7 @@
                 },
                 {
                     "end": 489,
-                    "explanation": "严正的话语",
+                    "explanation": "严正的议论",
                     "start": 487,
                     "text": "庄语",
                     "type": "yellow"
@@ -368,10 +368,10 @@
                 },
                 {
                     "end": 504,
-                    "explanation": "敦睦",
+                    "explanation": "勉励",
                     "start": 503,
                     "text": "敦",
-                    "type": "green-underline"
+                    "type": "red-underline"
                 },
                 {
                     "end": 505,
@@ -856,6 +856,20 @@
                     "type": "red-underline"
                 },
                 {
+                    "end": 1054,
+                    "explanation": "安置使有序。",
+                    "start": 1053,
+                    "text": "序",
+                    "type": "red"
+                },
+                {
+                    "end": 1060,
+                    "explanation": "指六国诸侯。",
+                    "start": 1058,
+                    "text": "同列",
+                    "type": "gray"
+                },
+                {
                     "end": 1084,
                     "explanation": "起事。",
                     "start": 1082,
@@ -876,6 +890,20 @@
         {
             "annotations": [
                 {
+                    "end": 10,
+                    "explanation": "道理",
+                    "start": 9,
+                    "text": "理",
+                    "type": "green"
+                },
+                {
+                    "end": 17,
+                    "explanation": "难道",
+                    "start": 16,
+                    "text": "岂",
+                    "type": "green"
+                },
+                {
                     "end": 20,
                     "explanation": "人的作为",
                     "start": 18,
@@ -890,6 +918,13 @@
                     "type": "yellow-underline"
                 },
                 {
+                    "end": 28,
+                    "explanation": "……的原因",
+                    "start": 26,
+                    "text": "所以",
+                    "type": "green"
+                },
+                {
                     "end": 92,
                     "explanation": "订立盟约",
                     "start": 91,
@@ -897,11 +932,46 @@
                     "type": "yellow"
                 },
                 {
+                    "end": 99,
+                    "explanation": "背叛",
+                    "start": 98,
+                    "text": "背",
+                    "type": "green"
+                },
+                {
+                    "end": 102,
+                    "explanation": "归附",
+                    "start": 101,
+                    "text": "归",
+                    "type": "yellow"
+                },
+                {
+                    "end": 111,
+                    "explanation": "遗憾",
+                    "start": 109,
+                    "text": "遗恨",
+                    "type": "green"
+                },
+                {
+                    "end": 115,
+                    "explanation": "给你",
+                    "start": 113,
+                    "text": "与尔",
+                    "type": "green"
+                },
+                {
                     "end": 120,
                     "explanation": "副词，表示祈使语气",
                     "start": 119,
                     "text": "其",
                     "type": "green"
+                },
+                {
+                    "end": 141,
+                    "explanation": "出兵打仗",
+                    "start": 139,
+                    "text": "用兵",
+                    "type": "yellow"
                 },
                 {
                     "end": 146,
@@ -918,11 +988,46 @@
                     "type": "gray"
                 },
                 {
+                    "end": 163,
+                    "explanation": "背",
+                    "start": 162,
+                    "text": "负",
+                    "type": "green"
+                },
+                {
+                    "end": 165,
+                    "explanation": "在前面",
+                    "start": 164,
+                    "text": "前",
+                    "type": "yellow"
+                },
+                {
+                    "end": 170,
+                    "explanation": "胜利归来",
+                    "start": 168,
+                    "text": "凯旋",
+                    "type": "yellow"
+                },
+                {
+                    "end": 172,
+                    "explanation": "收藏",
+                    "start": 171,
+                    "text": "纳",
+                    "type": "red"
+                },
+                {
+                    "end": 182,
+                    "explanation": "当",
+                    "start": 181,
+                    "text": "方",
+                    "type": "green"
+                },
+                {
                     "end": 184,
                     "explanation": "缚",
                     "start": 183,
                     "text": "系",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 189,
@@ -939,11 +1044,95 @@
                     "type": "green-underline"
                 },
                 {
+                    "end": 215,
+                    "explanation": "气势，神态",
+                    "start": 214,
+                    "text": "意",
+                    "type": "yellow"
+                },
+                {
+                    "end": 218,
+                    "explanation": "骄盛",
+                    "start": 217,
+                    "text": "盛",
+                    "type": "yellow"
+                },
+                {
                     "end": 227,
                     "explanation": "仇人。",
                     "start": 225,
                     "text": "仇雠",
                     "type": "green-underline"
+                },
+                {
+                    "end": 238,
+                    "explanation": "在夜里",
+                    "start": 237,
+                    "text": "夜",
+                    "type": "green"
+                },
+                {
+                    "end": 241,
+                    "explanation": "作乱",
+                    "start": 240,
+                    "text": "乱",
+                    "type": "green"
+                },
+                {
+                    "end": 243,
+                    "explanation": "从四方",
+                    "start": 242,
+                    "text": "四",
+                    "type": "green"
+                },
+                {
+                    "end": 247,
+                    "explanation": "匆忙的样子",
+                    "start": 245,
+                    "text": "仓皇",
+                    "type": "green"
+                },
+                {
+                    "end": 248,
+                    "explanation": "向东",
+                    "start": 247,
+                    "text": "东",
+                    "type": "green"
+                },
+                {
+                    "end": 264,
+                    "explanation": "看",
+                    "start": 263,
+                    "text": "顾",
+                    "type": "green"
+                },
+                {
+                    "end": 269,
+                    "explanation": "去哪里",
+                    "start": 267,
+                    "text": "所归",
+                    "type": "green"
+                },
+                {
+                    "end": 272,
+                    "explanation": "到……的境地",
+                    "start": 270,
+                    "text": "至于",
+                    "type": "green"
+                },
+                {
+                    "end": 278,
+                    "explanation": "眼泪",
+                    "start": 277,
+                    "text": "泣",
+                    "type": "green"
+                },
+                {
+                    "end": 284,
+                    "explanation": "多么",
+                    "start": 282,
+                    "text": "何其",
+                    "type": "green"
                 },
                 {
                     "end": 298,
@@ -960,11 +1149,39 @@
                     "type": "red-underline"
                 },
                 {
+                    "end": 308,
+                    "explanation": "出自",
+                    "start": 307,
+                    "text": "自",
+                    "type": "green"
+                },
+                {
+                    "end": 339,
+                    "explanation": "使……兴盛",
+                    "start": 338,
+                    "text": "兴",
+                    "type": "yellow"
+                },
+                {
                     "end": 343,
                     "explanation": "安乐",
                     "start": 341,
                     "text": "逸豫",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
+                },
+                {
+                    "end": 356,
+                    "explanation": "当",
+                    "start": 355,
+                    "text": "方",
+                    "type": "green"
+                },
+                {
+                    "end": 358,
+                    "explanation": "强盛",
+                    "start": 357,
+                    "text": "盛",
+                    "type": "green"
                 },
                 {
                     "end": 361,
@@ -972,6 +1189,27 @@
                     "start": 360,
                     "text": "举",
                     "type": "green-underline"
+                },
+                {
+                    "end": 368,
+                    "explanation": "没有谁",
+                    "start": 367,
+                    "text": "莫",
+                    "type": "green"
+                },
+                {
+                    "end": 383,
+                    "explanation": "围困",
+                    "start": 382,
+                    "text": "困",
+                    "type": "yellow"
+                },
+                {
+                    "end": 401,
+                    "explanation": "积聚",
+                    "start": 400,
+                    "text": "积",
+                    "type": "yellow"
                 },
                 {
                     "end": 404,
@@ -982,10 +1220,17 @@
                 },
                 {
                     "end": 413,
-                    "explanation": "沉湎，无节制",
-                    "start": 412,
-                    "text": "溺",
-                    "type": "yellow-underline"
+                    "explanation": "所溺爱的人或物。溺，沉湎、无节制。",
+                    "start": 411,
+                    "text": "所溺",
+                    "type": "green-underline"
+                },
+                {
+                    "end": 416,
+                    "explanation": "只，仅",
+                    "start": 415,
+                    "text": "独",
+                    "type": "green"
                 }
             ],
             "content": "<p>呜呼！盛衰之理，虽曰天命，岂非人事哉！原庄宗之所以得天下，与其所以失之者，可以知之矣。</p><p>世言晋王之将终也，以三矢赐庄宗而告之曰：“梁，吾仇也；燕王，吾所立；契丹与吾约为兄弟；而皆背晋以归梁。此三者，吾遗恨也。与尔三矢，尔其无忘乃父之志！”庄宗受而藏之于庙。其后用兵，则遣从事以一少牢告庙，请其矢，盛以锦囊，负而前驱，及凯旋而纳之。</p><p>方其系燕父子以组，函梁君臣之首，入于太庙，还矢先王，而告以成功，其意气之盛，可谓壮哉！及仇雠已灭，天下已定，一夫夜呼，乱者四应，仓皇东出，未及见贼而士卒离散，君臣相顾，不知所归。至于誓天断发，泣下沾襟，何其衰也！岂得之难而失之易欤？抑本其成败之迹，而皆自于人欤？</p><p>《书》曰：“满招损，谦得益。”忧劳可以兴国，逸豫可以亡身，自然之理也。故方其盛也，举天下之豪杰，莫能与之争；及其衰也，数十伶人困之，而身死国灭，为天下笑。夫祸患常积于忽微，而智勇多困于所溺，岂独伶人也哉！作《伶官传》。</p>",
@@ -1092,31 +1337,31 @@
                     "type": "green"
                 },
                 {
-                    "text": "逸",
-                    "start": 138,
                     "end": 139,
                     "explanation": "放纵",
+                    "start": 138,
+                    "text": "逸",
                     "type": "red"
                 },
                 {
-                    "text": "荒",
-                    "start": 140,
                     "end": 141,
                     "explanation": "++放纵迷乱",
+                    "start": 140,
+                    "text": "荒",
                     "type": "red"
                 },
                 {
-                    "text": "自弃",
-                    "start": 156,
                     "end": 158,
                     "explanation": "++自我毁灭",
+                    "start": 156,
+                    "text": "自弃",
                     "type": "red"
                 },
                 {
-                    "text": "何为",
-                    "start": 181,
                     "end": 183,
                     "explanation": "++为什么",
+                    "start": 181,
+                    "text": "何为",
                     "type": "green"
                 },
                 {
@@ -1358,17 +1603,17 @@
                     "type": "green"
                 },
                 {
-                    "text": "扣",
-                    "start": 531,
                     "end": 532,
                     "explanation": "++牵住",
+                    "start": 531,
+                    "text": "扣",
                     "type": "red"
                 },
                 {
-                    "text": "数",
-                    "start": 541,
                     "end": 542,
                     "explanation": "++数落",
+                    "start": 541,
+                    "text": "数",
                     "type": "green"
                 },
                 {
@@ -1408,10 +1653,10 @@
                 },
                 {
                     "end": 658,
-                    "explanation": "道歉",
+                    "explanation": "谢罪",
                     "start": 657,
                     "text": "谢",
-                    "type": "yellow"
+                    "type": "red"
                 },
                 {
                     "end": 673,
@@ -1428,10 +1673,10 @@
                     "type": "yellow-underline"
                 },
                 {
-                    "text": "敕",
-                    "start": 730,
                     "end": 731,
                     "explanation": "++皇帝下命令",
+                    "start": 730,
+                    "text": "敕",
                     "type": "yellow"
                 },
                 {
@@ -1832,10 +2077,10 @@
                     "type": "red-underline"
                 },
                 {
-                    "text": "宁",
-                    "start": 59,
                     "end": 60,
                     "explanation": "++岂，难道",
+                    "start": 59,
+                    "text": "宁",
                     "type": "red"
                 },
                 {
@@ -1867,10 +2112,10 @@
                     "type": "green"
                 },
                 {
-                    "text": "休舍",
-                    "start": 114,
                     "end": 116,
                     "explanation": "++休息",
+                    "start": 114,
+                    "text": "休舍",
                     "type": "green"
                 },
                 {
@@ -1902,10 +2147,10 @@
                     "type": "yellow"
                 },
                 {
-                    "text": "习",
-                    "start": 129,
                     "end": 130,
                     "explanation": "++演习",
+                    "start": 129,
+                    "text": "习",
                     "type": "green"
                 },
                 {
@@ -1951,10 +2196,10 @@
                     "type": "green-underline"
                 },
                 {
-                    "text": "所向",
-                    "start": 250,
                     "end": 252,
                     "explanation": "++克敌制胜",
+                    "start": 250,
+                    "text": "所向",
                     "type": "red"
                 },
                 {
@@ -1979,10 +2224,10 @@
                     "type": "green"
                 },
                 {
-                    "text": "及",
-                    "start": 337,
                     "end": 338,
                     "explanation": "++趁着",
+                    "start": 337,
+                    "text": "及",
                     "type": "yellow"
                 },
                 {
@@ -2035,10 +2280,10 @@
                     "type": "green-underline"
                 },
                 {
-                    "text": "以",
-                    "start": 425,
                     "end": 426,
                     "explanation": "++凭借",
+                    "start": 425,
+                    "text": "以",
                     "type": "yellow"
                 },
                 {
@@ -2077,10 +2322,10 @@
                     "type": "red-underline"
                 },
                 {
-                    "text": "取",
-                    "start": 503,
                     "end": 504,
                     "explanation": "++攻取，俘虏",
+                    "start": 503,
+                    "text": "取",
                     "type": "red"
                 },
                 {
@@ -2252,10 +2497,10 @@
                     "type": "yellow"
                 },
                 {
-                    "text": "胡",
-                    "start": 826,
                     "end": 827,
                     "explanation": "++怎么，为什么",
+                    "start": 826,
+                    "text": "胡",
                     "type": "yellow"
                 },
                 {
@@ -2273,10 +2518,10 @@
                     "type": "green"
                 },
                 {
-                    "text": "乃",
-                    "start": 858,
                     "end": 859,
                     "explanation": "++最终",
+                    "start": 858,
+                    "text": "乃",
                     "type": "yellow"
                 },
                 {
@@ -2285,6 +2530,13 @@
                     "start": 859,
                     "text": "流王于彘",
                     "type": "gray"
+                },
+                {
+                    "text": "值",
+                    "start": 900,
+                    "end": 901,
+                    "explanation": "遇到",
+                    "type": "red"
                 },
                 {
                     "end": 905,
@@ -2319,7 +2571,7 @@
                     "explanation": "抛弃",
                     "start": 996,
                     "text": "委",
-                    "type": "yellow"
+                    "type": "red"
                 },
                 {
                     "end": 1000,
@@ -2330,10 +2582,10 @@
                 },
                 {
                     "end": 1033,
-                    "explanation": "退兵",
+                    "explanation": "退兵。班，调回，调动。",
                     "start": 1031,
                     "text": "班军",
-                    "type": "yellow"
+                    "type": "red"
                 },
                 {
                     "end": 1039,
