@@ -220,7 +220,7 @@ function printMode() {
     toggleSidebar();
     document.getElementsByClassName('container')[0].style.position = 'relative';
     document.getElementsByClassName('container')[0].style.height = 'auto';
-    document.getElementsByClassName('body-text')[0].style.lineHeight = 2.4; // 此处修改原文行距
+    document.getElementsByClassName('body-text')[0].style.lineHeight = 2.5; // 此处修改原文行距
     document.getElementById('main-text-content').style.overflowY = 'visible';
     document.getElementById('annotation-list').style.overflowY = 'visible';
     document.getElementById('annotation-list').style.height = 'auto';
