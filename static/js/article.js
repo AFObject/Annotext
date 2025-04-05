@@ -63,7 +63,7 @@ function processAnnotatedText(text, title = "", needAlign = true) {
             }
         }
         if (type === "default")
-            type = "yellow";
+            type = "red";
         else
             explanation = explanation.slice(2);
 
