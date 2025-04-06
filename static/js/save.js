@@ -1,4 +1,4 @@
-function downloadDataAsJSON(data=globalData, fileName="data.json") {
+function downloadDataAsJSON(data = globalData, fileName = "data.json") {
     // Step 1: Convert data to JSON string
     const jsonString = JSON.stringify(data, null, 4); // 使用缩进美化JSON格式
 
@@ -21,4 +21,86 @@ function downloadDataAsJSON(data=globalData, fileName="data.json") {
     // Clean up
     document.body.removeChild(a);
     URL.revokeObjectURL(url); // 释放URL对象
+}
+
+function copyAnnotations() {
+    const listItems = document.querySelectorAll('#annotation-list li');
+
+    const htmlLines = Array.from(listItems).map(li => {
+        const clonedLi = li.cloneNode(true);
+
+        // 移除不需要的部分
+        clonedLi.querySelectorAll('span.anno-content, div.type-menu').forEach(el => el.remove());
+
+        // 替换 circle-capsule
+        const originalCapsule = li.querySelector('div.circle-capsule');
+        const capsule = clonedLi.querySelector('div.circle-capsule');
+        if (capsule) {
+            const spanCapsule = document.createElement('span');
+            spanCapsule.innerText = capsule.innerText + '.';
+            spanCapsule.className = capsule.className;
+            spanCapsule.style.backgroundColor = getComputedStyle(originalCapsule).backgroundColor;
+            capsule.replaceWith(spanCapsule);
+            spanCapsule.insertAdjacentText('afterend', ' ');
+        }
+        return clonedLi.innerHTML.trim();
+    }).filter(html => html.length > 0)
+        .map(html => `${html}`)
+        .join('\n');
+
+
+    const htmlLines2 = Array.from(listItems).map(li => {
+        const clonedLi = li.cloneNode(true);
+
+        // 移除不需要的部分
+        clonedLi.querySelectorAll('div.type-menu').forEach(el => el.remove());
+
+        // 替换 circle-capsule
+        const originalCapsule = li.querySelector('div.circle-capsule');
+        const capsule = clonedLi.querySelector('div.circle-capsule');
+        if (capsule) {
+            const spanCapsule = document.createElement('span');
+            spanCapsule.innerText = capsule.innerText + '.';
+            spanCapsule.className = capsule.className;
+            spanCapsule.style.backgroundColor = getComputedStyle(originalCapsule).backgroundColor;
+            capsule.replaceWith(spanCapsule);
+            spanCapsule.insertAdjacentText('afterend', ' ');
+        }
+        return clonedLi.innerHTML.trim();
+    }).filter(html2 => html2.length > 0)
+        .map(html2 => `${html2}`)
+        .join('\n');
+
+    const newWindow = window.open('', '_blank');
+    if (newWindow) {
+        newWindow.document.write(`
+        <html>
+          <head>
+            <title>注释展示</title>
+            <style>
+              body {
+                font-family: sans-serif;
+                padding: 20px;
+                line-height: 1.6;
+                white-space: pre-wrap;
+                tab-size: 3;
+              }
+              b { font-weight: bold; }
+              u { text-decoration: underline; }
+              .highlight { background-color: yellow; }
+              .anno-content { color: #333; font-family: 'Kaiti SC'; }
+            </style>
+          </head>
+          <body>
+            <h2>注释</h2>
+            ${'\n' + htmlLines}
+            <h2>答案</h2>
+            ${'\n' + htmlLines2}
+          </body>
+        </html>
+      `);
+        newWindow.document.close();
+    } else {
+        alert('无法打开新窗口，可能被浏览器拦截，请允许弹出窗口。');
+    }
 }
