@@ -115,7 +115,7 @@ function deleteArticle(idx1) {
 }
 
 function addAnnotation(text, start, end, explanation) { // 修改保存后端数据
-    let newAnn = { text, start, end, explanation, type: "yellow" };
+    let newAnn = { text, start, end, explanation, type: "red" };
     let annotations = globalData.articles[currentArticleIndex].annotations;
     annotations.push(newAnn);
 

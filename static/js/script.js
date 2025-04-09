@@ -93,7 +93,7 @@ function loadAnnotationBar(index=currentArticleIndex, data=globalData.articles[i
 
     // 辅助函数：带位置信息的句子分割
     function splitSentences(text) {
-        const splitPoints = /([，。！？；：“”.\"<>])/g;
+        const splitPoints = /([，。！？、；：“”.\"<>])/g;
         const tokens = text.split(splitPoints);
         const sentences = [];
         let current = { text: '', start: 0 };
@@ -220,7 +220,7 @@ function printMode() {
     toggleSidebar();
     document.getElementsByClassName('container')[0].style.position = 'relative';
     document.getElementsByClassName('container')[0].style.height = 'auto';
-    document.getElementsByClassName('body-text')[0].style.lineHeight = 2.5; // 此处修改原文行距
+    document.getElementsByClassName('body-text')[0].style.lineHeight = 1.8; // 此处修改原文行距
     document.getElementById('main-text-content').style.overflowY = 'visible';
     document.getElementById('annotation-list').style.overflowY = 'visible';
     document.getElementById('annotation-list').style.height = 'auto';
