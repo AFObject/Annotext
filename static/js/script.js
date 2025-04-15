@@ -220,14 +220,14 @@ function printMode() {
     toggleSidebar();
     document.getElementsByClassName('container')[0].style.position = 'relative';
     document.getElementsByClassName('container')[0].style.height = 'auto';
-    document.getElementsByClassName('body-text')[0].style.lineHeight = 1.8; // 此处修改原文行距
+    document.getElementsByClassName('body-text')[0].style.lineHeight = 2.6; // 此处修改原文行距
     document.getElementById('main-text-content').style.overflowY = 'visible';
     document.getElementById('annotation-list').style.overflowY = 'visible';
     document.getElementById('annotation-list').style.height = 'auto';
     document.getElementById('annotations').style.width = '40%';
     document.getElementById('main-text-content').style.width = '60%';
     document.getElementsByClassName('filter-menu')[0].style.display = 'none';
-    document.querySelectorAll(".annotations li").forEach(li => li.style.padding = '6px'); // 此处修改注释行距
+    document.querySelectorAll(".annotations li").forEach(li => li.style.padding = '4.3px'); // 此处修改注释行距
     document.querySelectorAll('.global-btn').forEach(btn => btn.style.display = 'none');
     document.querySelectorAll(".anno-content").forEach(content => content.classList.add("show"));
 }
