@@ -448,3 +448,35 @@ h2 {
     position: absolute;
     bottom: 20px;
 }
+
+#dockbar {
+    display: flex;
+    flex-direction: row;      /* 从左到右排列（默认） */
+    justify-content: flex-start; /* 从左开始，不留空隙 */
+    align-items: center;      /* 垂直居中（可选） */
+    gap: 10px;               /* 按钮之间的间距 */
+    position: sticky;
+    bottom: 10px;
+    margin: auto;
+    width: fit-content;
+    background: var(--sidebar-bg);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#dockbar-text {
+    font-size: 12px;
+    text-align: right;
+    font-style: italic;
+    color: var(--bad-text-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.divider {
+    width: 1px;                 /* 细线 */
+    height: 24px;               /* 高度和 dock 栏子项一致 */
+    background-color: #ccc;     /* 分隔线颜色 */
+    margin: 0 0px;             /* 左右间距 */
+}

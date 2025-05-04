@@ -43,6 +43,7 @@ function loadArticle(index, data=globalData) {
     articleList[data.articles.length - 1 - index].classList.add('active');
 
     let text = article.content;
+    document.getElementById('dockbar-text').innerHTML = `${text.length}<br>${article.annotations.length}`;
     let annotations = article.annotations;
 
     // **按 start 索引降序排序，确保从后往前替换**

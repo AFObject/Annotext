@@ -19,11 +19,15 @@
         </div>
         <div class="content" id="main-text-content" tabindex="0">
             <h2 id="text-title"></h2>
-            <button id="edit-btn" class="global-btn" onclick="startEdit()"><img src="{{ url_for('static', filename='img/file-edit.svg') }}"></img></button>
-            <button id="test-btn" class="global-btn" onclick="startTest()"><img src="{{ url_for('static', filename='img/list-check.svg') }}"></img></button>
-            <button id="print-btn" class="global-btn" onclick="printMode()"><img src="{{ url_for('static', filename='img/print.svg') }}"></img></button>
-            <button id="copy-btn" class="global-btn" onclick="copyAnnotations()"><img src="{{ url_for('static', filename='img/file-export.svg') }}"></img></button>
             <p id="text" class="body-text"></p>
+            <div id="dockbar">
+                <div id="dockbar-text"></div>
+                <div class="divider"></div>
+                <button id="edit-btn" class="global-btn" onclick="startEdit()"><img src="{{ url_for('static', filename='img/file-edit.svg') }}"></img></button>
+                <button id="test-btn" class="global-btn" onclick="startTest()"><img src="{{ url_for('static', filename='img/list-check.svg') }}"></img></button>
+                <button id="print-btn" class="global-btn" onclick="printMode()"><img src="{{ url_for('static', filename='img/print.svg') }}"></img></button>
+                <button id="copy-btn" class="global-btn" onclick="copyAnnotations()"><img src="{{ url_for('static', filename='img/file-export.svg') }}"></img></button>
+            </div>
         </div>
         <div class="annotations" id="annotations">
             <h3 id="toggle-anno-content" title="点击全部显示或隐藏答案">注释</h3>
@@ -38,6 +42,7 @@
             <ul id="annotation-list"></ul>
         </div>
     </div>
+
     <div id="overlay">
         <div id="editorContainer" style="display: none;">
             <h3>编辑源码</h3>
