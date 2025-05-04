@@ -297,6 +297,7 @@ h2 {
 }
 
 .global-btn {
+    height: 28px;
     display: inline-block;
     font-family: 'SF Pro';
     padding: 7px 10px;
@@ -307,6 +308,11 @@ h2 {
     cursor: pointer;
     font-size: 12px;
     transition: background-color 0.3s, color 0.3s;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #edit-btn {

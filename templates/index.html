@@ -13,16 +13,16 @@
     <div class="container">
         <div class="sidebar" id="sidebar">
             <h3 id="annotext-title">AnnoText</h3>
-            <button id="new-article-btn" class="global-btn" onclick="newArticle()">􀏪</button>
-            <button id="save-btn" class="global-btn" onclick="downloadDataAsJSON()">􀈉</button>
+            <button id="new-article-btn" class="global-btn" onclick="newArticle()"><img src="{{ url_for('static', filename='img/add-document.svg') }}"></img></button>
+            <button id="save-btn" class="global-btn" onclick="downloadDataAsJSON()"><img src="{{ url_for('static', filename='img/download.svg') }}"></img></button>
             <ul id="article-list"></ul>
         </div>
         <div class="content" id="main-text-content" tabindex="0">
             <h2 id="text-title"></h2>
-            <button id="edit-btn" class="global-btn" onclick="startEdit()">􀈎</button>
-            <button id="test-btn" class="global-btn" onclick="startTest()">􁜾</button>
-            <button id="print-btn" class="global-btn" onclick="printMode()">􀎚</button>
-            <button id="copy-btn" class="global-btn" onclick="copyAnnotations()">􀉁</button>
+            <button id="edit-btn" class="global-btn" onclick="startEdit()"><img src="{{ url_for('static', filename='img/file-edit.svg') }}"></img></button>
+            <button id="test-btn" class="global-btn" onclick="startTest()"><img src="{{ url_for('static', filename='img/list-check.svg') }}"></img></button>
+            <button id="print-btn" class="global-btn" onclick="printMode()"><img src="{{ url_for('static', filename='img/print.svg') }}"></img></button>
+            <button id="copy-btn" class="global-btn" onclick="copyAnnotations()"><img src="{{ url_for('static', filename='img/file-export.svg') }}"></img></button>
             <p id="text" class="body-text"></p>
         </div>
         <div class="annotations" id="annotations">
@@ -68,8 +68,8 @@
             <li id="sidebar-context-menu-delete-btn" style="color: red">删除</li>
         </ul>
     </div>
-    <button id="toggle-annotations" class="global-btn" onclick="toggleAnnotations()">􀏛</button>
-    <button id="toggle-sidebar" class="global-btn" onclick="toggleSidebar()">􀏚</button>
+    <button id="toggle-annotations" class="global-btn" onclick="toggleAnnotations()"><img src="{{ url_for('static', filename='img/sidebar-flip.svg') }}"></img></button>
+    <button id="toggle-sidebar" class="global-btn" onclick="toggleSidebar()"><img src="{{ url_for('static', filename='img/sidebar.svg') }}"></img></button>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/edit.js') }}"></script>
     <script src="{{ url_for('static', filename='js/article.js') }}"></script>
