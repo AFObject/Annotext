@@ -27,6 +27,8 @@
                 <button id="test-btn" class="global-btn" onclick="startTest()"><img src="{{ url_for('static', filename='img/list-check.svg') }}"></img></button>
                 <button id="print-btn" class="global-btn" onclick="printMode()"><img src="{{ url_for('static', filename='img/print.svg') }}"></img></button>
                 <button id="copy-btn" class="global-btn" onclick="copyAnnotations()"><img src="{{ url_for('static', filename='img/file-export.svg') }}"></img></button>
+                <button id="hide-btn" class="global-btn" onclick="hideFormats()"><img src="{{ url_for('static', filename='img/eye.svg') }}"></img></button>
+                <button id="translation-btn" class="global-btn" onclick="showTranslation()"><img src="{{ url_for('static', filename='img/language-exchange.svg') }}"></img></button>
             </div>
         </div>
         <div class="annotations" id="annotations">
@@ -81,6 +83,7 @@
     <script src="{{ url_for('static', filename='js/save.js') }}"></script>
     <script src="{{ url_for('static', filename='js/filter.js') }}"></script>
     <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/translation.js') }}"></script>
 </body>
 
 </html>

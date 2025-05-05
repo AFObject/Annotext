@@ -20,12 +20,50 @@ fetch('/get_data')
         loadArticle(data.articles.length - 1);
     });
 
+
+function asciiToChinese(asciiStr) {
+    let encodedStr = '';
+    // 遍历 ASCII 字符串，将每个字符转换为 %XX 形式的十六进制编码
+    for (let i = 0; i < asciiStr.length; i++) {
+        const charCode = asciiStr.charCodeAt(i);
+        const hexCode = charCode.toString(16).padStart(2, '0');
+        encodedStr += `%${hexCode}`;
+    }
+    // 对编码后的字符串进行解码
+    return decodeURIComponent(encodedStr);
+}
+
+function chineseToASCII(str) {
+    const encodedStr = encodeURIComponent(str);
+    return encodedStr.replace(/%([0-9A-F]{2})/g, function(match, p1) {
+        return String.fromCharCode(parseInt(p1, 16));
+    });
+}
+
 function toggleAnnotations() {
     document.getElementById('annotations').classList.toggle('hidden');
 }
 
 function toggleSidebar() {
     document.getElementById('sidebar').classList.toggle('hidden');
+}
+
+function activateTooltip() {
+    document.querySelectorAll('.main.highlight').forEach(el => {
+        el.addEventListener('mouseover', (e) => {
+            let tooltip = document.createElement('div');
+            tooltip.className = 'tooltip';
+            tooltip.textContent = asciiToChinese(el.dataset.explanation);
+            tooltip.style.left = e.pageX + 'px';
+            tooltip.style.top = (e.pageY - 30) + 'px';
+            tooltip.style.display = 'block';
+            document.body.appendChild(tooltip);
+            el.addEventListener('mouseout', () => {
+                tooltip.style.display = 'none';
+                tooltip.remove();
+            });
+        });
+    });
 }
 
 // 【主要逻辑】一篇 Article 的全部加载任务
@@ -55,7 +93,7 @@ function loadArticle(index, data=globalData) {
         let before = text.slice(0, ann.start);
         let classText = ann.type.replace('-underline', ' red-underline');
         // 倒序了，所以全部是 length - idx
-        let highlighted = `<span id="ann-${length - idx}" class="main highlight ${classText}" data-explanation="${ann.explanation}">${text.slice(ann.start, ann.end)}</span>`;
+        let highlighted = `<span id="ann-${length - idx}" class="main highlight ${classText}" data-explanation="${chineseToASCII(ann.explanation)}">${text.slice(ann.start, ann.end)}</span>`;
         let after = text.slice(ann.end);
         text = before + highlighted + `<sup style="margin-left: 1px; margin-right: 3px">${length - idx}</sup>` + after;
     });
@@ -65,21 +103,7 @@ function loadArticle(index, data=globalData) {
     document.getElementById('text').innerHTML = text;
 
     // 绑定鼠标悬停事件
-    document.querySelectorAll('.main.highlight').forEach(el => {
-        el.addEventListener('mouseover', (e) => {
-            let tooltip = document.createElement('div');
-            tooltip.className = 'tooltip';
-            tooltip.textContent = el.dataset.explanation;
-            tooltip.style.left = e.pageX + 'px';
-            tooltip.style.top = (e.pageY - 30) + 'px';
-            tooltip.style.display = 'block';
-            document.body.appendChild(tooltip);
-            el.addEventListener('mouseout', () => {
-                tooltip.style.display = 'none';
-                tooltip.remove();
-            });
-        });
-    });
+    activateTooltip();
 
     loadAnnotationBar(index, data.articles[index]);
     resetAnnoContentDisplay();
@@ -231,4 +255,8 @@ function printMode() {
     document.querySelectorAll(".annotations li").forEach(li => li.style.padding = '4.3px'); // 此处修改注释行距
     document.querySelectorAll('.global-btn').forEach(btn => btn.style.display = 'none');
     document.querySelectorAll(".anno-content").forEach(content => content.classList.add("show"));
+}
+
+function hideFormats() {
+    document.getElementById('text').classList.toggle('hidden-state');
 }

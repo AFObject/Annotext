@@ -25,6 +25,17 @@ function processAnnotatedText(text, title = "", needAlign = true) {
                 else return `<p>${line.trim()}</p>`;
             })
             .join('');
+
+    console.log(text);
+    const regex = /<translation>([\s\S]*?)<\/translation>/g;
+    const extractedParts = [];
+    let match;
+    while ((match = regex.exec(text))!== null) {
+        extractedParts.push(match[1]);
+    }
+    text = text.replace(regex, '');
+    console.log(extractedParts, text);
+
     // 正则匹配所有注释结构（添加g标志进行全局匹配）
     const pattern = /【(.*?)】\s*（(.*?)）/g;
     const matches = Array.from(text.matchAll(pattern));
@@ -86,7 +97,8 @@ function processAnnotatedText(text, title = "", needAlign = true) {
     return {
         title: title,
         content: cleanContent,
-        annotations: annotations
+        annotations: annotations,
+        translation: extractedParts[0]
     };
 }
 
@@ -120,6 +132,8 @@ function exportText(articleIndex = currentArticleIndex) {
         offset += highlighted.length - (end - start); // 计算新的偏移量
     });
 
+    article += `<translation>${globalData.articles[articleIndex].translation}</translation>`;
+
     return article;
 }
 
@@ -132,6 +146,7 @@ function startEdit() {
 function confirmEdit() {
     let editedText = document.getElementById("textEditor").value;
     let newData = processAnnotatedText(editedText, globalData.articles[currentArticleIndex].title, false);
+    console.log(newData);
     globalData.articles[currentArticleIndex] = newData;
     saveData();
     loadArticle(currentArticleIndex);

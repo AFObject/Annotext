@@ -126,6 +126,23 @@ h2 {
     color: var(--text-color);
 }
 
+#text.translation-state {
+    text-indent: 0;
+}
+
+#text.hidden-state {
+    sup {
+        display: none;
+    }
+    .highlight {
+        background-color: var(--bg-color);
+        border: none;
+        padding: 0;
+        text-decoration: none;
+        font-weight: normal;
+    }
+}
+
 .body-text h3 {
     text-indent: 0;
     font-weight: 800;
@@ -310,7 +327,6 @@ h2 {
     transition: background-color 0.3s, color 0.3s;
 
     img {
-        width: 100%;
         height: 100%;
     }
 }
@@ -479,4 +495,11 @@ h2 {
     height: 24px;               /* 高度和 dock 栏子项一致 */
     background-color: #ccc;     /* 分隔线颜色 */
     margin: 0 0px;             /* 左右间距 */
+}
+
+.translation-text {
+    line-height: 1.5;
+    font-size: 18px;
+    color: var(--bad-text-color);
+    font-family: 'Kaiti SC', '楷体', 'Kaiti', 'STKaiti', 'STKaiti SC';
 }
