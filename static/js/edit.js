@@ -52,15 +52,30 @@ function getPlainText(element) {
 
     // **移除 <sup> 及其内容**
     clone.querySelectorAll("sup").forEach(sup => sup.remove());
+    // 移除句子翻译
+    clone.querySelectorAll(".translation-text").forEach(sup => sup.remove());
+    // 移除多余换行
+    clone.querySelectorAll("br").forEach(sup => sup.remove());
 
-    // **移除 <highlight> 但保留其内容**
-    clone.querySelectorAll("span").forEach(hl => {
-        let parent = hl.parentNode;
-        while (hl.firstChild) parent.insertBefore(hl.firstChild, hl);
-        parent.removeChild(hl);
+    // 移除原文每句多余的 <p> 标签，但保留内部格式
+    clone.querySelectorAll(".translation-sentence").forEach((p) => {
+        const children = Array.from(p.childNodes);
+        children.forEach((child) => {
+            p.parentNode.insertBefore(child, p);
+        });
+        p.parentNode.removeChild(p);
     });
 
-    console.log(clone.innerHTML);
+    // 移除高亮注释
+    clone.querySelectorAll(".highlight").forEach((p) => {
+        const text = p.textContent;
+        const newTextNode = document.createTextNode(text);
+        p.parentNode.replaceChild(newTextNode, p);
+    });
+
+    // 特殊标记回转
+    clone.innerHTML = clone.innerHTML.replaceAll('<span class="__start-note"></span>', '<p>').replaceAll('<span class="__end-note"></span>', '</p>');
+    console.log(clone.innerHTML)
 
     // **转换为纯文本但保留 <p> 结构**
     return clone.innerHTML.replace(/<\/p>\s*$/i, "");;

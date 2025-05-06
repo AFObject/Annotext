@@ -6326,28 +6326,28 @@
                     "explanation": "凭借",
                     "start": 10,
                     "text": "以",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 13,
                     "explanation": "任用",
                     "start": 12,
                     "text": "任",
-                    "type": "red"
+                    "type": "yellow"
                 },
                 {
                     "end": 17,
                     "explanation": "都",
                     "start": 16,
                     "text": "并",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 18,
                     "explanation": "做",
                     "start": 17,
                     "text": "为",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 19,
@@ -6361,28 +6361,28 @@
                     "explanation": "渐渐",
                     "start": 20,
                     "text": "稍",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 22,
                     "explanation": "升迁",
                     "start": 21,
                     "text": "迁",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 26,
                     "explanation": "管事的官员",
                     "start": 25,
                     "text": "监",
-                    "type": "yellow"
+                    "type": "green-underline"
                 },
                 {
                     "end": 30,
                     "explanation": "接连",
                     "start": 29,
                     "text": "连",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 32,
@@ -6396,35 +6396,35 @@
                     "explanation": "屡次",
                     "start": 33,
                     "text": "数",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 36,
                     "explanation": "互派使者",
                     "start": 34,
                     "text": "通使",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 43,
                     "explanation": "扣留",
                     "start": 42,
                     "text": "留",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 58,
                     "explanation": "十几批",
                     "start": 55,
                     "text": "十余辈",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 71,
                     "explanation": "相抵",
                     "start": 69,
                     "text": "相当",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 82,
@@ -6438,35 +6438,35 @@
                     "explanation": "对长辈的尊称",
                     "start": 98,
                     "text": "丈人",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 101,
                     "explanation": "辈",
                     "start": 100,
                     "text": "行",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 118,
                     "explanation": "赞许他这种合乎情理的做法。义，做事合乎情理",
                     "start": 115,
                     "text": "嘉其义",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 123,
                     "explanation": "凭借",
                     "start": 122,
                     "text": "以",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 129,
                     "explanation": "旄节，以竹为杆，上缀以牦牛尾，是使者所持的凭证",
                     "start": 128,
                     "text": "节",
-                    "type": "red"
+                    "type": "green-underline"
                 },
                 {
                     "end": 141,
@@ -6480,7 +6480,7 @@
                     "explanation": "回报",
                     "start": 144,
                     "text": "答",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 160,
@@ -6494,28 +6494,28 @@
                     "explanation": "士卒",
                     "start": 164,
                     "text": "士",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 167,
                     "explanation": "侦察兵",
                     "start": 165,
                     "text": "斥候",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 178,
                     "explanation": "备办",
                     "start": 177,
                     "text": "置",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 179,
                     "explanation": "财物",
                     "start": 178,
                     "text": "币",
-                    "type": "red"
+                    "type": "yellow"
                 },
                 {
                     "end": 180,
@@ -6529,21 +6529,21 @@
                     "explanation": "渐渐",
                     "start": 185,
                     "text": "益",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 187,
                     "explanation": "倨傲",
                     "start": 186,
                     "text": "骄",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 210,
                     "explanation": "适逢",
                     "start": 209,
                     "text": "会",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 249,
@@ -6557,42 +6557,42 @@
                     "explanation": "率领",
                     "start": 256,
                     "text": "将",
-                    "type": "yellow"
+                    "type": "green-underline"
                 },
                 {
                     "end": 261,
                     "explanation": "暗地里",
                     "start": 260,
                     "text": "阴",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 293,
                     "explanation": "相熟识，有交情",
                     "start": 291,
                     "text": "相知",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 296,
                     "explanation": "私下拜访",
                     "start": 294,
                     "text": "私候",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 306,
                     "explanation": "痛恨",
                     "start": 305,
                     "text": "怨",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 327,
                     "explanation": "希望",
                     "start": 326,
                     "text": "幸",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 328,
@@ -6606,42 +6606,42 @@
                     "explanation": "财物",
                     "start": 339,
                     "text": "货物",
-                    "type": "yellow"
+                    "type": "green-underline"
                 },
                 {
                     "end": 376,
                     "explanation": "发动，动手",
                     "start": 375,
                     "text": "发",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 382,
                     "explanation": "逃跑",
                     "start": 381,
                     "text": "亡",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 384,
                     "explanation": "告发",
                     "start": 383,
                     "text": "告",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 405,
                     "explanation": "指被活捉",
                     "start": 403,
                     "text": "生得",
-                    "type": "yellow"
+                    "type": "green-underline"
                 },
                 {
                     "end": 414,
                     "explanation": "审理这个案件",
                     "start": 411,
                     "text": "治其事",
-                    "type": "yellow"
+                    "type": "green-underline"
                 },
                 {
                     "end": 424,
@@ -6655,14 +6655,14 @@
                     "explanation": "情状、情况",
                     "start": 426,
                     "text": "状",
-                    "type": "yellow"
+                    "type": "green-underline"
                 },
                 {
                     "end": 428,
                     "explanation": "告诉",
                     "start": 427,
                     "text": "语",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 441,
@@ -6683,28 +6683,28 @@
                     "explanation": "更加",
                     "start": 448,
                     "text": "重",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 468,
                     "explanation": "牵扯",
                     "start": 467,
                     "text": "引",
-                    "type": "yellow"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 479,
                     "explanation": "指贵族大臣",
                     "start": 477,
                     "text": "贵人",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 507,
                     "explanation": "使动用法，使......投降",
                     "start": 506,
                     "text": "降",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 526,
@@ -6718,63 +6718,63 @@
                     "explanation": "污损了节操",
                     "start": 533,
                     "text": "屈节",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 537,
                     "explanation": "辜负了使命",
                     "start": 535,
                     "text": "辱命",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 572,
                     "explanation": "坑",
                     "start": 571,
                     "text": "坎",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 576,
                     "explanation": "没有火焰的微火",
                     "start": 574,
                     "text": "煴火",
-                    "type": "red-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 583,
                     "explanation": "同“搯”，叩击、拍打。",
                     "start": 582,
                     "text": "蹈",
-                    "type": "red-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 597,
                     "explanation": "又能呼吸",
                     "start": 595,
                     "text": "复息",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 603,
                     "explanation": "车，这里用作动词，用车载送",
                     "start": 602,
                     "text": "舆",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 609,
                     "explanation": "意动用法，认为……豪壮",
                     "start": 608,
                     "text": "壮",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 618,
                     "explanation": "问候",
                     "start": 616,
                     "text": "候问",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 623,
@@ -6788,56 +6788,56 @@
                     "explanation": "渐渐痊愈",
                     "start": 634,
                     "text": "益愈",
-                    "type": "red"
+                    "type": "green"
                 },
                 {
                     "end": 642,
                     "explanation": "派使者通知",
                     "start": 639,
                     "text": "使使晓",
-                    "type": "yellow"
+                    "type": "green-underline"
                 },
                 {
                     "end": 646,
                     "explanation": "判罪",
                     "start": 645,
                     "text": "论",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 651,
                     "explanation": "趁",
                     "start": 650,
                     "text": "因",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 661,
                     "explanation": "以后",
                     "start": 660,
                     "text": "已",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 676,
                     "explanation": "亲近之臣。这里是卫律自指",
                     "start": 674,
                     "text": "近臣",
-                    "type": "red-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 678,
                     "explanation": "判处",
                     "start": 677,
                     "text": "当",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 679,
                     "explanation": "死罪",
                     "start": 678,
                     "text": "死",
-                    "type": "red"
+                    "type": "green"
                 },
                 {
                     "end": 712,
@@ -6851,77 +6851,77 @@
                     "explanation": "本来没有参与谋划",
                     "start": 718,
                     "text": "本无谋",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 737,
                     "explanation": "比画",
                     "start": 736,
                     "text": "拟",
-                    "type": "yellow-underline"
+                    "type": "green-underline"
                 },
                 {
                     "end": 753,
                     "explanation": "背叛",
                     "start": 752,
                     "text": "负",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 776,
                     "explanation": "满",
                     "start": 775,
                     "text": "弥",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 793,
                     "explanation": "也会这样",
                     "start": 791,
                     "text": "复然",
-                    "type": "red"
+                    "type": "green"
                 },
                 {
                     "end": 800,
                     "explanation": "滋润荒野，也就是做肥料的意思。膏，滋润",
                     "start": 797,
                     "text": "膏草野",
-                    "type": "red-underline"
+                    "type": "yellow-underline"
                 },
                 {
                     "end": 810,
                     "explanation": "搭理",
                     "start": 809,
                     "text": "应",
-                    "type": "red"
+                    "type": "yellow"
                 },
                 {
                     "end": 823,
                     "explanation": "结交为",
                     "start": 822,
                     "text": "为",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 840,
                     "explanation": "还，仍然",
                     "start": 839,
                     "text": "尚",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 863,
                     "explanation": "同“叛”，背叛",
                     "start": 862,
                     "text": "畔",
-                    "type": "yellow"
+                    "type": "green-underline"
                 },
                 {
                     "end": 873,
                     "explanation": "古代指边远地区的民族",
                     "start": 871,
                     "text": "蛮夷",
-                    "type": "yellow"
+                    "type": "green"
                 },
                 {
                     "end": 907,
@@ -6935,7 +6935,462 @@
                     "explanation": "你",
                     "start": 908,
                     "text": "若",
-                    "type": "yellow"
+                    "type": "green"
+                },
+                {
+                    "text": "不可胁",
+                    "start": 944,
+                    "end": 947,
+                    "explanation": "不可威逼而致屈服",
+                    "type": "red"
+                },
+                {
+                    "text": "幽",
+                    "start": 961,
+                    "end": 962,
+                    "explanation": "囚禁",
+                    "type": "red"
+                },
+                {
+                    "text": "绝",
+                    "start": 968,
+                    "end": 969,
+                    "explanation": "断绝",
+                    "type": "red"
+                },
+                {
+                    "text": "雨",
+                    "start": 974,
+                    "end": 975,
+                    "explanation": "下",
+                    "type": "red"
+                },
+                {
+                    "text": "啮",
+                    "start": 979,
+                    "end": 980,
+                    "explanation": "咬，嚼",
+                    "type": "red"
+                },
+                {
+                    "text": "旃",
+                    "start": 983,
+                    "end": 984,
+                    "explanation": "同“毡”，毛织的毡毯",
+                    "type": "red"
+                },
+                {
+                    "text": "徙",
+                    "start": 1001,
+                    "end": 1002,
+                    "explanation": "流放（翻译：转移）",
+                    "type": "red"
+                },
+                {
+                    "text": "羝",
+                    "start": 1012,
+                    "end": 1013,
+                    "explanation": "公羊",
+                    "type": "red"
+                },
+                {
+                    "text": "乳",
+                    "start": 1015,
+                    "end": 1016,
+                    "explanation": "生子",
+                    "type": "red"
+                },
+                {
+                    "text": "别",
+                    "start": 1020,
+                    "end": 1021,
+                    "explanation": "分开、离析",
+                    "type": "red"
+                },
+                {
+                    "text": "廪食",
+                    "start": 1038,
+                    "end": 1040,
+                    "explanation": "官府发给的粮食",
+                    "type": "red"
+                },
+                {
+                    "text": "去",
+                    "start": 1046,
+                    "end": 1047,
+                    "explanation": "同“弆”，收藏。",
+                    "type": "red"
+                },
+                {
+                    "text": "草实",
+                    "start": 1047,
+                    "end": 1049,
+                    "explanation": "野生果实。",
+                    "type": "red"
+                },
+                {
+                    "text": "杖",
+                    "start": 1053,
+                    "end": 1054,
+                    "explanation": "执、拄",
+                    "type": "red"
+                },
+                {
+                    "text": "操持",
+                    "start": 1061,
+                    "end": 1063,
+                    "explanation": "拿着",
+                    "type": "red"
+                },
+                {
+                    "text": "积",
+                    "start": 1069,
+                    "end": 1070,
+                    "explanation": "过了",
+                    "type": "red"
+                },
+                {
+                    "text": "弋射",
+                    "start": 1080,
+                    "end": 1082,
+                    "explanation": "用绳系在箭上射猎",
+                    "type": "red"
+                },
+                {
+                    "text": "网",
+                    "start": 1087,
+                    "end": 1088,
+                    "explanation": "结网",
+                    "type": "red"
+                },
+                {
+                    "text": "纺缴",
+                    "start": 1088,
+                    "end": 1090,
+                    "explanation": "纺制系在箭尾的丝绳。",
+                    "type": "gray"
+                },
+                {
+                    "text": "檠",
+                    "start": 1091,
+                    "end": 1092,
+                    "explanation": "矫正弓弩的工具，这里用作动词，用檠矫正(弓弩)。",
+                    "type": "red"
+                },
+                {
+                    "text": "服匿",
+                    "start": 1117,
+                    "end": 1119,
+                    "explanation": "盛酒酪的器皿。",
+                    "type": "gray"
+                },
+                {
+                    "text": "丁令",
+                    "start": 1135,
+                    "end": 1137,
+                    "explanation": "即丁灵，匈奴族的一支。卫律被封为丁灵王。丁令盗武牛羊，应是他所指使。",
+                    "type": "gray"
+                },
+                {
+                    "text": "穷厄",
+                    "start": 1144,
+                    "end": 1146,
+                    "explanation": "困顿",
+                    "type": "red"
+                },
+                {
+                    "text": "侍中",
+                    "start": 1162,
+                    "end": 1164,
+                    "explanation": "汉代在其本官职外的加官。",
+                    "type": "gray"
+                },
+                {
+                    "text": "求",
+                    "start": 1178,
+                    "end": 1179,
+                    "explanation": "访求",
+                    "type": "red"
+                },
+                {
+                    "text": "因",
+                    "start": 1199,
+                    "end": 1200,
+                    "explanation": "趁机",
+                    "type": "red"
+                },
+                {
+                    "text": "素厚",
+                    "start": 1212,
+                    "end": 1214,
+                    "explanation": "一向关系很好",
+                    "type": "red"
+                },
+                {
+                    "text": "足下",
+                    "start": 1220,
+                    "end": 1222,
+                    "explanation": "敬称，您",
+                    "type": "red"
+                },
+                {
+                    "text": "亡",
+                    "start": 1238,
+                    "end": 1239,
+                    "explanation": "同“无”",
+                    "type": "red"
+                },
+                {
+                    "text": "见",
+                    "start": 1247,
+                    "end": 1248,
+                    "explanation": "同“现”",
+                    "type": "red"
+                },
+                {
+                    "text": "除",
+                    "start": 1267,
+                    "end": 1268,
+                    "explanation": "宫殿的台阶",
+                    "type": "red"
+                },
+                {
+                    "text": "劾",
+                    "start": 1274,
+                    "end": 1275,
+                    "explanation": "判决",
+                    "type": "red"
+                },
+                {
+                    "text": "祠",
+                    "start": 1295,
+                    "end": 1296,
+                    "explanation": "祀",
+                    "type": "red"
+                },
+                {
+                    "text": "后土",
+                    "start": 1298,
+                    "end": 1300,
+                    "explanation": "指地神",
+                    "type": "red"
+                },
+                {
+                    "text": "堕",
+                    "start": 1312,
+                    "end": 1313,
+                    "explanation": "掉，落",
+                    "type": "red"
+                },
+                {
+                    "text": "亡",
+                    "start": 1322,
+                    "end": 1323,
+                    "explanation": "逃跑",
+                    "type": "red"
+                },
+                {
+                    "text": "得",
+                    "start": 1332,
+                    "end": 1333,
+                    "explanation": "（翻译）抓到",
+                    "type": "red"
+                },
+                {
+                    "text": "惶恐",
+                    "start": 1334,
+                    "end": 1336,
+                    "explanation": "逃跑",
+                    "type": "red"
+                },
+                {
+                    "text": "不幸",
+                    "start": 1347,
+                    "end": 1349,
+                    "explanation": "对去世的委婉说法",
+                    "type": "red"
+                },
+                {
+                    "text": "更嫁",
+                    "start": 1365,
+                    "end": 1367,
+                    "explanation": "改嫁",
+                    "type": "red"
+                },
+                {
+                    "text": "女弟",
+                    "start": 1371,
+                    "end": 1373,
+                    "explanation": "妹妹",
+                    "type": "red"
+                },
+                {
+                    "text": "苦",
+                    "start": 1402,
+                    "end": 1403,
+                    "explanation": "困苦，折磨",
+                    "type": "red"
+                },
+                {
+                    "text": "忽忽",
+                    "start": 1411,
+                    "end": 1413,
+                    "explanation": "迷惑，恍惚，失意的样子。（翻译：精神恍惚）",
+                    "type": "red"
+                },
+                {
+                    "text": "系",
+                    "start": 1425,
+                    "end": 1426,
+                    "explanation": "关押",
+                    "type": "red"
+                },
+                {
+                    "text": "过",
+                    "start": 1437,
+                    "end": 1438,
+                    "explanation": "超过",
+                    "type": "red"
+                },
+                {
+                    "text": "春秋高",
+                    "start": 1443,
+                    "end": 1446,
+                    "explanation": "年纪老",
+                    "type": "red"
+                },
+                {
+                    "text": "亡",
+                    "start": 1449,
+                    "end": 1450,
+                    "explanation": "同“无”",
+                    "type": "red"
+                },
+                {
+                    "text": "常",
+                    "start": 1450,
+                    "end": 1451,
+                    "explanation": "定规",
+                    "type": "red"
+                },
+                {
+                    "text": "夷灭",
+                    "start": 1456,
+                    "end": 1458,
+                    "explanation": "诛灭，这里指全家杀尽。",
+                    "type": "red"
+                },
+                {
+                    "text": "愿",
+                    "start": 1477,
+                    "end": 1478,
+                    "explanation": "希望",
+                    "type": "red"
+                },
+                {
+                    "text": "云",
+                    "start": 1485,
+                    "end": 1486,
+                    "explanation": "说",
+                    "type": "red"
+                },
+                {
+                    "text": "成就",
+                    "start": 1504,
+                    "end": 1506,
+                    "explanation": "栽培，提拔",
+                    "type": "red"
+                },
+                {
+                    "text": "亲近",
+                    "start": 1517,
+                    "end": 1519,
+                    "explanation": "皇上的亲近之臣",
+                    "type": "red"
+                },
+                {
+                    "text": "肝脑涂地",
+                    "start": 1522,
+                    "end": 1526,
+                    "explanation": "形容死亡的惨状，这里指以身许国。",
+                    "type": "red"
+                },
+                {
+                    "text": "自效",
+                    "start": 1531,
+                    "end": 1533,
+                    "explanation": "指愿为人贡献自己的生命。效，贡献、献出。",
+                    "type": "red"
+                },
+                {
+                    "text": "诚",
+                    "start": 1541,
+                    "end": 1542,
+                    "explanation": "的确",
+                    "type": "red"
+                },
+                {
+                    "text": "亡",
+                    "start": 1561,
+                    "end": 1562,
+                    "explanation": "同“无”",
+                    "type": "red"
+                },
+                {
+                    "text": "壹",
+                    "start": 1592,
+                    "end": 1593,
+                    "explanation": "一定",
+                    "type": "red"
+                },
+                {
+                    "text": "分",
+                    "start": 1603,
+                    "end": 1604,
+                    "explanation": "料想，断定",
+                    "type": "red"
+                },
+                {
+                    "text": "王",
+                    "start": 1609,
+                    "end": 1610,
+                    "explanation": "指李陵",
+                    "type": "red"
+                },
+                {
+                    "text": "毕",
+                    "start": 1616,
+                    "end": 1617,
+                    "explanation": "尽，结束",
+                    "type": "red"
+                },
+                {
+                    "text": "效死于前",
+                    "start": 1622,
+                    "end": 1626,
+                    "explanation": "在您面前死去",
+                    "type": "red"
+                },
+                {
+                    "text": "通",
+                    "start": 1653,
+                    "end": 1654,
+                    "explanation": "达",
+                    "type": "red"
+                },
+                {
+                    "text": "决",
+                    "start": 1666,
+                    "end": 1667,
+                    "explanation": "同“诀”，辞别、告别",
+                    "type": "red"
+                },
+                {
+                    "text": "去",
+                    "start": 1667,
+                    "end": 1668,
+                    "explanation": "离开",
+                    "type": "red"
                 }
             ],
             "content": "<p>武，字子卿。少以父任，兄弟并为郎。稍迁至中厩监。时汉连伐胡，数通使相窥观。匈奴留汉使郭吉、路充国等，前后十余辈。匈奴使来，汉亦留之以相当。天汉元年，且鞮侯单于初立，恐汉袭之，乃曰：\"汉天子我丈人行也。\"尽归汉使路充国等。武帝嘉其义，乃遣武以中郎将使持节送匈奴使留在汉者，因厚赂单于，答其善意。武与副中郎将张胜及假吏常惠等募士斥候百余人俱，既至匈奴，置币遗单于；单于益骄，非汉所望也。</p><p>方欲发使送武等，会缑王与长水虞常等谋反匈奴中。缑王者，昆邪王姊子也，与昆邪王俱降汉，后随浞野侯没胡中。及卫律所将降者，阴相与谋劫单于母阏氏归汉。会武等至匈奴，虞常在汉时，素与副张胜相知，私候胜曰：\"闻汉天子甚怨卫律，常能为汉伏弩射杀之，吾母与弟在汉，幸蒙其赏赐。\"张胜许之，以货物与常。</p><p>后月余，单于出猎，独阏氏子弟在。虞常等七十余人欲发，其一人夜亡，告之。单于子弟发兵与战。缑王等皆死，虞常生得。单于使卫律治其事，张胜闻之，恐前语发，以状语武。武曰：\"事如此，此必及我，见犯乃死，重负国。\"欲自杀，胜、惠共止之。虞常果引张胜。单于怒，召诸贵人议，欲杀汉使者。左伊秩訾曰：\"即谋单于，何以复加？宜皆降之。\"</p><p>单于使卫律召武受辞。武谓惠等：“屈节辱命，虽生，何面目以归汉！”引佩刀自刺。卫律惊，自抱持武，驰召医。凿地为坎，置煴火，覆武其上，蹈其背以出血。武气绝，半日复息。惠等哭，舆归营。单于壮其节，朝夕遣人候问武，而收系张胜。</p><p>武益愈，单于使使晓武，会论虞常，欲因此时降武。剑斩虞常已，律曰：“汉使张胜谋杀单于近臣，当死。单于募降者赦罪。”举剑欲击之，胜请降。律谓武曰：“副有罪，当相坐。”武曰：“本无谋，又非亲属，何谓相坐？”复举剑拟之，武不动。律曰：“苏君，律前负汉归匈奴，幸蒙大恩，赐号称王。拥众数万，马畜弥山，富贵如此！苏君今日降，明日复然。空以身膏草野，谁复知之！”武不应。律曰：“君因我降，与君为兄弟；今不听吾计，后虽欲复见我，尚可得乎？”武骂律曰：“汝为人臣子，不顾恩义，畔主背亲，为降虏于蛮夷，何以汝为见？且单于信汝，使决人死生，不平心持正，反欲斗两主，观祸败。若知我不降明，欲令两国相攻，匈奴之祸，从我始矣。”</p><p>律知武终不可胁，白单于。单于愈益欲降之。乃幽武置大窖中，绝不饮食。天雨雪，武卧啮雪，与旃毛并咽之，数日不死。匈奴以为神。乃徙武北海上无人处，使牧羝，羝乳乃得归。别其官属常惠等各置他所。武既至海上，廪食不至，掘野鼠去草实而食之。杖汉节牧羊，卧起操持，节旄尽落。积五六年，单于弟於靬王弋射海上。武能网纺缴，檠弓弩，於王爱之，给其衣食。三岁余，王病，赐武马畜、服匿、穹庐。王死后，人众徙去。其冬，丁令盗武牛羊，武复穷厄。</p><p>初，武与李陵俱为侍中。武使匈奴，明年，陵降，不敢求武。久之，单于使陵至海上，为武置酒设乐。因谓武曰：“单于闻陵与子卿素厚，故使陵来说足下，虚心欲相待。终不得归汉，空自苦亡人之地，信义安所见乎？前长君为奉车，从至雍棫阳宫，扶辇下除，触柱折辕，劾大不敬，伏剑自刎，赐钱二百万以葬。孺卿从祠河东后土，宦骑与黄门驸马争船，推堕驸马河中溺死，宦骑亡，诏使孺卿逐捕，不得，惶恐饮药而死。来时太夫人已不幸，陵送葬至阳陵。子卿妇年少，闻已更嫁矣。独有女弟二人，两女一男，今复十余年，存亡不可知。人生如朝露，何久自苦如此！陵始降时，忽忽如狂，自痛负汉，加以老母系保宫。子卿不欲降，何以过陵？且陛下春秋高，法令亡常，大臣亡罪夷灭者数十家，安危不可知，子卿尚复谁为乎？愿听陵计，勿复有云。”武曰：“武父子亡功德，皆为陛下所成就，位列将，爵通侯，兄弟亲近，常愿肝脑涂地。今得杀身自效，虽蒙斧钺汤镬，诚甘乐之。臣事君，犹子事父也，子为父死，亡所恨，愿勿复再言！”</p><p>陵与武饮数日，复曰：“子卿壹听陵言！”武曰：“自分已死久矣！王必欲降武，请毕今日之欢，效死于前！”陵见其至诚，喟然叹曰：“嗟乎，义士！陵与卫律之罪上通于天！”因泣下沾衿，与武决去。......</p><p>昭帝即位，数年，匈奴与汉和亲。汉求武等，匈奴诡言武死。后汉使复至匈奴，常惠请其守者与俱，得夜见汉使，具自陈道。教使者谓单于，言天子射上林中，得雁，足有系帛书，言武等在某泽中。使者大喜，如惠语以让单于。单于视左右而惊，谢汉使曰：“武等实在。”......</p><p>单于召会武官属，前以降及物故，凡随武还者九人。武以始元六年春至京师。......武留匈奴凡十九岁，始以强壮出，及还，须发尽白。</p>",

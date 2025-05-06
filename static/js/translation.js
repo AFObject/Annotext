@@ -1,3 +1,5 @@
+var showingTranslation = false;
+
 function addTranslation(idx1, text) { // 修改保存后端数据
     globalData.articles[idx1].translation = text;
     saveData();
@@ -32,13 +34,15 @@ function splitTextBySentences(text) {
 }
 
 function showTranslation() {
-    if (document.getElementById('text').classList.contains('translation-state')) {
+    if (showingTranslation) {
+        showingTranslation = false;
         document.getElementById('text').classList.remove('translation-state');
         loadArticle(currentArticleIndex);
         return;
     }
 
-    const a = document.getElementById('text').innerHTML.replaceAll('<p>', '').replaceAll('</p>', '');
+    showingTranslation = true;
+    const a = document.getElementById('text').innerHTML.replaceAll('<p>', '<span class="__start-note"></span>').replaceAll('</p>', '<span class="__end-note"></span>');
     const b = globalData.articles[currentArticleIndex].translation;
     
     const aa = splitTextBySentences(a);
@@ -49,7 +53,7 @@ function showTranslation() {
         if (index >= bb.length) {
             return;
         }
-        res += `<p>${aaa}<br><span class='translation-text'>${bb[index]}</span></p>`
+        res += `<p class='translation-sentence'>${aaa}<br><span class='translation-text'>${bb[index]}</span></p>` // 为段落开头、结尾设置特殊标记，方便回转
     });
     document.getElementById('text').innerHTML = res;
     document.getElementById('text').classList.add('translation-state');

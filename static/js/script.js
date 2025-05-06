@@ -73,6 +73,7 @@ function loadArticle(index, data=globalData) {
     fetch('/get_data')
     const article = data.articles[index];
     document.getElementById('text-title').textContent = article.title;
+    // document.getElementById('text').classList.remove('translation-state');
 
     const articleList = document.getElementById('article-list').querySelectorAll('li');
     articleList.forEach(li => {
@@ -107,6 +108,12 @@ function loadArticle(index, data=globalData) {
 
     loadAnnotationBar(index, data.articles[index]);
     resetAnnoContentDisplay();
+
+    console.log(showingTranslation);
+    if (showingTranslation) {
+        showingTranslation = false;
+        showTranslation();
+    }
 }
 
 // 【主要逻辑】处理右侧边栏
