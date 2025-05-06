@@ -8,7 +8,7 @@
     --active-btn-bg: #ddd;
     --border-color: #333;
 
-    --gray-bg: #d0d0d0;
+    --gray-bg: #dfdfdf;
     --yellow-bg: #fce9b7;
     --green-bg: #cefcf9;
     --red-bg: #ffc6c6;
@@ -30,5 +30,8 @@
         --yellow-bg: #cc9a23a7;
         --green-bg: #026878c1;
         --red-bg: #a30000b6;
+    }
+    img[src$=".svg"] {
+        filter: invert(1);
     }
 }
