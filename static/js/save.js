@@ -63,6 +63,7 @@ function copyAnnotations() {
             spanCapsule.innerText = capsule.innerText + '.';
             spanCapsule.className = capsule.className;
             spanCapsule.style.backgroundColor = getComputedStyle(originalCapsule).backgroundColor;
+			spanCapsule.style.fontWeight = getComputedStyle(originalCapsule).fontWeight;
             capsule.replaceWith(spanCapsule);
             spanCapsule.insertAdjacentText('afterend', ' ');
         }
@@ -88,6 +89,7 @@ function copyAnnotations() {
               b { font-weight: bold; }
               u { text-decoration: underline; }
               .highlight { background-color: yellow; }
+			  .red-underline { text-decoration: red underline; font-weight: bold; border: 2px black solid; }
               .anno-content { color: #333; font-family: 'Kaiti SC'; }
             </style>
           </head>

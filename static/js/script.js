@@ -85,23 +85,74 @@ function loadArticle(index, data=globalData) {
     document.getElementById('dockbar-text').innerHTML = `${text.length}<br>${article.annotations.length}`;
     let annotations = article.annotations;
 
-    // **按 start 索引降序排序，确保从后往前替换**
-    annotations.sort((a, b) => b.start - a.start);
-    let length = annotations.length
-
-    // 依次插入高亮注释
-    annotations.forEach((ann, idx) => {
-        let before = text.slice(0, ann.start);
-        let classText = ann.type.replace('-underline', ' red-underline');
-        // 倒序了，所以全部是 length - idx
-        let highlighted = `<span id="ann-${length - idx}" class="main highlight ${classText}" data-explanation="${chineseToASCII(ann.explanation)}">${text.slice(ann.start, ann.end)}</span>`;
-        let after = text.slice(ann.end);
-        text = before + highlighted + `<sup style="margin-left: 1px; margin-right: 3px">${length - idx}</sup>` + after;
+    // 1. 按原始start分配ID（保持显示顺序）
+    annotations.sort((a, b) => a.start - b.start);
+    annotations.forEach((ann, index) => {
+        ann.id = index + 1; // 分配固定ID
     });
 
-    annotations.sort((a, b) => a.start - b.start);
+    // 2. 按跨度升序排序（先处理内层小注释）
+    annotations.sort((a, b) => {
+    const spanA = a.end - a.start;
+        const spanB = b.end - b.start;
+        if (spanA !== spanB) return spanA - spanB; // 跨度小的优先
+        return b.start - a.start; // 跨度相同时start大的优先
+    });
+
+    // 3. 存储已处理的注释信息（用于索引调整）
+    let processed = [];
+
+    // 4. 按跨度顺序处理注释（内层优先）
+    annotations.forEach(ann => {
+        console.log(`${ann.id} ${ann.end - ann.start}`);
+        // 计算当前注释的索引偏移量（前面插入导致的位移）
+        let startOffset = 0;
+        let endOffset = 0;
+        
+        processed.forEach(item => {
+            if (item.originalStart < ann.start) {
+                startOffset += item.offset;
+            }
+            if (item.originalStart < ann.end) {
+                endOffset += item.offset;
+            }
+        });
+
+        // 计算调整后的索引位置
+        const adjustedStart = ann.start + startOffset;
+        const adjustedEnd = ann.end + endOffset;
+
+        // 构建高亮标签
+        const before = text.slice(0, adjustedStart);
+        const content = text.slice(adjustedStart, adjustedEnd);
+        const classText = ann.type.replace('-underline', ' red-underline');
+        const highlighted = `<span id="ann-${ann.id}" class="main highlight ${classText}" data-explanation="${chineseToASCII(ann.explanation)}">${content}</span>`;
+        const supTag = `<sup style="margin-left: 1px; margin-right: 3px">${ann.id}</sup>`;
+        const after = text.slice(adjustedEnd);
+        
+        // 更新文本内容
+        text = before + highlighted + supTag + after;
+
+        // 计算本次插入导致的偏移量（新增字符数）
+        const insertedString = highlighted + supTag;
+        const offset = insertedString.length - content.length;
+        
+        // 记录当前注释的处理信息
+        processed.push({
+            originalStart: ann.start, // 原始start用于后续计算
+            offset: offset
+        });
+    });
+
+    annotations.sort((a, b) => {
+        if (a.start < b.start) return -1;
+        if (a.start > b.start) return 1;
+        if (a. start == b.start) return a.end - b.end; // 如果 start 相同，按 end 排序
+        return 0;
+    });
 
     document.getElementById('text').innerHTML = text;
+    console.log(text);
 
     // 绑定鼠标悬停事件
     activateTooltip();

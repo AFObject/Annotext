@@ -135,7 +135,12 @@ function addAnnotation(text, start, end, explanation) { // 修改保存后端数
     annotations.push(newAnn);
 
     // **按 start 重新排序**
-    annotations.sort((a, b) => a.start - b.start);
+    annotations.sort((a, b) => {
+        if (a.start < b.start) return -1;
+        if (a.start > b.start) return 1;
+        if (a. start == b.start) return a.end - b.end; // 如果 start 相同，按 end 排序
+        return 0;
+    });
 
     saveData();
     loadArticle(currentArticleIndex);

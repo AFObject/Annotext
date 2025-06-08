@@ -8,10 +8,10 @@
     --active-btn-bg: #ddd;
     --border-color: #333;
 
-    --gray-bg: #dfdfdf;
-    --yellow-bg: #fce9b7;
-    --green-bg: #cefcf9;
-    --red-bg: #ffc6c6;
+    --gray-bg: #dfdfdfd8;
+    --yellow-bg: rgba(255, 218, 107, 0.6);
+    --green-bg: rgba(115, 251, 251, 0.4);
+    --red-bg: rgba(255, 158, 158, 0.5);
 }
 
 /* 系统是暗黑模式时 */
