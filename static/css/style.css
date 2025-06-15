@@ -467,6 +467,14 @@ h2 {
     transition: 0.3s;
 }
 
+#test-cnt {
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--bad-text-color);
+    font-family: monospace;
+    display: inline;
+}
+
 .btn-container {
     position: absolute;
     bottom: 20px;

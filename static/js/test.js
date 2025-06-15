@@ -23,6 +23,7 @@ function generateTest() {
     console.log(globalTesting);
     globalTesting.splice(randomIndex, 1);
     console.log(randomItem);
+    document.getElementById('test-cnt').innerHTML = `${globalTesting.length}`;
     randomItem.getElementsByClassName('anno-content')[0].style.visibility = 'hidden';
     document.getElementById('test-question').innerHTML = randomItem.innerHTML;
 }
