@@ -310,7 +310,7 @@ function printMode() {
     document.getElementById('annotations').style.width = '40%';
     document.getElementById('main-text-content').style.width = '60%';
     document.getElementsByClassName('filter-menu')[0].style.display = 'none';
-    document.querySelectorAll(".annotations li").forEach(li => li.style.padding = '4.3px'); // 此处修改注释行距
+    document.querySelectorAll(".annotations li").forEach(li => li.style.padding = '4.3px 5px'); // 此处修改注释行距
     document.getElementById('dockbar').style.display = 'none';
     document.querySelectorAll('.global-btn').forEach(btn => btn.style.display = 'none');
     document.querySelectorAll(".anno-content").forEach(content => content.classList.add("show"));
@@ -334,10 +334,10 @@ function printMode() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft') {
             padding += 0.1;
-            elements.forEach(li => li.style.padding = `${padding}px`);
+            elements.forEach(li => li.style.padding = `${padding}px 5px`);
         } else if (e.key === 'ArrowRight') {
             padding -= 0.1;
-            elements.forEach(li => li.style.padding = `${padding}px`);
+            elements.forEach(li => li.style.padding = `${padding}px 5px`);
         }
     });
 
